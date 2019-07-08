@@ -1,4 +1,18 @@
-# Array Exercises
+# Arrays Lab
+
+To complete this lab (as for most labs), do the following:
+
+1. Fork this repo.
+2. Clone **your** forked repo.
+3. Create a file called `arrays_lab.js` inside your cloned repo.
+4. Copy the description of the exercise as a comment.
+5. Underneath the commented description write your code.
+6. Ensure your solutions work properly!
+7. Open PR against this repo.
+
+___
+
+## Exercises
 
 1. Log the last element of an array.
 2. Change the first element of an array to "something else".
