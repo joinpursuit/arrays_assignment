@@ -8,6 +8,9 @@ console.log(pets[pets.length-1]);
 pets[0] = "something else";
 console.log(pets[0]);
 // 3. Add "mango" to the end of a fruits array ["strawberry", "banana"].
+let fruits = ["strawberry", "banana"];
+fruits.push("mango");
+console.log(fruits);
 // 4. Add "blueberry" to the front of the same fruits array.
 // 5. Remove the last element of the fruits array.
 // 6. console.log the length of the fruits array.
