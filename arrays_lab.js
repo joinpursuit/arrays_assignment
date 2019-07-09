@@ -23,8 +23,7 @@ console.log(fruits.length);
 fruits.shift();
 console.log(fruits);
 // 8. Join all the elements in the fruits array with a '$'.
-//
-//
+console.log(fruits.join("$"));
 // 9. Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
 //
 // ```js
