@@ -12,9 +12,16 @@ let fruits = ["strawberry", "banana"];
 fruits.push("mango");
 console.log(fruits);
 // 4. Add "blueberry" to the front of the same fruits array.
+fruits.unshift("blueberry");
+console.log(fruits);
 // 5. Remove the last element of the fruits array.
+fruits.pop();
+console.log(fruits);
 // 6. console.log the length of the fruits array.
+console.log(fruits.length);
 // 7. Remove the first element of the fruits array.
+fruits.shift();
+console.log(fruits);
 // 8. Join all the elements in the fruits array with a '$'.
 //
 //
