@@ -246,7 +246,7 @@ console.log(sumOfEven)
 //
 
 //Note: I searched on google on how to solve and I understand some of it.
-// I have an idea on what to do but I am not sure how to fully execute it my ideas.
+// I have an idea on what to do but I am not sure how to fully execute my ideas.
 
 
 let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1];
