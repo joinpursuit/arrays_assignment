@@ -165,7 +165,7 @@ let labber14 = [1, 20, 300];
 console.log(labber14);
 console.log("");
 let sum14 = labber14[0];
-for (i = 1; i < labber14.length; i++) {
+for (let i = 1; i < labber14.length; i++) {
   sum14 += labber14[i];
 }
 console.log(sum14);
@@ -224,7 +224,7 @@ console.log("");
 let noDupeList = [];
 for (let i of dupeFriendlyList) { // LOOP LEVEL 1: Evals each element of dupeFriendlyList
   let addOrDont = true;
-  for (j = 0; j < noDupeList.length; j++) { // LOOP LEVEL 2: Evals against each existing element on noDupeList
+  for (let j = 0; j < noDupeList.length; j++) { // LOOP LEVEL 2: Evals against each existing element on noDupeList
     if (i === noDupeList[j]) {
       addOrDont = false;
     }
@@ -246,9 +246,9 @@ let someRepeatsAgain = [25,11,30,31,50,28,4,37,13,20,24,38,28,14,44,33,7,43,39,3
 console.log(someRepeatsAgain);
 console.log("");
 let onlyOnceList = [];
-for (i = 0; i < someRepeatsAgain.length; i++) { // LOOP LEVEL 1: Evals each element of someRepeatsAgain
+for (let i = 0; i < someRepeatsAgain.length; i++) { // LOOP LEVEL 1: Evals each element of someRepeatsAgain
   let addingIfOnce = true;
-  for (j = 0; j < someRepeatsAgain.length; j++) { // LOOP LEVEL 2: Evals against each element of someRepeatsAgain looking for duplicates
+  for (let j = 0; j < someRepeatsAgain.length; j++) { // LOOP LEVEL 2: Evals against each element of someRepeatsAgain looking for duplicates
     if (j !== i) { // CHECK prevents eval of same index
       if (someRepeatsAgain[i] === someRepeatsAgain[j]) {
         addingIfOnce = false;
@@ -304,7 +304,7 @@ let labber20 = [91, 92, 93, 91, 91, 91, 98, 93, 101, -9, 0, -1, 3, 0, 3];
 console.log(labber20);
 console.log("");
 let winners = [labber20[0]];
-for (i = 1; i < labber20.length; i++) { // LOOP LEVEL 1: Evals each element of labber20, starting with second vs first
+for (let i = 1; i < labber20.length; i++) { // LOOP LEVEL 1: Evals each element of labber20, starting with second vs first
   if (labber20[i] < winners[0]) { // challenger element is lesser than smallest
     winners[1] = winners[0];
     winners[0] = labber20[i];
