@@ -269,18 +269,21 @@ console.log("\n\n");
 
 console.log('19. Given an array of strings, find the the string with the most "a"s in it.');
 //
-let labber19 = ["apes", "abba", "apple", "aardvark", "lots of aaaaaaas", "last a"];
+let labber19 = ["first aaaas", "apes", "abba", "apple", "aardvark", "lots of aaaaas", "last a"];
 //
 console.log(labber19);
 console.log("");
 let winnerString = labber19[0];
-let winnerNumAs = 0;
-for (let i = 1; i < labber19.length; i++) { // LOOP LEVEL 1: Evals each element of labber19, starting with second element vs the first element
+let winnerNumAs = "";
+for (let i = 0; i < labber19.length; i++) { // LOOP LEVEL 1: Evals each element of labber19, starting with second element vs the first element
   let howManyAs = 0;
   for (let j of labber19[i]) { // LOOP LEVEL 2: Evals each element of labber19 AS STRING with counter for instances of 'a'
     if (j === "a") {
       howManyAs += 1;
     }
+  if (i === 0) { // CHECK Creats first num of A's to beat
+    winnerNumAs = howManyAs;
+  }
   }
   if (howManyAs > winnerNumAs) { // CHECK Whoever wins moves on to the next round in Level 1
     winnerString = labber19[i];
