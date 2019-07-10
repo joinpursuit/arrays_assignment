@@ -23,7 +23,8 @@ console.log(fruits.length);
 fruits.shift();
 console.log(fruits);
 // 8. Join all the elements in the fruits array with a '$'.
-console.log(fruits.join("$"));
+let joinedFruits = fruits.join("$");
+console.log(joinedFruits);
 // 9. Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
 //
 // ```js
@@ -32,7 +33,13 @@ console.log(fruits.join("$"));
 //
 // // log [1,5,2,4]
 // ```
-//
+// let firstArr = [1,2,3];
+// let secondArr = [1,5,2,4];
+// if (firstArr.length === secondArr.length) {
+//   console.log("They are the same size.")
+// } else {
+// }
+
 // 10. Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 //
 // ```js
