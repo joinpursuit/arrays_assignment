@@ -72,7 +72,9 @@ let arrayMessageFor = ["I", "am", "a", "happy", "array"];
 for (let forIndex = 0; forIndex < arrayMessageFor.length; forIndex++) {
   console.log(arrayMessageFor[forIndex]);
 }
-
+//
+console.log("____");
+//
 // 12. Write code that logs every value in an array using a while loop
 //
 // ```js
@@ -91,7 +93,8 @@ while (arrIndex < arrayMessageWhile.length) {
   console.log(arrayMessageWhile[arrIndex]);
   arrIndex++;
 }
-
+//
+console.log("____");
 // 13. Write code that logs every value in an array using a for/of loop
 //
 // ```js
@@ -104,8 +107,11 @@ while (arrIndex < arrayMessageWhile.length) {
 //   array
 // */
 // ```
-// let arrayMessageForOF = ["I", "am", "a", "happy", "array"];
-
+let arrayMessageForOF = ["I", "am", "a", "happy", "array"];
+for (let forOfIndex of arrayMessageForOF) {
+  console.log(forOfIndex);
+  forOfIndex ++;
+}
 // 14. Given an array of numbers, write code that logs the sum of all the numbers
 //
 // ```js
