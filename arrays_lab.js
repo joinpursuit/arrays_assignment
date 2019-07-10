@@ -42,9 +42,9 @@ console.log(fruitsArray.join('$'))
 //
 // // log [1,5,2,4]
 // ```
-// let firstArray = ['a','b','c']
-// let secondArray = ['d','e','f','g']
-//
+let firstArray = ['a','b','c']
+let secondArray = ['d','e','f','g']
+
 if (firstArray.length > secondArray.length){
   console.log(firstArray)
 } else if(firstArray.length < secondArray.length){
