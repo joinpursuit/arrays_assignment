@@ -33,12 +33,15 @@ console.log(joinedFruits);
 //
 // // log [1,5,2,4]
 // ```
-// let firstArr = [1,2,3];
-// let secondArr = [1,5,2,4];
-// if (firstArr.length === secondArr.length) {
-//   console.log("They are the same size.")
-// } else {
-// }
+let firstArr = [1,2,3];
+let secondArr = [1,5,2,4];
+if (firstArr.length === secondArr.length) {
+  console.log("They are the same size.")
+} else if (firstArr.length > secondArr.length) {
+  console.log(firstArr);
+} else {
+  console.log(secondArr);
+}
 
 // 10. Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 //
