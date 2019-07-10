@@ -55,6 +55,15 @@ if (firstArr.length === secondArr.length) {
 // // log 4,6
 //
 // ```
+let newArray = [1, 3, 5];
+// for (let newIndex = 1; newIndex < newArray.length; newIndex++) {
+//   if (newIndex = Math.floor(newArray[newArray.length/2])) {
+//   console.log(newArray[newIndex]);
+//   newIndex++;
+// } else {
+//   console.log("you didn't do this right.")
+// }
+// }
 
 // 11. Write code that logs every value in an array using a for loop
 //
@@ -112,6 +121,8 @@ for (let forOfIndex of arrayMessageForOF) {
   console.log(forOfIndex);
   forOfIndex ++;
 }
+//
+console.log("___");
 // 14. Given an array of numbers, write code that logs the sum of all the numbers
 //
 // ```js
@@ -121,7 +132,9 @@ for (let forOfIndex of arrayMessageForOF) {
 // let secondArrToSum = [1, 2, 3, 4, 5, -6]
 // //  9
 // ```
+
 //
+console.log("___");
 //
 // 15. Given an array of numbers, write code that logs all the odd numbers
 //
