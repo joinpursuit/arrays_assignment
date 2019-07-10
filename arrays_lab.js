@@ -137,7 +137,8 @@ for (let evenOddIndex = 0; evenOddIndex < evenAndOddArr.length; evenOddIndex ++)
     console.log(evenAndOddArr[evenOddIndex]);
   }
 }
-
+//
+console.log("___");
 // 16. Given an array of numbers, write code that logs the sum of all the even numbers
 //
 // ```js
@@ -146,6 +147,13 @@ for (let evenOddIndex = 0; evenOddIndex < evenAndOddArr.length; evenOddIndex ++)
 //
 // // 12
 // ```
+let evenAndOddArrToSum = [1,5,2,3,11,4,6];
+for (let sumEvenIndex = 0; sumEvenIndex < evenAndOddArrToSum.length; sumEvenIndex ++) {
+  if (evenAndOddArrToSum[sumEvenIndex] % 2 === 0) {
+    let sumResult = evenAndOddArrToSum[sumEvenIndex] += evenAndOddArrToSum[sumEvenIndex];
+    console.log(sumResult);
+  }
+}
 
 //BONUS QUESTIONS
 // 17. Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
