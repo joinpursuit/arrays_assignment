@@ -1,12 +1,26 @@
 # Array Exercises
 
 1. Log the last element of an array.
+let jewels = ["pearl," "ruby", "garnet", "diamond"]
+  console.log(jewels[jewels.length-1])
 2. Change the first element of an array to "something else".
-3. Add "mango" to the end fruits array ["strawberry", "bannana"].
+let jewels = ["pearl," "ruby", "garnet", "diamond"]
+jewels.shift()
+let jewels =["ruby", "garnet", "diamond"]
+jewels.unshift(emerald)
+3. Add "mango" to the end fruits array ["strawberry", "banana"].
+let fruits = ["strawberry", "banana"]
+fruits.push("mango")
 4. Add "blueberry" to the front of the same fruits array.
+let fruits = ["mango", "strawberry, "banana"]
+fruits.unshift("blueberry")
 5. Remove the last element of the fruits array.
+let fruits = ["blueberry", "mango", "strawberry", "banana"]
+fruits.pop()
 6. console.log the length of the fruits array.
+console.log(fruits[fruits.length-1])
 7. Remove the first element of the fruits array.
+
 8. Join all the elements in the fruits array with a '$'.
 9. Write a `longestArr` code block that takes in two array variables. The code block should compare the length of the two arrays and log whichever array is longer (aka whichever array has more values in it). If the lengths of the two arrays are equal, then log null.
 ```js
@@ -71,4 +85,4 @@ doubleTrouble([10, 8, 5]);
 // returns [20, 16, 10]
 ```
 
-15. Write a code block that takes in two varaibles. A target, and an array. Console log the indicies (as an array) of the elements that add up to the target. Exactly two indicies must be logged. 
+15. Write a code block that takes in two varaibles. A target, and an array. Console log the indicies (as an array) of the elements that add up to the target. Exactly two indicies must be logged.
