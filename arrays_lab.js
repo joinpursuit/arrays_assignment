@@ -262,3 +262,52 @@ for (i = 0; i < someRepeatsAgain.length; i++) {
 }
 }
   console.log(resultsArray);
+
+//19. Given an array of strings, find the the string with the most "a"s in it.
+console.log('');
+console.log('Question 19');
+console.log('');
+
+let mostAStrings = ["apes", "abba", "apple"];
+let aCounter = 0;
+let lastACounter = 0;
+let finalResults = '';
+//console.log(mostAStrings[0][0]);
+
+for (let element of mostAStrings) {
+    for (i = 0; i < element.length; i++) {
+      if (element[i] === 'a') {
+        aCounter += 1;
+        if (aCounter > lastACounter) {
+          finalResults = element;
+          lastACounter = aCounter;
+          aCounter = 0;
+        }
+      }
+    }
+}
+console.log(finalResults + ' Has the most A\'s in this group of elements: ' + mostAStrings + '.');
+
+//20. Find the second smallest number in an Array of Ints
+console.log('');
+console.log('Question 20');
+console.log('');
+
+//I could sort the array and select the 2nd index... but
+let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69];
+const minimun = Math.min.apply(Math, secondSmallestArr);
+let placeHolder = 0;
+let secondSmallest = Math.max.apply(Math, secondSmallestArr);
+console.log('Highest: ' + secondSmallest + ' Smallest: ' + minimun);
+
+for (a = 0; a < secondSmallestArr.length; a++) {
+  for (b = 0; b < secondSmallestArr.length; b++){
+    if (a !== b && secondSmallestArr[a] < secondSmallestArr[b] && minimun < secondSmallestArr[a]) {
+      placeHolder = secondSmallestArr[a];
+      if (placeHolder < secondSmallest) {
+        secondSmallest = placeHolder;
+      }
+    }
+  }
+}
+console.log('The second smallest number in this array is ' + secondSmallest + '.');
