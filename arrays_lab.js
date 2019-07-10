@@ -131,7 +131,12 @@ for (let forOfIndex of arrayMessageForOF) {
 //
 // // 1, 5, 11, 99
 // ```
-
+let evenAndOddArr = [1,5,2,4,11,12,99,100];
+for (let evenOddIndex = 0; evenOddIndex < evenAndOddArr.length; evenOddIndex ++) {
+  if (evenAndOddArr[evenOddIndex] % 2 != 0) {
+    console.log(evenAndOddArr[evenOddIndex]);
+  }
+}
 
 // 16. Given an array of numbers, write code that logs the sum of all the even numbers
 //
