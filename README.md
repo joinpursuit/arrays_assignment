@@ -115,7 +115,7 @@ let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 
 // 12
 ```
-
+// BONUS
 17. Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
 
 ```js
