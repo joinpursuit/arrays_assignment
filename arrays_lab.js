@@ -55,7 +55,7 @@ if (firstArr.length === secondArr.length) {
 // // log 4,6
 //
 // ```
-//
+
 // 11. Write code that logs every value in an array using a for loop
 //
 // ```js
@@ -68,7 +68,8 @@ if (firstArr.length === secondArr.length) {
 //   array
 // */
 // ```
-//
+// let arrayMessageFor = ["I", "am", "a", "happy", "array"];
+
 // 12. Write code that logs every value in an array using a while loop
 //
 // ```js
@@ -81,8 +82,13 @@ if (firstArr.length === secondArr.length) {
 //   array
 // */
 // ```
-//
-//
+let arrayMessageWhile = ["I", "am", "a", "happy", "array"];
+let arrIndex = 0;
+while (arrIndex < arrayMessageWhile.length) {
+  console.log(arrayMessageWhile[arrIndex]);
+  arrIndex++;
+}
+
 // 13. Write code that logs every value in an array using a for/of loop
 //
 // ```js
@@ -95,8 +101,8 @@ if (firstArr.length === secondArr.length) {
 //   array
 // */
 // ```
-//
-//
+// let arrayMessageForOF = ["I", "am", "a", "happy", "array"];
+
 // 14. Given an array of numbers, write code that logs the sum of all the numbers
 //
 // ```js
@@ -116,7 +122,8 @@ if (firstArr.length === secondArr.length) {
 //
 // // 1, 5, 11, 99
 // ```
-//
+
+
 // 16. Given an array of numbers, write code that logs the sum of all the even numbers
 //
 // ```js
@@ -125,7 +132,8 @@ if (firstArr.length === secondArr.length) {
 //
 // // 12
 // ```
-//
+
+//BONUS QUESTIONS
 // 17. Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
 //
 // ```js
