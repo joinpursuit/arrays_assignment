@@ -272,7 +272,10 @@ console.log(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 //
 //
 //
-//
+//     EXTRA QUESTIONS FROM THE PREVIOUS VERSION
+console.log("Extra Bonus Questions from the previous Version");
+console.log(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
 // 21. Write a range code block that takes two number variables: min and max.
 // The block will log an array with all the numbers, inclusive, between min and max.
 // range(2, 6)
