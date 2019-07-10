@@ -68,7 +68,10 @@ if (firstArr.length === secondArr.length) {
 //   array
 // */
 // ```
-// let arrayMessageFor = ["I", "am", "a", "happy", "array"];
+let arrayMessageFor = ["I", "am", "a", "happy", "array"];
+for (let forIndex = 0; forIndex < arrayMessageFor.length; forIndex++) {
+  console.log(arrayMessageFor[forIndex]);
+}
 
 // 12. Write code that logs every value in an array using a while loop
 //
