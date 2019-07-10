@@ -88,7 +88,7 @@ if(testArray.length % 2 === 0){
 // */
 // ```
 let thisArray = ['one', 'two', 'three', 'four']
-for (i = 0; i < thisArray.length; i++){
+for (let i = 0; i < thisArray.length; i++){
 console.log(thisArray[i])
 }
 
