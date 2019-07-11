@@ -273,12 +273,18 @@ let singleAppear = [];
 
 
 for ( let w = 0; w < someRepeatsAgain.length; w++) {
-  if (!someRepeatsAgain.includes(someRepeatsAgain[w], w + 1)) {
-    singleAppear.push(someRepeatsAgain[w]);
-  }
+  let once = true;
+  for (let c = 0; c < someRepeatsAgain.length; c++) {
+    if (w !== c) {
+      if (someRepeatsAgain[w] === someRepeatsAgain[c]){
+          once = false;
+        }
+      }
+    } if (once){
+      singleAppear.push(someRepeatsAgain[w]);
+    }
 }
 console.log(singleAppear);
-
 
 // 19. Given an array of strings, find the the string with the most "a"s in it.
 //
@@ -320,6 +326,23 @@ for (let y = 1; y < mostAStrings.length; y++) {
 //
 // // 4
 // ```
-
+console.log("20._________________");
 
 let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+let currentSmallest = secondSmallestArr[0];
+let smallest = 0;
+
+for (let g = 1; g < secondSmallestArr.length; g++) {
+   let nxt = secondSmallestArr[g + 1];
+  if ( secondSmallestArr[g] <= currentSmallest && secondSmallestArr[g] <= nxt) {
+    currentSmallest = secondSmallestArr[g];
+
+  }
+    console.log(currentSmallest);
+  //   for (let j = 0; j < secondSmallestArr.length; j++){
+  // if (secondSmallestArr[j] <= currentSmallest){
+  //   smallest = secondSmallestArr[j];
+  //   }
+  // }
+}
+console.log(smallest);
