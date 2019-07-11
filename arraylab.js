@@ -112,23 +112,3 @@ for (l = 0; l < evenAndOddArrToSum.length; l++) {
 }
 }
 console.log('The sum of the even numbers is '+ sumeven);
-
-//17. Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
-
-let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-let noDupeList = []
-
-
-for(let i = 0; i < dupeFriendlyList.length; i++) {
-    let truthy = false;
-    for(let j = 0; j < noDupeList.length; j++){
-        if(noDupeList[j] === dupeFriendlyList[i]){
-            truthy = true;
-        }
-
-    }
-    if(truthy === false){
-        noDupeList.push(dupeFriendlyList[i]);
-    }
-
-}
