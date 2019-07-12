@@ -185,17 +185,17 @@ for(let i =0; i< evenAndOddArrToSum.length; i++){
 // 17. Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
 //
 // ```js
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-//  let noDupeList = []
-//  let exac =[]
-// for (let i =0; i < dupeFriendlyList.length; i++){
-//       exac = dupeFriendlyList[i]
-//     if (exac[i] === dupeFriendlyList[i]){
-//         continue
-//     } else {
-//       console.log(noDupeList.push(exac[i]))
-//     }
-// }
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+ let noDupeList = []
+ let exac =[]
+for (let i =0; i < dupeFriendlyList.length; i++){
+
+    if (exac[i] === dupeFriendlyList[i]){
+        continue
+    } else {
+      console.log(noDupeList.push(exac[i]))
+    }
+}
 
 
 //noDupleList = [4, 2, 6, 9, 1]
@@ -223,15 +223,13 @@ for (let i = 0; i <someRepeatsAgain.length; i++){
 //
 // //"abba"
 // ```
-//
+
+
+
 // 20. Find the second smallest number in an Array of Ints
 //
 // ```js
 let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
-let firstSmall=secondSmallestArr[0];
-let secondSmall= secondSmallestArr[1]
-for (i =0; i < secondSmallestArr.length; i++){
-      if (secondSmallestArr[i] < firstSmall[i]){
-        secondSmall = firstSmall
-      }
-}//console.log(secondSmall)
+secondSmallestArr.sort(function(a, b){return a-b})
+console.log(secondSmallestArr);
+console.log(secondSmallestArr[1])
