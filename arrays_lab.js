@@ -75,9 +75,14 @@ if (food.length < bev.length){
 // let hasNoExactMiddleArr = [1,4,6,9]
 //
 // // log 4,6
-//
-// ```
-let mix = ['a', 'e', 'i', 'o', 'u']
+// //
+// // ```
+let mix = ['a', 'e', 'i', 'o', 'u', 'y']
+if (mix.length % 2 === 0){
+  console.log(mix[mix.length/2] + ',' + mix[(mix.length/2) -1])
+} else{
+  console.log(mix[Math.floor(mix.length/2)])
+}
 
 
 // 11. Write code that logs every value in an array using a for loop
@@ -203,7 +208,7 @@ console.log(sum)
 // ```
 // let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
 // let noDupeList = []
-
+//
 // 18. Make an array that contains all elements that appear exactly once in someRepeatsAgain
 //
 // ```js
@@ -214,7 +219,7 @@ console.log(sum)
 //
 // ```
 // let someRepeatsAgain = [25,11,30,31,50,28,4,37,13,20,24,38,28,14,44,33,7,43,39,35,36,42,1,40,7,14,23,46,21,39,11,42,12,38,41,48,20,23,29,24,50,41,38,23,11,30,50,13,13,16,10,8,3,43,10,20,28,39,24,36,21,13,40,25,37,39,31,4,46,20,38,2,7,11,11,41,45,9,49,31,38,23,41,16,49,29,14,6,6,11,5,39,13,17,43,1,1,15,25]
-
+//
 // 19. Given an array of strings, find the the string with the most "a"s in it.
 //
 // ```js
@@ -223,16 +228,36 @@ console.log(sum)
 // //"abba"
 // ```
 // let mostAStrings = ["apes", "abba", "apple"]
-
+//
 // 20. Find the second smallest number in an Array of Ints
-
+//
 // ```js
 // let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
 //
 // // 4
 // ```
-
+//
 // let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
 // secondSmallestArr.sort()
 // console.log(secondSmallestArr[1])
 // let sliceSecondSmall = secondSmallestArr.slice(1,3)
+//
+
+
+// 
+// let arr = [7,7,3,1,5,3,7,0]
+// let output =[]
+// for(let i = 1; i < arr.length; i++){
+//   console.log(i)
+//   if(arr[0] === arr[i]){
+//     console.log("index of number if equals: ", i)
+//     arr.splice(i,1)
+//     console.log("array after splice: ", arr)
+//   } else{
+//     console.log("index of number if does not equal: ", i)
+//     output.push(arr[i])
+//     console.log(output)
+//
+//   }
+// }
+// console.log("OUTPUT: ", output)
