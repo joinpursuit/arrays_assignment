@@ -254,17 +254,15 @@ let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92,
                          89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
 
 let smallest = secondSmallestArr[0];
-let secondeSmall = secondSmallestArr[0];
+let secondeSmall = Infinity;
 
 for (let num of secondSmallestArr){
-  if (num < smallest){
-    smallest = num;
-  }
-}
-
-for (let num of secondSmallestArr){
-  if (num > smallest && num < secondeSmall){
-    secondeSmall = num;
+  if (num < secondeSmall){
+      if (num < smallest){
+        smallest = num;
+      } else {
+          secondeSmall = num;
+        }
   }
 }
 console.log(`20. The smallest = ${smallest} \n the seonde smallest = ${secondeSmall}`);
@@ -275,7 +273,6 @@ console.log(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 //     EXTRA QUESTIONS FROM THE PREVIOUS VERSION
 console.log("Extra Bonus Questions from the previous Version");
 console.log(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
 // 21. Write a range code block that takes two number variables: min and max.
 // The block will log an array with all the numbers, inclusive, between min and max.
 // range(2, 6)
