@@ -133,8 +133,10 @@ let someRepeatsAgain = [25,11,30,31,50,28,4,37,13,20,24,38,28,14,44,33,7,43,39,3
 
 // [ 44, 33, 35, 12, 48, 8, 3, 2, 45, 9, 5, 17, 15 ]
 
-
-```
+let noRepeats = []
+for (i =0; i < someRepeatsAgain.length; i++){
+  for ()
+}
 
 19. Given an array of strings, find the the string with the most "a"s in it.
 
