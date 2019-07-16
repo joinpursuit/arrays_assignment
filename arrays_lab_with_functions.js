@@ -3,8 +3,8 @@
 
 // 1. Log the last element of an array.
 let pets = ["hamster", "chinchilla", "cat", "rabbit"];
-const lastElement = ([array]) => {
-  return(pets[pets.length-1]);
+const lastElement = (arr) => {
+  return(arr[arr.length-1]);
 }
 console.log(lastElement(pets));
 // // 2. Change the first element of an array to the string "something else".
