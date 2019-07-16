@@ -3,7 +3,10 @@
 
 // 1. Log the last element of an array.
 let pets = ["hamster", "chinchilla", "cat", "rabbit"];
-console.log(pets[pets.length-1]);
+const lastElement = ([array]) => {
+  return(pets[pets.length-1]);
+}
+console.log(lastElement(pets));
 // // 2. Change the first element of an array to the string "something else".
 pets[0] = "something else";
 console.log(pets[0]);
