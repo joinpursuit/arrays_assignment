@@ -8,8 +8,11 @@ const lastElement = (arr) => {
 }
 console.log(lastElement(pets));
 // // 2. Change the first element of an array to the string "something else".
-pets[0] = "something else";
-console.log(pets[0]);
+function changeFirst (arr) {
+  return (arr[0] = "something else");
+}
+console.log(changeFirst(pets));
+
 // // 3. Add "mango" to the end of a fruits array ["strawberry", "banana"].
 let fruits = ["strawberry", "banana"];
 fruits.push("mango");
