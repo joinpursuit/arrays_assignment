@@ -28,13 +28,13 @@ console.log(fruitArray1)
 // // // 3. Add "mango" to the end of a fruits array ["strawberry", "banana"].
 // //
 let fruitArray3 = ['strawberry','banana' ]
-fruitArray3.push('mango')
-console.log(fruitArray3)
+fruitArray3.push('mango')// Adding mango to the last character of the array
+console.log(fruitArray3)// printing new array
 //
 // // // 4. Add "blueberry" to the front of the same fruits array.
 // //
 // let fruitArray3 = ['strawberry','banana' ]
-fruitArray3.unshift('blueberry');
+fruitArray3.unshift('blueberry'); // adding blueberryto the front of the same 
 console.log(fruitArray3)
 // //
 // // // 5. Remove the last element of the fruits array.
