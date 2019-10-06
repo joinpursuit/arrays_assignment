@@ -65,4 +65,32 @@
 //         i++
 // }
 
+// Problem 5
+
+// let firstArrToSu = [1, 2, 3, 4, 5, 6]
+// let sum = 0
+// for(let i = 0; i <= firstArrToSu.length; i++){
+//     sum += i
+// }
+
+    // console.log(sum)
+
+    // problem 6
+
+// let arr = [1, 4, 5, 6, 8, 11]
+// for (let i = 0; i <= arr.length -1; i++)
+// if (arr[i] % 2 === 1){
+//     console.log(arr[i])
+
+// } 
+
+
+let arr = [1, 4, 5, 6, 8, 11]
+let sum = 0
+for (let i = 0; i <= arr.length -1; i++)
+if (arr[i] % 2 === 0){
+    sum += arr[i]
+}
+
+console.log(sum)
 
