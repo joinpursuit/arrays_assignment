@@ -203,7 +203,17 @@ let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 
 
 // 4
 ```
-
+let smallest= number[0];
+let secondSmallest = []
+for(let i=0;i< number.length;i++){
+ if(number[i]<smallest){
+ secondSmallest = smallest;
+   smallest = number[i];
+ }else if(number[i] < secondSmallest) {
+   secondSmallest = number[i];
+ }
+}
+console.log(secondSmallest)
 
 ## 9. Problem Nine - Duplicates
 
