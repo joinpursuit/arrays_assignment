@@ -204,17 +204,17 @@
 // // 4
 // ```
 let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
-let smallestValue = secondSmallestArr[0]
-let secondSmallest = secondSmallestArr[0]
+// let smallestValue = secondSmallestArr[0]
+// let secondSmallest = secondSmallestArr[0]
 
-for(let i =0; i < secondSmallestArr.length; i++){
-    if(secondSmallestArr[i] > smallestValue && secondSmallestArr[i] < secondSmallest){
-        secondSmallest = secondSmallestArr[i]
-    } else if(secondSmallestArr[i] < smallestValue){
-        smallestValue = secondSmallestArr[i]
-    }
-}
-console.log(secondSmallest)
+// for(let i =0; i < secondSmallestArr.length; i++){
+//     if(secondSmallestArr[i] > smallestValue && secondSmallestArr[i] < secondSmallest){
+//         secondSmallest = secondSmallestArr[i]
+//     } else if(secondSmallestArr[i] < smallestValue){
+//         smallestValue = secondSmallestArr[i]
+//     }
+// }
+// console.log(secondSmallest)
 // ## 9. Problem Nine - Duplicates
 
 // Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
@@ -232,3 +232,15 @@ console.log(secondSmallest)
 // // noDupleList = [4, 2, 6, 9, 1]
 
 // ```
+
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = []
+
+for(let i = 0; i < dupeFriendlyList.length; i++){
+    if(noDupeList.includes(dupeFriendlyList[i])){
+
+    }else{
+        noDupeList.push(dupeFriendlyList[i])
+    }
+}
+console.log(noDupeList)
