@@ -45,12 +45,18 @@ if (firstArr.length < secondArr.length) {
 // Given an array, log its middle element. If the middle of the array is between two elements, log both of them.
 
 // let hasExactMiddleArr = [1,5,3]
-
 // logs 5
 
 // let hasNoExactMiddleArr = [1,4,6,9]
-
 // logs 4,6
+
+let arr = [1,2,3,4,5,6]
+if (arr.length%2 !==0) {
+    console.log(Math.floor(arr[(arr.length-1)/2]))
+} else if (arr.length%2 === 0) {
+    console.log(arr.slice(((arr.length-1)/2),((arr.length+2)/2)))
+} 
+
 // 4. Problem Four - Iterate over an array
 // a. Write code that logs every value in an array using a for loop
 
