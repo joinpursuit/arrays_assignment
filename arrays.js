@@ -91,23 +91,13 @@
 
 //Problem 8
 
-let arr6 = [5,7,4,3]
-let value2 = arr6[0]
+let arr6 = [5,7,3,4]
+let smallest = arr6[0]
+let secondSmallest = smallest
 for (let i=0; i< arr6.length; i++){
-    if(arr6[i] < value2){
-        value2 = arr6[i]
-}
-}console.log(value2)
-
-let arr7 = arr6.slice(0,value2)+arr6.slice(value2+1)
-console.log(arr7)
-
-
-
-// let value3 = arr7[0]
-// for (let i=0; i< arr7.length; i++){
-//     if(arr7[i] < value3){
-//         value3 = arr7[i]}
-//         console.log(value3)
-//     }
-  
+    if(smallest > arr6[i]) {
+        secondSmallest = smallest
+        smallest = arr6[i]
+    } else if (arr6[i]<secondSmallest && secondSmallest > smallest){
+        secondSmallest = arr6[i]}
+    } console.log(secondSmallest)
