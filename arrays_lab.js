@@ -14,6 +14,15 @@
 
 // f. Join all the elements in the fruits array with a '$'.
 
+let fruits = ["strawberry", "banana"];
+fruits.push("mango");
+fruits.unshift("blueberry");
+fruits.pop();
+console.log(fruits.length);
+fruits.shift();
+console.log(fruits.join("$"));
+console.log(fruits)
+
 
 // ## 2. Problem Two - Larger array
 
@@ -25,7 +34,18 @@
 
 // // log [1,5,2,4]
 // ```
+let firstArr = [1,2,3]
+let secondArr = [1,5,2,4]
 
+if(firstArr === secondArr) {
+    console.log("They are the same size")
+} else if (firstArr < secondArr) {
+    console.log(secondArr)
+} else { (secondArr < firstArr)
+    console.log(firstArr)
+}
+//let smallarr = firstArr.length < sżcondArr.length || secondArr.length < firstArr.length
+// for(let i = 0; i < firstArr.lenghth; i++)
 // ## 3. Problem Three - Middle element
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
