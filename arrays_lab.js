@@ -2,7 +2,7 @@
 
 ## 1. Problem One - Fruits array
 
-fruits =m ["strawberry", "banana"]
+fruits = ["strawberry", "banana"]
 
 a. Add "mango" to the end of a fruits array ["strawberry", "banana"].
 
@@ -32,7 +32,7 @@ fruits.shift()
 
 f. Join all the elements in the fruits array with a '$'.
 
-animals.join('$')
+fruits.join('$')
 
 ## 2. Problem Two - Larger array
 
@@ -44,6 +44,15 @@ let secondArr = [1,5,2,4]
 
 // log [1,5,2,4]
 ```
+let firstArr = [1,2,3]
+let secondArr = [1,5,2,4]
+if (firstArr.length > secondArr.length){
+ console.log(firstArr)
+} else if (secondArr.length > firstArr){
+ console.log(secondArr)
+} else {
+ console.log('They are the same size')
+}
 
 ## 3. Problem Three - Middle element
 
@@ -74,6 +83,11 @@ let logMeOutFor = ["I", "am", "a", "happy", "array"]
   array
 */
 ```
+let logMeOutFor = ["I", "am", "a", "happy", "array"]
+for (let i = 0; i < logMeOutFor.length; i++) {
+ console.log(logMeOutFor[i])
+}
+
 
 b. Write code that logs every value in an array using a `while` loop
 
@@ -87,6 +101,11 @@ let logMeOutWhile = ["I", "am", "a", "happy", "array"]
   array
 */
 ```
+let i = 0
+while(i < logMeOutFor.length){
+ console.log(logMeOutFor[i])
+ i++
+}
 
 
 c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
@@ -101,6 +120,10 @@ let logMeOutForOf = ["I", "am", "a", "happy", "array"]
   array
 */
 ```
+let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+for (const element of logMeOutForOf) {
+ console.log(element);
+}
 
 
 ## 5. Problem Five - Sum of array
