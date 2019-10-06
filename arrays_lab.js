@@ -124,25 +124,41 @@
 // }
 // console.log(sum)
 
-
-let secondArrToSum = [1, 2, 3, 4, 5, -6]
+//let secondArrToSum = [1, 2, 3, 4, 5, -6]
 //  9
-let sum = 0
-for (let i = 0; i < secondArrToSum.length; i++){
-    sum += secondArrToSum[i]
-}
-console.log(sum)
+// let sum = 0
+// for (let i = 0; i < secondArrToSum.length; i++){
+//     sum += secondArrToSum[i]
+// }
+// console.log(sum)
 
 
 // 6. Problem Six - Log odd/even numbers
 // a. Given an array of numbers, write code that logs all the odd numbers
 
 // let evenAndOddArr = [1,5,2,4,11,12,99,100]
+// for (let i = 0; i < evenAndOddArr.length; i++){
+//     if (evenAndOddArr[i] % 2 != 0){
+//         console.log(evenAndOddArr[i]);
+//     }else if (evenAndOddArr[i] % 2 === 0){
+//         continue;
+//     }
+// }
+
 
 // 1, 5, 11, 99
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
 // let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// let sum = 0
+// for (let i = 0; i < evenAndOddArrToSum.length; i++){
+//     if (evenAndOddArrToSum[i] % 2 === 0){
+//         sum += evenAndOddArrToSum[i]
+//     }else if (evenAndOddArrToSum[i] % 2 != 0){
+//         continue;
+//     }
+// }
+// console.log(sum)
 
 // 12
 // 7. Problem Seven - Smallest value
