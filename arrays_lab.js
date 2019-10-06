@@ -64,9 +64,34 @@
 // ## 5. Problem Five - Sum of array
 
 // Given an array of numbers, write code that logs the sum of all the numbers
-let sum = 0
-let arrayFour = [18,14,4,5]
-for (let i = 0; i < arrayFour.length; i++){
-    sum+= arrayFour[i]
-}
-console.log(sum)
+// let sum = 0
+// let arrayFour = [18,14,4,5]
+// for (let i = 0; i < arrayFour.length; i++){
+//     sum+= arrayFour[i]
+// }
+// console.log(sum)
+
+
+// ## 6. Problem Six - Log odd/even numbers
+
+// a. Given an array of numbers, write code that logs all the odd numbers
+
+// let evenAndOddArr = [1,5,2,4,11,12,99,100]
+// let emptyArr = []
+// for (let i = 0; i < evenAndOddArr.length; i++) {
+//     if (evenAndOddArr[i] % 2 > 0) {
+//         emptyArr.push(evenAndOddArr[i]);
+//     }
+// }
+// console.log(emptyArr)
+
+// b. Given an array of numbers, write code that logs the sum of all the even numbers
+
+// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// let sum = 0
+// for (let i = 0; i < evenAndOddArrToSum.length; i++) {
+//     if (evenAndOddArrToSum[i] % 2 === 0) {
+//         sum += evenAndOddArrToSum[i];
+//     }
+// }
+// console.log(sum)
