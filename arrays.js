@@ -59,27 +59,55 @@
 //     sumOfArr3 += arr3[i]
 // } console.log(sumOfArr3)
 
-// //Problem 6
-// //a
-// let arr4 = [1,2,3,4,5,6,7]
-// for(let i = 0; i < arr4.length; i++) {
-//     if ( arr4[i]%2 === 1) {
-//         console.log(arr4[i])
-//     }
+// // //Problem 6
+// // //a
+// // let arr4 = [1,2,3,4,5,6,7]
+// // for(let i = 0; i < arr4.length; i++) {
+// //     if ( arr4[i]%2 === 1) {
+// //         console.log(arr4[i])
+// //     }
+// // }
+
+// // //b
+// // let sumofArr4 = 0
+// // for(let i = 0; i < arr4.length; i++) {
+// //     if ( arr4[i]%2 === 0) {
+// //         sumofArr4 += arr4[i]
+// //     }
+// // } console.log(sumofArr4)
+
+// //Problem 7
+// let arr5 = [10,20,30,40,2,50]
+// let value = arr5[0]
+// for(let i =0; i < arr5.length; i++){
+//     if (arr5[i] < value){
+//         value = arr5[i];
+
+
+//     }    
 // }
+// console.log(value)
 
-// //b
-// let sumofArr4 = 0
-// for(let i = 0; i < arr4.length; i++) {
-//     if ( arr4[i]%2 === 0) {
-//         sumofArr4 += arr4[i]
-//     }
-// } console.log(sumofArr4)
 
-//Problem 7
-let arr5 = [10,20,30,40,50]
-for(let i =0; i < arr5.length; i++){
-    if(i < arr5.indexOf(i)){
-        console.log(i)
-    }
+//Problem 8
+
+let arr6 = [5,7,4,3]
+let value2 = arr6[0]
+for (let i=0; i< arr6.length; i++){
+    if(arr6[i] < value2){
+        value2 = arr6[i]
 }
+}console.log(value2)
+
+let arr7 = arr6.slice(0,value2)+arr6.slice(value2+1)
+console.log(arr7)
+
+
+
+// let value3 = arr7[0]
+// for (let i=0; i< arr7.length; i++){
+//     if(arr7[i] < value3){
+//         value3 = arr7[i]}
+//         console.log(value3)
+//     }
+  
