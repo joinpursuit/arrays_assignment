@@ -68,6 +68,13 @@ let hasNoExactMiddleArr = [1,4,6,9]
 // logs 4,6
 
 ```
+let firstArr = [1,2,3,8,8,]
+if (firstArr.length % 2 === 1) {
+  console.log(firstArr[(firstArr.length - 1 )/ 2])
+} else if (firstArr.length % 2 === 0) {
+  console.log(firstArr[(firstArr.length)/2])
+  console.log(firstArr[(firstArr.length/2) - 1])
+}
 
 ## 4. Problem Four - Iterate over an array
 
@@ -84,8 +91,8 @@ let logMeOutFor = ["I", "am", "a", "happy", "array"]
 */
 ```
 let logMeOutFor = ["I", "am", "a", "happy", "array"]
-for (let i = 0; i < logMeOutFor.length; i++) {
- console.log(logMeOutFor[i])
+  for (let i = 0; i < logMeOutFor.length; i++) {
+  console.log(logMeOutFor[i])
 }
 
 
@@ -121,8 +128,8 @@ let logMeOutForOf = ["I", "am", "a", "happy", "array"]
 */
 ```
 let logMeOutForOf = ["I", "am", "a", "happy", "array"]
-for (const element of logMeOutForOf) {
- console.log(element);
+  for (const element of logMeOutForOf) {
+  console.log(element);
 }
 
 
@@ -139,8 +146,8 @@ let secondArrToSum = [1, 2, 3, 4, 5, -6]
 ```
 let firstArrToSum = [1, 2, 3, 4, 5, 6]
 let sum = 0
-for (let i = 0; i < firstArrToSum.length; i++) {
- sum += firstArrToSum[i]
+  for (let i = 0; i < firstArrToSum.length; i++) {
+        sum += firstArrToSum[i]
 }
 
 ## 6. Problem Six - Log odd/even numbers
@@ -153,6 +160,12 @@ let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
 // 1, 5, 11, 99
 ```
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
+for(i=0; i < evenAndOddArr.length; i++) {
+  if(evenAndOddArr[i] % 2 !== 0){
+  console.log(evenAndOddArr[i])
+}
+}
 
 b. Given an array of numbers, write code that logs the sum of all the even numbers
 
@@ -162,6 +175,14 @@ let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 
 // 12
 ```
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
+let sum = 0
+for(i=0; i < evenAndOddArr.length; i++) {
+  if(evenAndOddArr[i] % 2 === 0){
+    sum += evenAndOddArr[i]
+  }
+}
+
 
 ## 7. Problem Seven - Smallest value
 
@@ -172,6 +193,14 @@ let arr = [4,3,7,29,40]
 
 // 3
 ```
+let number=[2,4,8,15,63,999,7,1];
+let smallest = number[0]
+for (i=0;i<number.length;i++){
+  if(number[i]<smallest){
+      smallest=number[i];
+  }
+}
+console.log(smallest)
 
 ## 8. Problem Eight - Second smallest value
 
@@ -182,6 +211,17 @@ let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 
 
 // 4
 ```
+let smallest= number[0];
+let secondSmallest = []
+for(let i = 0;i< number.length;i++){
+  if(number[i]<smallest){
+    secondSmallest = smallest;
+    smallest = number[i];
+      }else if(number[i] < secondSmallest) {
+        secondSmallest = number[i];
+ }
+}
+console.log(secondSmallest)
 
 
 ## 9. Problem Nine - Duplicates
