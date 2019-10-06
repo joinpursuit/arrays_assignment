@@ -14,14 +14,14 @@
 
 // f. Join all the elements in the fruits array with a '$'.
 
-let fruits = ["strawberry", "banana"];
-fruits.push("mango");
-fruits.unshift("blueberry");
-fruits.pop();
-console.log(fruits.length);
-fruits.shift();
-console.log(fruits.join("$"));
-console.log(fruits)
+// let fruits = ["strawberry", "banana"];
+// fruits.push("mango");
+// fruits.unshift("blueberry");
+// fruits.pop();
+// console.log(fruits.length);
+// fruits.shift();
+// console.log(fruits.join("$"));
+// console.log(fruits)
 
 
 // ## 2. Problem Two - Larger array
@@ -34,16 +34,16 @@ console.log(fruits)
 
 // // log [1,5,2,4]
 // ```
-let firstArr = [1,2,3]
-let secondArr = [1,5,2,4]
+// let firstArr = [1,2,3]
+// let secondArr = [1,5,2,4]
 
-if(firstArr === secondArr) {
-    console.log("They are the same size")
-} else if (firstArr < secondArr) {
-    console.log(secondArr)
-} else { (secondArr < firstArr)
-    console.log(firstArr)
-}
+// if(firstArr === secondArr) {
+//     console.log("They are the same size")
+// } else if (firstArr < secondArr) {
+//     console.log(secondArr)
+// } else { (secondArr < firstArr)
+//     console.log(firstArr)
+//}
 // ## 3. Problem Three - Middle element
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
@@ -61,17 +61,17 @@ if(firstArr === secondArr) {
 
 
 
-let hasMidArr = [1,5,3]
-//let noExactMidArr = [1,4,6,9]
+// let hasMidArr = [1,5,3]
+// //let noExactMidArr = [1,4,6,9]
 
-if (hasMidArr % 2 === 1) {
-    let midArr = Math.floor(hasMidArr.length / 2);
-    console.log(hasMidArr[midArr]);
-} else {
-    let midArr = Math.floor((hasMidArr.length - 1)/ 2);
-    let midArr2 = Math.floor(hasMidArr.length / 2);
-    console.log(hasMidArr[midArr] + hasMidArr[midArr2])
-}
+// if (hasMidArr % 2 === 1) {
+//     let midArr = Math.floor(hasMidArr.length / 2);
+//     console.log(hasMidArr[midArr]);
+// } else {
+//     let midArr = Math.floor((hasMidArr.length - 1)/ 2);
+//     let midArr2 = Math.floor(hasMidArr.length / 2);
+//     console.log(hasMidArr[midArr] + hasMidArr[midArr2])
+// }
 
 
 // ## 4. Problem Four - Iterate over an array
@@ -144,13 +144,13 @@ if (hasMidArr % 2 === 1) {
 // //  9
 // ```
 
-let numArr1 = [2, 3, 5, 6, 7]
-let sum = 0
+// let numArr1 = [2, 3, 5, 6, 7]
+// let sum = 0
 
-for(let i = 0; i < numArr1.length; i++) {
-    sum += numArr1[i]
-}
-console.log(sum)
+// for(let i = 0; i < numArr1.length; i++) {
+//     sum += numArr1[i]
+// }
+// console.log(sum)
 
 
 // ## 6. Problem Six - Log odd/even numbers
@@ -173,6 +173,24 @@ console.log(sum)
 // // 12
 // ```
 
+// let evenAndOddArr = [1, 5, 2, 4, 11, 12, 99, 100]
+// let oddSum = 0
+
+// for(let i = 0; i < evenAndOddArr.length; i++) {
+//     if(evenAndOddArr[i] % 2 === 1) {
+//         oddSum += evenAndOddArr[i]
+//     }
+// }
+// console.log(oddSum)
+
+// let evenSum = 0
+// for(let i = 0; i < evenAndOddArr.length; i++) {
+//     if(evenAndOddArr[i] % 2 === 0) {
+//         evenSum += evenAndOddArr[i]
+//     }
+// }
+// console.log(evenSum)
+
 // ## 7. Problem Seven - Smallest value
 
 // Given an array of numbers, write code that logs the smallest value
@@ -182,6 +200,9 @@ console.log(sum)
 
 // // 3
 // ```
+
+
+
 
 // ## 8. Problem Eight - Second smallest value
 
