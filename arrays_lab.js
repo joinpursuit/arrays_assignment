@@ -192,7 +192,7 @@ for(let n = 0; n < evenAndOddArrToSum.length; n++){
         sum2+= evenAndOddArrToSum[n];
     }
 }
-console.log(sum2)
+console.log(sum2);
 
 // ## 7. Problem Seven - Smallest value
 
@@ -223,14 +223,18 @@ let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 
 // // 4
 // ```
 console.log("Problem 8 -----------------");
-
 let smallestNumber = secondSmallestArr[0];
+let secondSmallest = smallestNumber;
 for(let y = 0; y < secondSmallestArr.length; y++){
     if(secondSmallestArr[y] < smallestNumber){
         smallestNumber = secondSmallestArr[y];
+    } else if (secondSmallestArr[y] < secondSmallest){
+        secondSmallest = secondSmallestArr[y];
     }
-}   
-console.log(smallestNumber);
+}
+console.log("Smallest number is: " + smallestNumber);
+console.log("Second smallest number is: " + secondSmallest);
+
 
 // ## 9. Problem Nine - Duplicates
 
@@ -239,12 +243,22 @@ console.log(smallestNumber);
 // <details>
 //   <summary>Hint</summary>
   
-//   Make another array to store all the values you've seen so far.  When looking at a new value, see if your array [includes](https://www.w3schools.com/jsref/jsref_includes_array.asp#targetText=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not.) the value, and only add it to the `noDupeList` if it doesn't.
+//   Make another array to store all the values you've seen so far.  When looking at a new value, see if your array [includes](https://www.w3schools.com/jsref/jsref_includes_array.asp#targetText=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not.)
+//   the value, and only add it to the `noDupeList` if it doesn't.
 // </details>
 
 // ```js
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-// let noDupeList = []
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = []
+for(let m = 0; m < dupeFriendlyList.length; m++){
+    if(noDupeList.includes(dupeFriendlyList[m])){
+        noDupeList += ""; 
+    } else {
+        noDupeList += dupeFriendlyList[m];
+    }
+}
+console.log(noDupeList);
+
 
 // // noDupleList = [4, 2, 6, 9, 1]
 
