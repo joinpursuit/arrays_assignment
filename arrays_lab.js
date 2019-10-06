@@ -182,3 +182,23 @@ for (let k = 0; k < newArray.length; k++) {
         console.log(newArray[k] + " is an even number.")
     }
 }
+
+
+// ## 7. Problem Seven - Smallest value
+
+// Given an array of numbers, write code that logs the smallest value
+
+// ```js
+// let arr = [4,3,7,29,40]
+
+// // 3
+// ```
+
+let arrOfNum = [10, 73, 17, 6, 21, 1]
+let smallest = arrOfNum[0]
+
+for (let p = 0; p < arrOfNum.length; p++) {
+    if (arrOfNum[p] < smallest ) {
+    smallest = arrOfNum[p]
+    } 
+} console.log(smallest + " is the smallest number.")
