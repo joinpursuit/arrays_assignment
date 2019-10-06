@@ -52,17 +52,16 @@ if (firstArr.length === secondArr.length) {
 //          ```        
 
 
-let hasExactMiddleArr = [1,5, 3, 5, 6]
-let hasNoExactMiddleArr = [1, 4, 6, 9]
+
+let value = [1, 4, 6, 9]
+
+let notExactMiddleValue = ((value.length - 1 ) / 2)
+let secondMiddleValue = ((value.length) / 2)
+let middleValue = (value.length/ 2 - 1)
 
 
-// if (hasNoExactMiddleArr.length % 2 === 0) {
-//     console.log()
-// }
-console.log([`${hasExactMiddleArr.length - 1 / 2}`])
-// } else if (firstArr.length < secondArr.length) {
-//             console.log(secondArr + " secondArr is the larger array")
-//         } else {
-//             console.log("They are not the same size") 
-//         }   
-
+if ((value.length - 1) % 2 === 0) {
+    console.log(value[notExactMiddleValue])
+} else {
+    console.log((value[middleValue]) + ", " + (value[secondMiddleValue]))
+}
