@@ -114,10 +114,10 @@
 // */
 // ```
 
-let logMeOutFor = ["I", "am", "a", "happy", "array"];
-for(const value of logMeOutFor) {
-    console.log(value);
-}
+// let logMeOutFor = ["I", "am", "a", "happy", "array"];
+// for(const value of logMeOutFor) {
+//     console.log(value);
+// }
 
 // ## 5. Problem Five - Sum of array
 
@@ -131,6 +131,13 @@ for(const value of logMeOutFor) {
 // //  9
 // ```
 
+// let firstArrToSum = [1, 2, 3, 4, 5, 6]
+// let sum = 0
+
+// for (let i = 0; i < firstArrToSum.length; i++){
+//     sum += firstArrToSum[i]
+// }
+// console.log(sum)
 
 // ## 6. Problem Six - Log odd/even numbers
 
@@ -143,6 +150,14 @@ for(const value of logMeOutFor) {
 // // 1, 5, 11, 99
 // ```
 
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
+
+for(let i =0; i< evenAndOddArr.length; i++){
+    if(evenAndOddArr[i] % 2 === 1){
+        console.log(evenAndOddArr[i])
+    }
+}
+
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
 // ```js
@@ -151,6 +166,13 @@ for(const value of logMeOutFor) {
 
 // // 12
 // ```
+
+let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+for(let i =0; i< evenAndOddArrToSum.length; i++){
+    if(evenAndOddArrToSum[i] % 2 === 0){
+        console.log(evenAndOddArrToSum[i])
+    }
+}
 
 // ## 7. Problem Seven - Smallest value
 
