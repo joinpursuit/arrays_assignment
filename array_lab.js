@@ -141,7 +141,13 @@ for(let indFiveB = 0; indFiveB < secondArrToSum.length; indFiveB++){
 
 // ```js
 
-// let evenAndOddArr = [1,5,2,4,11,12,99,100]
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
+
+for(let indSix =0; indSix < evenAndOddArr.length; indSix++){
+    if(evenAndOddArr[indSix] % 2 === 1 ){
+        console.log(evenAndOddArr[indSix])
+    }
+}
 
 // // 1, 5, 11, 99
 // ```
@@ -150,30 +156,83 @@ for(let indFiveB = 0; indFiveB < secondArrToSum.length; indFiveB++){
 
 // ```js
 
-// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 
 // // 12
 // ```
+let count = 0
+
+for (let indSixB = 0; indSixB < evenAndOddArrToSum.length; indSixB++){
+    if(evenAndOddArrToSum[indSixB] % 2 === 0){
+        count += evenAndOddArrToSum[indSixB]
+    }
+} console.log(count)
+
+
 
 // ## 7. Problem Seven - Smallest value
 
 // Given an array of numbers, write code that logs the smallest value
 
 // ```js
-// let arr = [4,3,7,29,40]
+let arr = [4,3,7,29,40]
 
 // // 3
 // ```
+
+let small = arr[0]
+
+for (let i = 0; i < arr.length; i++){
+    if(small > arr[i] ){
+        small = arr[i]
+
+    }
+} console.log(small)
 
 // ## 8. Problem Eight - Second smallest value
 
 // Find the second smallest number in an Array of Ints
 
 // ```js
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81,1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+
 
 // // 4
 // ```
+
+
+// for (let i = 0; i < secondSmallestArr.length; i++){
+    //     if(fSmall > secondSmallestArr[i] ){
+        //         fSmall = secondSmallestArr[i]
+        //          if(fSmall < copy){
+            //         sSmall = copy
+            //         console.log( fSmall + " 2nd Small " + sSmall)
+            //             }
+            //         }
+            //         copy = fSmall;
+            
+            //     }
+            //     // // sSmall = secondSmallestArr[i]
+            //     // if (sSmall > fSmall && sSmall < secondSmallestArr[i]){
+                //     // //    if(small < secondSmallestArr[i])
+                //     //     console.log(sSmall+ " 2nd") 
+                //     // }
+                //      console.log(fSmall+ " "+ sSmall)
+                
+let sampleArr = [11,3,13,2,-1,-2,3,1]
+let fSmall = Infinity
+let sSmall = Infinity
+                
+for (let i = 0; i < sampleArr.length; i++){
+    if(sampleArr[i] < sSmall && fSmall < sSmall){
+        sSmall = sampleArr[i]
+} else if ( sampleArr[i] < fSmall){
+    fSmall = sampleArr[i]
+
+}
+}
+console.log(fSmall + " " + sSmall)
+
 
 
 // ## 9. Problem Nine - Duplicates
@@ -190,6 +249,15 @@ for(let indFiveB = 0; indFiveB < secondArrToSum.length; indFiveB++){
 // let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
 // let noDupeList = []
 
-// // noDupleList = [4, 2, 6, 9, 1]
+// // // noDupleList = [4, 2, 6, 9, 1]
 
-// ```
+// // ```
+
+// for(let listcount =0; listcount < dupeFriendlyList.length; listcount++){
+//     if(dupeFriendlyList[listcount] === noDupeList[listcount]){
+//         noDupeList.shift();
+//         console.log(dupeFriendlyList +" and "+ noDupeList)
+//     }else {
+//         noDupeList[listcount]= dupeFriendlyList[listcount]
+//     }
+// }console.log(dupeFriendlyList +" and "+ noDupeList)

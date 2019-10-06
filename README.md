@@ -1,4 +1,4 @@
-# Arrays Lab
+git# Arrays Lab
 
 To complete this lab (as for most labs), do the following:
 
