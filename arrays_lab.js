@@ -154,3 +154,31 @@ for (let i = 0; i < firstArrToSum.length; i++) {
 }
 console.log("The total number is " + sum)
 
+// ## 6. Problem Six - Log odd/even numbers
+
+// a. Given an array of numbers, write code that logs all the odd numbers
+// ```js
+// let evenAndOddArr = [1,5,2,4,11,12,99,100]
+// // 1, 5, 11, 99
+// ```
+
+let newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for (let x = 0; x < newArray.length; x++) {
+    if (newArray[x] % 2 === 1) {
+        console.log(newArray[x] + " is an odd number.")
+    }
+}
+
+// b. Given an array of numbers, write code that logs the sum of all the even numbers
+// ```js
+// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// // 12
+// ```
+
+
+for (let k = 0; k < newArray.length; k++) {
+    if (newArray[k] % 2 === 0) {
+        console.log(newArray[k] + " is an even number.")
+    }
+}
