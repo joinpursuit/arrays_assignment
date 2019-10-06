@@ -100,10 +100,10 @@
 // */
 // c. Write code that logs every value in an array using a for/of loop
 
-let logMeOutForOf = ["I", "am", "a", "happy", "array"]
-for (let element of logMeOutForOf){
-    console.log(element)
-}
+// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+// for (let element of logMeOutForOf){
+//     console.log(element)
+// }
 
 
 // /* I
@@ -117,9 +117,23 @@ for (let element of logMeOutForOf){
 
 // let firstArrToSum = [1, 2, 3, 4, 5, 6]
 //  21
+// let sum = 0
+// for (let i = 0; i < firstArrToSum.length; i ++){
+//     console.log(i)
+//     sum += firstArrToSum[i]
+// }
+// console.log(sum)
 
-// let secondArrToSum = [1, 2, 3, 4, 5, -6]
+
+let secondArrToSum = [1, 2, 3, 4, 5, -6]
 //  9
+let sum = 0
+for (let i = 0; i < secondArrToSum.length; i++){
+    sum += secondArrToSum[i]
+}
+console.log(sum)
+
+
 // 6. Problem Six - Log odd/even numbers
 // a. Given an array of numbers, write code that logs all the odd numbers
 
