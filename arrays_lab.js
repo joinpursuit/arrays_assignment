@@ -101,9 +101,11 @@
 // c. Write code that logs every value in an array using a for/of loop
 
 let logMeOutForOf = ["I", "am", "a", "happy", "array"]
-for (let value of logMeOutForOf){
-    console.log(value)
+for (let element of logMeOutForOf){
+    console.log(element)
 }
+
+
 // /* I
 //   am
 //   a
