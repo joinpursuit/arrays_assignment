@@ -169,6 +169,8 @@ let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
 // // 1, 5, 11, 99
 // ```
+
+console.log("Problem 6a -----------------");
 for(let j = 0; j < evenAndOddArr.length; j++){
     if(evenAndOddArr[j] % 2 === 1){
         console.log(evenAndOddArr[j]);
@@ -178,31 +180,57 @@ for(let j = 0; j < evenAndOddArr.length; j++){
 
 // ```js
 
-// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 
 // // 12
 // ```
+
+console.log("Problem 6b -----------------");
+let sum2 = 0
+for(let n = 0; n < evenAndOddArrToSum.length; n++){
+    if(evenAndOddArrToSum[n]%2 === 0) {
+        sum2+= evenAndOddArrToSum[n];
+    }
+}
+console.log(sum2)
 
 // ## 7. Problem Seven - Smallest value
 
 // Given an array of numbers, write code that logs the smallest value
 
 // ```js
-// let arr = [4,3,7,29,40]
+let arr = [4,3,7,29,40]
 
 // // 3
 // ```
+console.log("Problem 7 -----------------");
+let smallestNum = arr[0];
+for(let l = 0; l < arr.length; l++){
+    if(arr[l] < smallestNum){
+        smallestNum = arr[l];
+    }
+}   
+console.log(smallestNum);
+
 
 // ## 8. Problem Eight - Second smallest value
 
 // Find the second smallest number in an Array of Ints
 
 // ```js
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
 
 // // 4
 // ```
+console.log("Problem 8 -----------------");
 
+let smallestNumber = secondSmallestArr[0];
+for(let y = 0; y < secondSmallestArr.length; y++){
+    if(secondSmallestArr[y] < smallestNumber){
+        smallestNumber = secondSmallestArr[y];
+    }
+}   
+console.log(smallestNumber);
 
 // ## 9. Problem Nine - Duplicates
 
