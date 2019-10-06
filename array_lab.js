@@ -85,12 +85,26 @@
 // } 
 
 
-let arr = [1, 4, 5, 6, 8, 11]
-let sum = 0
-for (let i = 0; i <= arr.length -1; i++)
-if (arr[i] % 2 === 0){
-    sum += arr[i]
-}
+// let arr = [1, 4, 5, 6, 8, 11]
+// let sum = 0
+// for (let i = 0; i <= arr.length -1; i++)
+// if (arr[i] % 2 === 0){
+//     sum += arr[i]
+// }
 
-console.log(sum)
+// console.log(sum)
 
+
+
+// PROBLEM 7
+// let lowNum = 0
+// let arr = [ 2,3,1,29,40,5]
+// lowNum = arr[0]
+// for (let i = 0; i<= arr.length ;i ++){
+//         if (arr[i] < lowNum) {
+//            lowNum = arr[i]; {
+
+//            }   
+//         }
+// }
+// console.log(lowNum);
