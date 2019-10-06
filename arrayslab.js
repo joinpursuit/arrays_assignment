@@ -1,212 +1,234 @@
-// ## Exercises
+// // ## Exercises
 
-// ## 1. Problem One - Fruits array
-let fruits = ["strawberry", "banana"]
-// a. Add "mango" to the end of a fruits array ["strawberry", "banana"].
-fruits.push("mango")
-// b. Add "blueberry" to the front of the same fruits array.
-fruits.unshift("blueberry")
-// c. Remove the last element of the fruits array.
-fruits.pop()
-// d. console.log the length of the fruits array.
-console.log(fruits.length)
-// e. Remove the first element of the fruits array.
-fruits.shift()
-// f. Join all the elements in the fruits array with a '$'.
-console.log(fruits.join("$"))
+// // ## 1. Problem One - Fruits array
+// let fruits = ["strawberry", "banana"]
+// // a. Add "mango" to the end of a fruits array ["strawberry", "banana"].
+// fruits.push("mango")
+// // b. Add "blueberry" to the front of the same fruits array.
+// fruits.unshift("blueberry")
+// // c. Remove the last element of the fruits array.
+// fruits.pop()
+// // d. console.log the length of the fruits array.
+// console.log(fruits.length)
+// // e. Remove the first element of the fruits array.
+// fruits.shift()
+// // f. Join all the elements in the fruits array with a '$'.
+// console.log(fruits.join("$"))
 
-// ## 2. Problem Two - Larger array
+// // ## 2. Problem Two - Larger array
 
-// Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
+// // Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
 
-// ```js
-// let firstArr = [1,2,3]
-// let secondArr = [1,5,2,4]
+// // ```js
+// // let firstArr = [1,2,3]
+// // let secondArr = [1,5,2,4]
 
-// // log [1,5,2,4]
-// ```
+// // // log [1,5,2,4]
+// // ```
 
-let firstArr = [3, 6, 9, 12]
-let secondArr = [3, 8, 10, 13, 17]
+// let firstArr = [3, 6, 9, 12]
+// let secondArr = [3, 8, 10, 13, 17]
 
-if (firstArr.length > secondArr.length) {
-    console.log(firstArr)
-} else if (firstArr.length < secondArr.length) {
-    console.log(secondArr)
-} else {
-    console.log("They are the same")
-}
+// if (firstArr.length > secondArr.length) {
+//     console.log(firstArr)
+// } else if (firstArr.length < secondArr.length) {
+//     console.log(secondArr)
+// } else {
+//     console.log("They are the same")
+// }
 
-// ## 3. Problem Three - Middle element
+// // ## 3. Problem Three - Middle element
 
-// Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
+// // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 
-// ```js
-// let hasExactMiddleArr = [1,5,3]
+// // ```js
+// // let hasExactMiddleArr = [1,5,3]
 
-// // logs 5
+// // // logs 5
 
-// let hasNoExactMiddleArr = [1,4,6,9]
+// // let hasNoExactMiddleArr = [1,4,6,9]
 
-// // logs 4,6
+// // // logs 4,6
 
-// ```
+// // ```
 
-let arr = [1, 3, 5, 7, 11]
-let midElement = Math.floor(arr.length / 2)
-let midElement1 = Math.floor((arr.length - 1) / 2)
-if (arr.length % 2 === 0) {
-    console.log(arr[midElement] + ", " + arr[midElement1])
-// console.log(`${arr[midElement]} , ${arr[midElement1]}`)
-} else if (arr.length % 2 === 1) {
-    console.log(arr[midElement])
-}
-
-
-// ## 4. Problem Four - Iterate over an array
+// let arr = [1, 3, 5, 7, 11]
+// let midElement = Math.floor(arr.length / 2)
+// let midElement1 = Math.floor((arr.length - 1) / 2)
+// if (arr.length % 2 === 0) {
+//     console.log(arr[midElement] + ", " + arr[midElement1])
+// // console.log(`${arr[midElement]} , ${arr[midElement1]}`)
+// } else if (arr.length % 2 === 1) {
+//     console.log(arr[midElement])
+// }
 
 
+// // ## 4. Problem Four - Iterate over an array
 
-// a. Write code that logs every value in an array using a `for` loop
 
-// ```js
+
+// // a. Write code that logs every value in an array using a `for` loop
+
+// // ```js
+// // let logMeOutFor = ["I", "am", "a", "happy", "array"]
+
+// // /* I
+// //   am
+// //   a
+// //   happy
+// //   array
+// // */
+// // ```
+
 // let logMeOutFor = ["I", "am", "a", "happy", "array"]
 
-// /* I
-//   am
-//   a
-//   happy
-//   array
-// */
-// ```
+// for (let i = 0; i < logMeOutFor.length; i++) {
+//   console.log(logMeOutFor[i]);
+// }
 
-let logMeOutFor = ["I", "am", "a", "happy", "array"]
+// // b. Write code that logs every value in an array using a `while` loop
 
-for (i = 0; i < logMeOutFor.length; i++) {
-  console.log(logMeOutFor[i]);
-}
+// // ```js
+// // let logMeOutWhile = ["I", "am", "a", "happy", "array"]
 
-// b. Write code that logs every value in an array using a `while` loop
-
-// ```js
-// let logMeOutWhile = ["I", "am", "a", "happy", "array"]
-
-// /* I
-//   am
-//   a
-//   happy
-//   array
-// */
-// ```
+// // /* I
+// //   am
+// //   a
+// //   happy
+// //   array
+// // */
+// // ```
 
 
 
-let logMeOutFor1 = ["I", "am", "a", "happy", "array"]
+// let logMeOutFor1 = ["I", "am", "a", "happy", "array"]
 
-let i = 0
-while (i < logMeOutFor1.length) {
-  console.log(logMeOutFor1[i]);
-   i += 1
-}
+// let i = 0
+// while (i < logMeOutFor1.length) {
+//   console.log(logMeOutFor1[i]);
+//    i += 1
+// }
 
-// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+// // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
 
-// ```js
-// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+// // ```js
+// // let logMeOutForOf = ["I", "am", "a", "happy", "array"]
 
-// /* I
-//   am
-//   a
-//   happy
-//   array
-// */
-// ```
+// // /* I
+// //   am
+// //   a
+// //   happy
+// //   array
+// // */
+// // ```
 
-let logMeOut = ["I", "am", "a", "happy", "array"]
+// let logMeOut = ["I", "am", "a", "happy", "array"]
 
-for (let Element of logMeOut) {
-    console.log(Element);
-  }
+// for (let Element of logMeOut) {
+//     console.log(Element);
+//   }
 
 
-// ## 5. Problem Five - Sum of array
+// // ## 5. Problem Five - Sum of array
 
-// Given an array of numbers, write code that logs the sum of all the numbers
+// // Given an array of numbers, write code that logs the sum of all the numbers
 
-// ```js
+// // ```js
+// // let firstArrToSum = [1, 2, 3, 4, 5, 6]
+// // //  21
+
+// // let secondArrToSum = [1, 2, 3, 4, 5, -6]
+// // //  9
+// // ```
+
 // let firstArrToSum = [1, 2, 3, 4, 5, 6]
-// //  21
+// let sum = 0
+// for (i = 0; i <= firstArrToSum.length; i++) {
+//  sum += i
+// }
+//   console.log(sum)
 
-// let secondArrToSum = [1, 2, 3, 4, 5, -6]
-// //  9
-// ```
+// // ## 6. Problem Six - Log odd/even numbers
 
-let firstArrToSum = [1, 2, 3, 4, 5, 6]
-let sum = 0
-for (i = 0; i <= firstArrToSum.length; i++) {
- sum += i
-}
-  console.log(sum)
+// // a. Given an array of numbers, write code that logs all the odd numbers
 
-// ## 6. Problem Six - Log odd/even numbers
+// // ```js
 
-// a. Given an array of numbers, write code that logs all the odd numbers
+// // let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
-// ```js
+// // // 1, 5, 11, 99
+// // ```
 
 // let evenAndOddArr = [1,5,2,4,11,12,99,100]
-
-// // 1, 5, 11, 99
-// ```
-
-let evenAndOddArr = [1,5,2,4,11,12,99,100]
-let newArray = []
-for (let i = 0; i <= evenAndOddArr.length; i++) {
-  if (evenAndOddArr[i] % 2 === 1) {
-    newArray.push(evenAndOddArr[i]);
-  }
-}
-console.log(newArray.join(" , "));
+// let newArray = []
+// for (let i = 0; i <= evenAndOddArr.length; i++) {
+//   if (evenAndOddArr[i] % 2 === 1) {
+//     newArray.push(evenAndOddArr[i]);
+//   }
+// }
+// console.log(newArray.join(" , "));
 
 
-// b. Given an array of numbers, write code that logs the sum of all the even numbers
+// // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
-// ```js
+// // ```js
+
+// // let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+
+// // // 12
+// // ```
 
 // let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// let sum1 = 0
+// for (let i = 0; i <= evenAndOddArrToSum.length; i ++) {
+//   if (evenAndOddArrToSum[i] % 2 === 0) {
+//     console.log(evenAndOddArrToSum[i]);
+//     sum1 += evenAndOddArrToSum[i]
+//   }
+// }
+// console.log(sum1);
 
-// // 12
-// ```
+// // ## 7. Problem Seven - Smallest value
 
-let evenAndOddArrToSum = [1,5,2,3,11,4,6]
-let sum = 0
-for (let i = 0; i <= evenAndOddArrToSum.length; i ++) {
-  if (evenAndOddArrToSum[i] % 2 === 0) {
-    console.log(evenAndOddArrToSum[i]);
-    sum += evenAndOddArrToSum[i]
+// // Given an array of numbers, write code that logs the smallest value
+
+// // ```js
+// // let arr = [4,3,7,29,40]
+
+// // // 3
+// // ```
+
+// let arr1 = [4,3,7,29,40]
+// let smallest = arr1[0]
+// for (let i = 0; i < arr1.length; i++) {
+//   if (arr1[i] < smallest) {
+//     smallest = arr1[i]
+//   }
+// }
+// console.log(smallest)
+
+// // ## 8. Problem Eight - Second smallest value
+
+// // Find the second smallest number in an Array of Ints
+
+// // ```js
+// // let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+
+// // // 4
+// // ```
+
+let array2 = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+let smallestNum = Infinity
+let secondSmallestNum = smallestNum
+for (let i = 0; i < array2.length; i++) {
+  if (array2[i] < smallestNum) {
+    secondSmallestNum = smallestNum
+    smallestNum = array2[i]
+  } else if (secondSmallestNum > smallestNum && secondSmallestNum > array2[i]) {
+    secondSmallestNum = array2[i]
   }
-}
-console.log(sum);
-
-// ## 7. Problem Seven - Smallest value
-
-// Given an array of numbers, write code that logs the smallest value
-
-// ```js
-// let arr = [4,3,7,29,40]
-
-// // 3
-// ```
-
-// ## 8. Problem Eight - Second smallest value
-
-// Find the second smallest number in an Array of Ints
-
-// ```js
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
-
-// // 4
-// ```
+ } console.log(smallestNum)
+  console.log(secondSmallestNum)
 
 
 // ## 9. Problem Nine - Duplicates
