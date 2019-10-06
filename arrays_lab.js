@@ -67,3 +67,6 @@ let sum = 0
 for (let x = 0; x < firstArrToSum.length; x++){
     console.log(sum += firstArrToSum[x])
 }
+
+
+dlksjfl
