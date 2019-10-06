@@ -65,3 +65,72 @@ if ((value.length - 1) % 2 === 0) {
 } else {
     console.log((value[middleValue]) + ", " + (value[secondMiddleValue]))
 }
+
+
+// ## 4. Problem Four - Iterate over an array
+
+// a. Write code that logs every value in an array using a `for` loop
+
+// ```js
+let logMeOutFor = ["I", "am", "a", "happy", "array"]
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+for (let i = 0; i < logMeOutFor.length; i++) {
+    console.log(logMeOutFor[i])
+}
+
+
+// b. Write code that logs every value in an array using a `while` loop
+
+// ```js
+// let logMeOutWhile = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+let i = 0
+while (i < logMeOutFor.length) {
+    console.log(logMeOutFor[i])
+    i++
+}
+
+// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+
+// ```js
+// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+
+for (let element of logMeOutFor) {
+    console.log(element)
+}
+
+// ## 5. Problem Five - Sum of array
+
+// Given an array of numbers, write code that logs the sum of all the numbers
+
+// ```js
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
+// //  21
+
+let secondArrToSum = [1, 2, 3, 4, 5, -6]
+// //  9
+// ```
+
