@@ -139,12 +139,24 @@ for(const element of logMeOutFor){
 // Given an array of numbers, write code that logs the sum of all the numbers
 
 // ```js
-// let firstArrToSum = [1, 2, 3, 4, 5, 6]
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
 // //  21
+let sum = 0;
+for(let i = 0; i < firstArrToSum.length; i ++){
+    sum += firstArrToSum[i];
+}
+console.log(sum);
 
-// let secondArrToSum = [1, 2, 3, 4, 5, -6]
 // //  9
 // ```
+
+let secondArrToSum = [1, 2, 3, 4, 5, -6]
+let newSum = 0
+for(let index1 = 0; index1 < secondArrToSum.length; index1++ ){
+    newSum += secondArrToSum[index1];
+} 
+console.log(newSum);
+
 
 
 // ## 6. Problem Six - Log odd/even numbers
@@ -153,11 +165,15 @@ for(const element of logMeOutFor){
 
 // ```js
 
-// let evenAndOddArr = [1,5,2,4,11,12,99,100]
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
 // // 1, 5, 11, 99
 // ```
-
+for(let j = 0; j < evenAndOddArr.length; j++){
+    if(evenAndOddArr[j] % 2 === 1){
+        console.log(evenAndOddArr[j]);
+    }
+}
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
 // ```js
