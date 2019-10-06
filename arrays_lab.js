@@ -26,11 +26,40 @@
 
 // Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
 
-let firstArr = [1,2,3,5,]
-let secondArr = [1,5,2,4]
+// let firstArr = [1,2,3,5,]
+// let secondArr = [1,5,2,4]
 
-if (firstArr.length > secondArr.length){
-    console.log( firstArr)
-}else if( secondArr.length > firstArr.length){
-    console.log (secondArr)
-}else console.log ("They are the same size")
+// if (firstArr.length > secondArr.length){
+//     console.log( firstArr)
+// }else if( secondArr.length > firstArr.length){
+//     console.log (secondArr)
+// }else console.log ("They are the same size")
+
+// ## 3. Problem Three - Middle element
+
+// Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
+
+//***** Not Yet Complete*****
+
+// let testArray = [1,2,3,4,5]
+// if (testArray.length % 2 === 0){
+//     console.log (testArray[(testArray.length / 2)-1] + testArray[((testArray.length / 2) + 1) - 1] )
+// }else console.log (testArray[(Math.round(testArray.length / 2)- 1)])
+
+// ## 4. Problem Four - Iterate over an array
+
+// a. Write code that logs every value in an array using a `for` loop
+let arr = ["red", "blue", "yellow"]
+for (let i = 0; i < arr.length; i++){
+    console.log (arr[i])
+}
+// b. Write code that logs every value in an array using a `while` loop
+let i = 0
+while (i < arr.length){
+    console.log (arr[i])
+    i++
+}
+// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+for (const i2 of arr){
+    console.log (i2)
+}
