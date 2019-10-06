@@ -150,13 +150,13 @@
 // // 1, 5, 11, 99
 // ```
 
-let evenAndOddArr = [1,5,2,4,11,12,99,100]
+// let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
-for(let i =0; i< evenAndOddArr.length; i++){
-    if(evenAndOddArr[i] % 2 === 1){
-        console.log(evenAndOddArr[i])
-    }
-}
+// for(let i =0; i< evenAndOddArr.length; i++){
+//     if(evenAndOddArr[i] % 2 === 1){
+//         console.log(evenAndOddArr[i])
+//     }
+// }
 
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
@@ -167,12 +167,12 @@ for(let i =0; i< evenAndOddArr.length; i++){
 // // 12
 // ```
 
-let evenAndOddArrToSum = [1,5,2,3,11,4,6]
-for(let i =0; i< evenAndOddArrToSum.length; i++){
-    if(evenAndOddArrToSum[i] % 2 === 0){
-        console.log(evenAndOddArrToSum[i])
-    }
-}
+// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// for(let i =0; i< evenAndOddArrToSum.length; i++){
+//     if(evenAndOddArrToSum[i] % 2 === 0){
+//         console.log(evenAndOddArrToSum[i])
+//     }
+// }
 
 // ## 7. Problem Seven - Smallest value
 
@@ -183,6 +183,16 @@ for(let i =0; i< evenAndOddArrToSum.length; i++){
 
 // // 3
 // ```
+
+let arr = [4,3,7,29,40]
+let smallestValue = arr[0]
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] < smallestValue){
+        smallestValue = arr[i]
+    }
+}
+console.log(smallestValue)
 
 // ## 8. Problem Eight - Second smallest value
 
