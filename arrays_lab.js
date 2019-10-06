@@ -120,6 +120,12 @@ let newArray = ["pokemon", "sword", "shield", "heart gold", "soul silver"]
  for(let i = 0; i < newArray.length; i++) {
      console.log(newArray[i])
 }
+
+let i = 0
+while(i < newArray.length) {
+    console.log(newArray[i])
+        i++
+}
 // ## 5. Problem Five - Sum of array
 
 // Given an array of numbers, write code that logs the sum of all the numbers
