@@ -42,3 +42,30 @@ console.log(fruits.join("$"));
 
 // // log [1,5,2,4]
 // ```
+
+let firstArr = [1, 2, 3]
+let secondArr = [1, 5, 2, 4]
+
+if (firstArr > secondArr) {
+console.log(firstArr + " is greater than " + secondArr);
+} else if (firstArr < secondArr) {
+console.log(firstArr + " is less than " + secondArr)
+} else {
+    console.log(firstArr + " is equal to " + secondArr)
+}
+
+
+// ## 3. Problem Three - Middle element
+
+// Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
+
+// ```js
+// let hasExactMiddleArr = [1,5,3]
+
+// // logs 5
+
+// let hasNoExactMiddleArr = [1,4,6,9]
+
+// // logs 4,6
+
+// ```
