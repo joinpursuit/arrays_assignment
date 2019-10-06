@@ -65,6 +65,8 @@ if (arr.length % 2 === 0) {
 
 // ## 4. Problem Four - Iterate over an array
 
+
+
 // a. Write code that logs every value in an array using a `for` loop
 
 // ```js
@@ -77,6 +79,12 @@ if (arr.length % 2 === 0) {
 //   array
 // */
 // ```
+
+let logMeOutFor = ["I", "am", "a", "happy", "array"]
+
+for (i = 0; i < logMeOutFor.length; i++) {
+  console.log(logMeOutFor[i]);
+}
 
 // b. Write code that logs every value in an array using a `while` loop
 
@@ -92,6 +100,15 @@ if (arr.length % 2 === 0) {
 // ```
 
 
+
+let logMeOutFor1 = ["I", "am", "a", "happy", "array"]
+
+let i = 0
+while (i < logMeOutFor1.length) {
+  console.log(logMeOutFor1[i]);
+   i += 1
+}
+
 // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
 
 // ```js
@@ -104,6 +121,12 @@ if (arr.length % 2 === 0) {
 //   array
 // */
 // ```
+
+let logMeOut = ["I", "am", "a", "happy", "array"]
+
+for (let Element of logMeOut) {
+    console.log(Element);
+  }
 
 
 // ## 5. Problem Five - Sum of array
@@ -118,6 +141,12 @@ if (arr.length % 2 === 0) {
 // //  9
 // ```
 
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
+let sum = 0
+for (i = 0; i <= firstArrToSum.length; i++) {
+ sum += i
+}
+  console.log(sum)
 
 // ## 6. Problem Six - Log odd/even numbers
 
@@ -130,6 +159,16 @@ if (arr.length % 2 === 0) {
 // // 1, 5, 11, 99
 // ```
 
+let evenAndOddArr = [1,5,2,4,11,12,99,100]
+let newArray = []
+for (let i = 0; i <= evenAndOddArr.length; i++) {
+  if (evenAndOddArr[i] % 2 === 1) {
+    newArray.push(evenAndOddArr[i]);
+  }
+}
+console.log(newArray.join(" , "));
+
+
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
 
 // ```js
@@ -138,6 +177,16 @@ if (arr.length % 2 === 0) {
 
 // // 12
 // ```
+
+let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+let sum = 0
+for (let i = 0; i <= evenAndOddArrToSum.length; i ++) {
+  if (evenAndOddArrToSum[i] % 2 === 0) {
+    console.log(evenAndOddArrToSum[i]);
+    sum += evenAndOddArrToSum[i]
+  }
+}
+console.log(sum);
 
 // ## 7. Problem Seven - Smallest value
 
