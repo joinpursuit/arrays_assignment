@@ -39,10 +39,10 @@
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 
-let testArray = [1,2,3,4,5,6]
-if (testArray.length % 2 === 0){
-    console.log (testArray[(testArray.length / 2)-1] + "," + String(testArray[((testArray.length / 2) + 1) - 1]))
-} else console.log (testArray[(Math.round(testArray.length / 2)- 1)])
+// let testArray = [1,2,3,4,5,6]
+// if (testArray.length % 2 === 0){
+//     console.log (testArray[(testArray.length / 2)-1] + "," + String(testArray[((testArray.length / 2) + 1) - 1]))
+// } else console.log (testArray[(Math.round(testArray.length / 2)- 1)])
 
 // ## 4. Problem Four - Iterate over an array
 
@@ -64,3 +64,9 @@ if (testArray.length % 2 === 0){
 // ## 5. Problem Five - Sum of array
 
 // Given an array of numbers, write code that logs the sum of all the numbers
+let sum = 0
+let arrayFour = [18,14,4,5]
+for (let i = 0; i < arrayFour.length; i++){
+    sum+= arrayFour[i]
+}
+console.log(sum)
