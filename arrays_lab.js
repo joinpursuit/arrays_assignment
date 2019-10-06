@@ -137,7 +137,11 @@ let firstArrToSum = [1, 2, 3, 4, 5, 6]
 let secondArrToSum = [1, 2, 3, 4, 5, -6]
 //  9
 ```
-
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
+let sum = 0
+for (let i = 0; i < firstArrToSum.length; i++) {
+ sum += firstArrToSum[i]
+}
 
 ## 6. Problem Six - Log odd/even numbers
 
