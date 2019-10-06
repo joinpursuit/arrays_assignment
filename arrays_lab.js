@@ -84,7 +84,7 @@ if(middleArr.length%2 === 1) {
 // a. Write code that logs every value in an array using a `for` loop
 
 // ```js
-// let logMeOutFor = ["I", "am", "a", "happy", "array"]
+let logMeOutFor = ["I", "am", "a", "happy", "array"]
 
 // /* I
 //   am
@@ -93,11 +93,14 @@ if(middleArr.length%2 === 1) {
 //   array
 // */
 // ```
+for(let i = 0; i < logMeOutFor.length; i++){
+    console.log(logMeOutFor[i]);
+}
 
 // b. Write code that logs every value in an array using a `while` loop
 
 // ```js
-// let logMeOutWhile = ["I", "am", "a", "happy", "array"]
+let logMeOutWhile = ["I", "am", "a", "happy", "array"]
 
 // /* I
 //   am
@@ -106,12 +109,17 @@ if(middleArr.length%2 === 1) {
 //   array
 // */
 // ```
+let index = 0;
+while(index < logMeOutWhile.length){
+    console.log(logMeOutWhile[index]);
+    index++;
+}
 
 
 // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
 
 // ```js
-// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+let logMeOutForOf = ["I", "am", "a", "happy", "array"]
 
 // /* I
 //   am
@@ -120,6 +128,10 @@ if(middleArr.length%2 === 1) {
 //   array
 // */
 // ```
+for(const element of logMeOutFor){
+    console.log(element);
+}
+
 
 
 // ## 5. Problem Five - Sum of array
