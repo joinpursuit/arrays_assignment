@@ -33,10 +33,11 @@ console.log(fruits);
 // f. Join all the elements in the fruits array with a '$'.
 console.log(fruits.join("$"))
 
-
+ 
 // ## 2. Problem Two - Larger array
 
-// Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
+// Given two arrays, write code that logs the larger array.  If the arrays are the same length, 
+// log "They are the same size"
 
 // ```js
 // let firstArr = [1,2,3]
@@ -44,6 +45,7 @@ console.log(fruits.join("$"))
 
 // // log [1,5,2,4]
 // ```
+
 
 // ## 3. Problem Three - Middle element
 
