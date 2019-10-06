@@ -24,15 +24,19 @@
 // }
 
 
-let arr = [1, 5, 6, 7, 8, 9,]
-let notMiddleArr = (arr.length/2)
-let middleArr = (arr.length / 2) - .5
-    if (arr.length % 2 === 1){
-//     console.log(arr[middleArr])
- } else if (arr.length % 2 === 0){
-     console.log(arr[notMiddleArr] - 1, arr[notMiddleArr])
+// PROBLEM 3
 
- }
+// let arr = [1, 5, 6, 7, 8, 9,]
+// let notMiddleArr = (arr.length/2)
+// let middleArr = (arr.length / 2) - .5
+//     if (arr.length % 2 === 1){
+// //     console.log(arr[middleArr])
+//  } else if (arr.length % 2 === 0){
+//      console.log(arr[notMiddleArr] - 1, arr[notMiddleArr])
+
+//  }
+//  CODE 2 
+
 
 //  let arr = [1, 5, 6, 7, 8, 9, 10]
 //  let middleIndex = Math.floor(arr.length / 2)
@@ -43,3 +47,22 @@ let middleArr = (arr.length / 2) - .5
  //      console.log(arr[middleIndex - 1], arr[middleIndex])
  
  //  }
+
+
+
+
+//   PROBLEM 4
+
+
+// let arr = ["My","Name","Is","Danny"]
+// // for (i =  0; i = arr.length ; i++){
+// // console.log(arr.shift());
+// // }
+
+
+// while (i = arr.length){
+//         console.log(arr.shift())
+//         i++
+// }
+
+
