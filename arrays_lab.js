@@ -46,13 +46,22 @@ console.log(fruits.join("$"))
 // // log [1,5,2,4]
 // ```
 
+let firstArr = [1,2,3]
+let secondArr = [1,5,2,4]
+if(firstArr.length === secondArr.length){
+    console.log("They are the same size")
+} else if(firstArr.length > secondArr.length){
+    console.log(firstArr)
+} else {
+    console.log(secondArr)
+}
 
 // ## 3. Problem Three - Middle element
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 
 // ```js
-// let hasExactMiddleArr = [1,5,3]
+// let middleArr = [1,5,3]
 
 // // logs 5
 
@@ -61,6 +70,14 @@ console.log(fruits.join("$"))
 // // logs 4,6
 
 // ```
+
+let middleArr = [1,5,3, 4]
+if(middleArr.length%2 === 1) {
+    console.log(middleArr[(middleArr.length-1)/2])
+} else if(middleArr.length%2 === 0){
+    console.log(middleArr[(middleArr.length/2)-1]);
+    console.log(middleArr[middleArr.length/2])
+}
 
 // ## 4. Problem Four - Iterate over an array
 
