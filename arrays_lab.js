@@ -1,43 +1,51 @@
 // 1. Problem One - Fruits array
 
 // a. Add "mango" to the end of a fruits array ["strawberry", "banana"].
-fruits = ["strawberry", "banana"]
-fruits.push("mango")
-console.log(fruits)
+
+// fruits = ["strawberry", "banana"]
+// fruits.push("mango")
+// console.log(fruits)
+
+
 // b. Add "blueberry" to the front of the same fruits array.
 
-fruits.unshift("blueberry")
-console.log(fruits)
+// fruits.unshift("blueberry")
+// console.log(fruits)
+
 
 // c. Remove the last element of the fruits array.
 
-fruits.pop()
-console.log(fruits)
+// fruits.pop()
+// console.log(fruits)
+
 
 // d. console.log the length of the fruits array.
-console.log(fruits.length)
+// console.log(fruits.length)
+
 
 // e. Remove the first element of the fruits array.
 
-fruits.shift()
-console.log(fruits)
+// fruits.shift()
+// console.log(fruits)
+
 
 // f. Join all the elements in the fruits array with a '$'.
 
-console.log(fruits.join("$"))
+// console.log(fruits.join("$"))
+
 
 // 2. Problem Two - Larger array
 // Given two arrays, write code that logs the larger array. 
 //If the arrays are the same length, log "They are the same size"
 
-let firstArr = [1,2,3]
-let secondArr = [1,5,2,4]
-if (firstArr.length < secondArr.length) {
-    console.log(secondArr)
-} else if (firstArr.length > secondArr.length) {
-    console.log(firstArr)
-} else
-    console.log("They are the same size")
+// let firstArr = [1,2,3]
+// let secondArr = [1,5,2,4]
+// if (firstArr.length < secondArr.length) {
+//     console.log(secondArr)
+// } else if (firstArr.length > secondArr.length) {
+//     console.log(firstArr)
+// } else
+//     console.log("They are the same size")
 
 
 // log [1,5,2,4]
@@ -50,17 +58,22 @@ if (firstArr.length < secondArr.length) {
 // let hasNoExactMiddleArr = [1,4,6,9]
 // logs 4,6
 
-let arr = [1,2,3,4,5,6]
-if (arr.length%2 !==0) {
-    console.log(Math.floor(arr[(arr.length-1)/2]))
-} else if (arr.length%2 === 0) {
-    console.log(arr.slice(((arr.length-1)/2),((arr.length+2)/2)))
-} 
+// let arr = [1,2,3,4,5,6]
+// if (arr.length%2 !==0) {
+//     console.log(Math.floor(arr[(arr.length-1)/2]))
+// } else if (arr.length%2 === 0) {
+//     console.log(arr.slice(((arr.length-1)/2),((arr.length+2)/2)))
+// } 
+
 
 // 4. Problem Four - Iterate over an array
 // a. Write code that logs every value in an array using a for loop
 
 // let logMeOutFor = ["I", "am", "a", "happy", "array"]
+// for (let i = 0; i < logMeOutFor.length; i++){
+//     console.log(logMeOutFor[i])
+// }
+
 
 // /* I
 //   am
@@ -69,6 +82,13 @@ if (arr.length%2 !==0) {
 //   array
 // */
 // b. Write code that logs every value in an array using a while loop
+
+// let i = 0
+// while (i < logMeOutFor.length){
+//     console.log(logMeOutFor[i])
+//     i ++
+// }
+
 
 // let logMeOutWhile = ["I", "am", "a", "happy", "array"]
 
@@ -80,8 +100,10 @@ if (arr.length%2 !==0) {
 // */
 // c. Write code that logs every value in an array using a for/of loop
 
-// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
-
+let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+for (let value of logMeOutForOf){
+    console.log(value)
+}
 // /* I
 //   am
 //   a
