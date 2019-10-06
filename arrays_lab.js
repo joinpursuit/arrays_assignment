@@ -184,15 +184,15 @@
 // // 3
 // ```
 
-let arr = [4,3,7,29,40]
-let smallestValue = arr[0]
+// let arr = [4,3,7,29,40];
+// let smallestValue = arr[0];
 
-for(let i = 0; i < arr.length; i++){
-    if(arr[i] < smallestValue){
-        smallestValue = arr[i]
-    }
-}
-console.log(smallestValue)
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < smallestValue){
+//         smallestValue = arr[i]
+//     }
+// }
+// console.log(smallestValue);
 
 // ## 8. Problem Eight - Second smallest value
 
@@ -203,8 +203,18 @@ console.log(smallestValue)
 
 // // 4
 // ```
+let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+let smallestValue = secondSmallestArr[0]
+let secondSmallest = secondSmallestArr[0]
 
-
+for(let i =0; i < secondSmallestArr.length; i++){
+    if(secondSmallestArr[i] > smallestValue && secondSmallestArr[i] < secondSmallest){
+        secondSmallest = secondSmallestArr[i]
+    } else if(secondSmallestArr[i] < smallestValue){
+        smallestValue = secondSmallestArr[i]
+    }
+}
+console.log(secondSmallest)
 // ## 9. Problem Nine - Duplicates
 
 // Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
