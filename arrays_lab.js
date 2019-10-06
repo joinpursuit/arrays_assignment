@@ -200,7 +200,11 @@
 
 // // 3
 // ```
+let arr = [4,3,7,29,40]
+let smallnum = 0
+for(let i = 0; i < arr.length; i++) {
 
+}
 
 
 
