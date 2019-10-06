@@ -56,16 +56,101 @@ console.log(firstArr + " is less than " + secondArr)
 
 
 // ## 3. Problem Three - Middle element
-
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 
 // ```js
 // let hasExactMiddleArr = [1,5,3]
-
 // // logs 5
-
 // let hasNoExactMiddleArr = [1,4,6,9]
-
 // // logs 4,6
-
 // ```
+//-------------------------------------------------------------------------------
+
+let array1 = [9, 4, 7]
+// let array1 = [0, 4, 7, 3]
+
+if (array1.length % 2 === 1) {
+    console.log(array1[Math.floor(array1.length / 2)]);
+} else {
+    console.log(array1[Math.floor(array1.length / 2)] + ", " + array1[Math.floor(array1.length / 2) - 1])
+}
+
+// ## 4. Problem Four - Iterate over an array
+
+// a. Write code that logs every value in an array using a `for` loop
+
+// ```js
+// let logMeOutFor = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+let str = ["You", "should", "know", "what", "peng", "means"]
+for (i = 0; i < str.length; i ++) {
+console.log(str[i]);
+}
+// b. Write code that logs every value in an array using a `while` loop
+
+// ```js
+// let logMeOutWhile = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+let str2 = ["How", "are", "you", "today"]
+x = 0;
+while(x < str2.length) {
+console.log(str2[x]);
+x++
+}
+
+
+// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+
+// ```js
+// let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+const eArray = ["I", "am", "a", "happy", "array"];
+
+for (const element of eArray) {
+    console.log(element)
+}
+
+// ## 5. Problem Five - Sum of array
+
+// Given an array of numbers, write code that logs the sum of all the numbers
+
+// ```js
+// let firstArrToSum = [1, 2, 3, 4, 5, 6]
+// //  21
+
+// let secondArrToSum = [1, 2, 3, 4, 5, -6]
+// //  9
+// ```
+
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
+let sum = 0
+
+for (let i = 0; i < firstArrToSum.length; i++) {
+    sum += firstArrToSum[i]
+}
+console.log("The total number is " + sum)
+
