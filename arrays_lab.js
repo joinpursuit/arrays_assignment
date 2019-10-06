@@ -95,3 +95,16 @@
 //     }
 // }
 // console.log(sum)
+
+// ## 7. Problem Seven - Smallest value
+
+// Given an array of numbers, write code that logs the smallest value
+
+let arr = [4,3,7,29,40]
+let emptyVar = arr[0]
+for (let i = 0; i < arr.length; i++){
+    if (emptyVar > arr[i]) {
+        emptyVar = arr[i]
+    } 
+}   
+console.log(emptyVar)
