@@ -50,15 +50,15 @@
 
 // ```
 
-let arr = [1, 2, 3, 4];
-if (arr.length % 2 === 1) {
-    let middleElement = Math.floor(arr.length / 2);
-    console.log(arr[middleElement]);
-} else {
-    let middleElement = Math.floor((arr.length - 1)/ 2);
-    let middleElement2 = Math.floor(arr.length / 2);
-    console.log(`${arr[middleElement]}, ${arr[middleElement2]}`)
-}
+// let arr = [1, 2, 3, 4];
+// if (arr.length % 2 === 1) {
+//     let middleElement = Math.floor(arr.length / 2);
+//     console.log(arr[middleElement]);
+// } else {
+//     let middleElement = Math.floor((arr.length - 1)/ 2);
+//     let middleElement2 = Math.floor(arr.length / 2);
+//     console.log(`${arr[middleElement]}, ${arr[middleElement2]}`)
+// }
 
 // ## 4. Problem Four - Iterate over an array
 
@@ -75,6 +75,11 @@ if (arr.length % 2 === 1) {
 // */
 // ```
 
+// let logMeOutFor = ["I", "am", "a", "happy", "array"];
+// for(let i = 0; i < logMeOutFor.length; i++) {
+//     console.log(logMeOutFor[i]);
+// }
+
 // b. Write code that logs every value in an array using a `while` loop
 
 // ```js
@@ -87,6 +92,13 @@ if (arr.length % 2 === 1) {
 //   array
 // */
 // ```
+
+// let logMeOutFor = ["I", "am", "a", "happy", "array"];
+// let i = 0;
+// while(i < logMeOutFor.length) {
+//     console.log(logMeOutFor[i]);
+//     i++;
+// }
 
 
 // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
@@ -102,6 +114,10 @@ if (arr.length % 2 === 1) {
 // */
 // ```
 
+let logMeOutFor = ["I", "am", "a", "happy", "array"];
+for(const value of logMeOutFor) {
+    console.log(value);
+}
 
 // ## 5. Problem Five - Sum of array
 
