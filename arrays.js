@@ -52,9 +52,34 @@
 //     console.log(element);
 // }
 
-//Problem 5
-let arr3 = [7,5,3]
-let sumOfArr3 = 0
-for (let i = 0 ; i < arr3.length; i++){
-    sumOfArr3 += arr3[i]
-} console.log(sumOfArr3)
+// //Problem 5
+// let arr3 = [7,5,3]
+// let sumOfArr3 = 0
+// for (let i = 0 ; i < arr3.length; i++){
+//     sumOfArr3 += arr3[i]
+// } console.log(sumOfArr3)
+
+// //Problem 6
+// //a
+// let arr4 = [1,2,3,4,5,6,7]
+// for(let i = 0; i < arr4.length; i++) {
+//     if ( arr4[i]%2 === 1) {
+//         console.log(arr4[i])
+//     }
+// }
+
+// //b
+// let sumofArr4 = 0
+// for(let i = 0; i < arr4.length; i++) {
+//     if ( arr4[i]%2 === 0) {
+//         sumofArr4 += arr4[i]
+//     }
+// } console.log(sumofArr4)
+
+//Problem 7
+let arr5 = [10,20,30,40,50]
+for(let i =0; i < arr5.length; i++){
+    if(i < arr5.indexOf(i)){
+        console.log(i)
+    }
+}
