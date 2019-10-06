@@ -100,11 +100,28 @@
 
 // Given an array of numbers, write code that logs the smallest value
 
-let arr = [4,3,7,29,40]
-let emptyVar = arr[0]
-for (let i = 0; i < arr.length; i++){
-    if (emptyVar > arr[i]) {
-        emptyVar = arr[i]
-    } 
-}   
-console.log(emptyVar)
+// let arr = [4,3,7,29,40]
+// let emptyVar = arr[0]
+// for (let i = 0; i < arr.length; i++){
+//     if (emptyVar > arr[i]) {
+//         emptyVar = arr[i]
+//     } 
+// }   
+// console.log(emptyVar)
+
+// ## 8. Problem Eight - Second smallest value
+
+// Find the second smallest number in an Array of Ints
+
+// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+// let smallestNumber = secondSmallestArr[0]
+// let secondSmallestNumber = smallestNumber
+// for (let i = 0; i < secondSmallestArr.length; i++) {
+//     if (smallestNumber > secondSmallestArr[i]) {
+//         secondSmallestNumber = smallestNumber
+//         smallestNumber = secondSmallestArr[i]
+//     } else if ( secondSmallestArr[i] < secondSmallestNumber && secondSmallestNumber > smallestNumber){
+//         secondSmallestNumber=secondSmallestArr[i]
+//     }
+// } console.log(smallestNumber)
+// console.log (secondSmallestNumber)
