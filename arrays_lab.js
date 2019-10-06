@@ -39,27 +39,28 @@
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
 
-//***** Not Yet Complete*****
-
-// let testArray = [1,2,3,4,5]
-// if (testArray.length % 2 === 0){
-//     console.log (testArray[(testArray.length / 2)-1] + testArray[((testArray.length / 2) + 1) - 1] )
-// }else console.log (testArray[(Math.round(testArray.length / 2)- 1)])
+let testArray = [1,2,3,4,5,6]
+if (testArray.length % 2 === 0){
+    console.log (testArray[(testArray.length / 2)-1] + "," + String(testArray[((testArray.length / 2) + 1) - 1]))
+} else console.log (testArray[(Math.round(testArray.length / 2)- 1)])
 
 // ## 4. Problem Four - Iterate over an array
 
 // a. Write code that logs every value in an array using a `for` loop
-let arr = ["red", "blue", "yellow"]
-for (let i = 0; i < arr.length; i++){
-    console.log (arr[i])
-}
-// b. Write code that logs every value in an array using a `while` loop
-let i = 0
-while (i < arr.length){
-    console.log (arr[i])
-    i++
-}
-// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
-for (const i2 of arr){
-    console.log (i2)
-}
+// let arr = ["red", "blue", "yellow"]
+// for (let i = 0; i < arr.length; i++){
+//     console.log (arr[i])
+// }
+// // b. Write code that logs every value in an array using a `while` loop
+// let i = 0
+// while (i < arr.length){
+//     console.log (arr[i])
+//     i++
+// }
+// // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+// for (const i2 of arr){
+//     console.log (i2)
+// }
+// ## 5. Problem Five - Sum of array
+
+// Given an array of numbers, write code that logs the sum of all the numbers
