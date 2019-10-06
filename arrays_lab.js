@@ -44,8 +44,6 @@ if(firstArr === secondArr) {
 } else { (secondArr < firstArr)
     console.log(firstArr)
 }
-//let smallarr = firstArr.length < sżcondArr.length || secondArr.length < firstArr.length
-// for(let i = 0; i < firstArr.lenghth; i++)
 // ## 3. Problem Three - Middle element
 
 // Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
@@ -61,7 +59,23 @@ if(firstArr === secondArr) {
 
 // ```
 
+
+
+let hasMidArr = [1,5,3]
+//let noExactMidArr = [1,4,6,9]
+
+if (hasMidArr % 2 === 1) {
+    let midArr = Math.floor(hasMidArr.length / 2);
+    console.log(hasMidArr[midArr]);
+} else {
+    let midArr = Math.floor((hasMidArr.length - 1)/ 2);
+    let midArr2 = Math.floor(hasMidArr.length / 2);
+    console.log(hasMidArr[midArr] + hasMidArr[midArr2])
+}
+
+
 // ## 4. Problem Four - Iterate over an array
+
 
 // a. Write code that logs every value in an array using a `for` loop
 
@@ -102,8 +116,10 @@ if(firstArr === secondArr) {
 //   array
 // */
 // ```
-
-
+let newArray = ["pokemon", "sword", "shield", "heart gold", "soul silver"]
+ for(let i = 0; i < newArray.length; i++) {
+     console.log(newArray[i])
+}
 // ## 5. Problem Five - Sum of array
 
 // Given an array of numbers, write code that logs the sum of all the numbers
