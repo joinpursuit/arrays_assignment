@@ -116,17 +116,23 @@ if (hasMidArr % 2 === 1) {
 //   array
 // */
 // ```
-let newArray = ["pokemon", "sword", "shield", "heart gold", "soul silver"]
- for(let i = 0; i < newArray.length; i++) {
-     console.log(newArray[i])
-}
+// let newArray = ["pokemon", "sword", "shield", "heart gold", "soul silver"]
+//  for(let i = 0; i < newArray.length; i++) {
+//      console.log(newArray[i])
+// }
 
-let i = 0
-while(i < newArray.length) {
-    console.log(newArray[i])
-        i++
-}
+// let i = 0
+// while(i < newArray.length) {
+//     console.log(newArray[i])
+//         i++
+// }
+
+// for (const element of newArray) {
+//     console.log(element);
+// }
+
 // ## 5. Problem Five - Sum of array
+
 
 // Given an array of numbers, write code that logs the sum of all the numbers
 
@@ -137,6 +143,14 @@ while(i < newArray.length) {
 // let secondArrToSum = [1, 2, 3, 4, 5, -6]
 // //  9
 // ```
+
+let numArr1 = [2, 3, 5, 6, 7]
+let sum = 0
+
+for(let i = 0; i < numArr1.length; i++) {
+    sum += numArr1[i]
+}
+console.log(sum)
 
 
 // ## 6. Problem Six - Log odd/even numbers
