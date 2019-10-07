@@ -193,8 +193,81 @@ let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 // }
 // console.log(sum)
 
+// ## 7. Problem Seven - Smallest value
 
+// Given an array of numbers, write code that logs the smallest value
+
+// ```js
+// let arr = [4,3,7,29,40]
+
+// // 3
+// ```
 
 let arr = [4,3,7,29,40]
-for (let i = 0; i < arr.length; i++)
-console.log(
+let small = arr[0]
+for (let i = 0; i < arr.length; i++) {
+    if(arr[i] < small)
+    {
+        small = arr[i]
+        console.log(small)
+    }
+}
+
+
+// ## 8. Problem Eight - Second smallest value
+
+// Find the second smallest number in an Array of Ints
+
+// ```js
+// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+
+// // 4
+// ```
+
+let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+
+
+//test area
+// let small = secondSmallestArr[0]
+// for (let i = 0; i < secondSmallestArr.length; i++) {
+//     if(secondSmallestArr[i] < small)
+//     {
+//         small = secondSmallestArr[i]
+//     }
+    
+// }
+// console.log(small)
+
+
+// //Test area
+// let small = secondSmallestArr[0]
+// let secondSmall = small[0]
+// for (let i = 0; i < secondSmallestArr.length; i++) {
+//     if(secondSmallestArr[i] < small)
+//     {
+//         small = secondSmallestArr[i]
+//     }
+//     secondSmall = small[i]
+    
+// }
+// console.log(secondSmall)
+
+
+
+// ## 9. Problem Nine - Duplicates
+
+// Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
+
+// <details>
+//   <summary>Hint</summary>
+  
+//   Make another array to store all the values you've seen so far.  When looking at a new value, see if your array [includes](https://www.w3schools.com/jsref/jsref_includes_array.asp#targetText=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not.) the value, and only add it to the `noDupeList` if it doesn't.
+// </details>
+
+// ```js
+// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+// let noDupeList = []
+
+// // noDupleList = [4, 2, 6, 9, 1]
+
+// ```
