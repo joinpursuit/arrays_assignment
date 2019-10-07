@@ -194,44 +194,27 @@ for (let i = 0; i < arr.length; i++){
 // Find the second smallest number in an Array of Ints
 
 // ```js
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81,1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81,1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
 
 
 // // 4
 // ```
 
 
-// for (let i = 0; i < secondSmallestArr.length; i++){
-    //     if(fSmall > secondSmallestArr[i] ){
-        //         fSmall = secondSmallestArr[i]
-        //          if(fSmall < copy){
-            //         sSmall = copy
-            //         console.log( fSmall + " 2nd Small " + sSmall)
-            //             }
-            //         }
-            //         copy = fSmall;
-            
-            //     }
-            //     // // sSmall = secondSmallestArr[i]
-            //     // if (sSmall > fSmall && sSmall < secondSmallestArr[i]){
-                //     // //    if(small < secondSmallestArr[i])
-                //     //     console.log(sSmall+ " 2nd") 
-                //     // }
-                //      console.log(fSmall+ " "+ sSmall)
                 
-let sampleArr = [11,3,13,2,-1,-2,3,1]
-let fSmall = Infinity
-let sSmall = Infinity
+//let sampleArr = [11,3,13,2,-1,-2,3,1]
+let sSmall = Infinity // Smallest
+let fSmall = Infinity // second smallest
                 
-for (let i = 0; i < sampleArr.length; i++){
-    if(sampleArr[i] < sSmall && fSmall < sSmall){
-        sSmall = sampleArr[i]
-} else if ( sampleArr[i] < fSmall){
-    fSmall = sampleArr[i]
+for (let i = 0; i < secondSmallestArr.length; i++){
+    if(secondSmallestArr[i] < sSmall && fSmall < sSmall){ 
+        sSmall = secondSmallestArr[i]
+} else if ( secondSmallestArr[i] < fSmall){
+    fSmall = secondSmallestArr[i]
 
 }
 }
-console.log(fSmall + " " + sSmall)
+console.log("Smallest = "+sSmall + " :2nd Smallest = " + fSmall)
 
 
 
@@ -246,18 +229,23 @@ console.log(fSmall + " " + sSmall)
 // </details>
 
 // ```js
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-// let noDupeList = []
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = []
 
 // // // noDupleList = [4, 2, 6, 9, 1]
 
 // // ```
+let compare
+let dup =0;
 
-// for(let listcount =0; listcount < dupeFriendlyList.length; listcount++){
-//     if(dupeFriendlyList[listcount] === noDupeList[listcount]){
-//         noDupeList.shift();
-//         console.log(dupeFriendlyList +" and "+ noDupeList)
-//     }else {
-//         noDupeList[listcount]= dupeFriendlyList[listcount]
-//     }
-// }console.log(dupeFriendlyList +" and "+ noDupeList)
+for (let i = 0; i < dupeFriendlyList.length; i++){
+ dupeFriendlyList.sort();
+ 
+ if(dupeFriendlyList[i] !== dupeFriendlyList[i+1]){
+    noDupeList.push(dupeFriendlyList[i])  
+ } 
+      
+}console.log(noDupeList)
+
+
+
