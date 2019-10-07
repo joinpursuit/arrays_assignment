@@ -246,18 +246,18 @@ console.log(fSmall + " " + sSmall)
 // </details>
 
 // ```js
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-// let noDupeList = []
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = []
+
+
 
 // // // noDupleList = [4, 2, 6, 9, 1]
 
 // // ```
 
-// for(let listcount =0; listcount < dupeFriendlyList.length; listcount++){
-//     if(dupeFriendlyList[listcount] === noDupeList[listcount]){
-//         noDupeList.shift();
-//         console.log(dupeFriendlyList +" and "+ noDupeList)
-//     }else {
-//         noDupeList[listcount]= dupeFriendlyList[listcount]
-//     }
-// }console.log(dupeFriendlyList +" and "+ noDupeList)
+for(let listcount = 0; listcount < dupeFriendlyList.length; listcount++){
+    if(noDupeList.includes(dupeFriendlyList[listcount]) === false ){
+        noDupeList.push(dupeFriendlyList[listcount])
+}
+}
+console.log(dupeFriendlyList +" and "+ noDupeList)
