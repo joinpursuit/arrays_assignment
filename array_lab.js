@@ -239,10 +239,10 @@ let compare
 let dup =0;
 
 for (let i = 0; i < dupeFriendlyList.length; i++){
- dupeFriendlyList.sort();
- 
- if(dupeFriendlyList[i] !== dupeFriendlyList[i+1]){
-    noDupeList.push(dupeFriendlyList[i])  
+ dupeFriendlyList.sort(); // Sorts out the Array 
+
+ if(dupeFriendlyList[i] !== dupeFriendlyList[i+1]){ // compares the [i] to the next element up
+    noDupeList.push(dupeFriendlyList[i])  // 
  } 
       
 }console.log(noDupeList)
