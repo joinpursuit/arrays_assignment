@@ -200,12 +200,14 @@
 
 // // 3
 // ```
-let arr = [4,3,7,29,40]
-let smallnum = 0
+let arr = [4, 3, 7, 29, 40]
+let smallestArr = arr[0]
 for(let i = 0; i < arr.length; i++) {
-
+    if(arr[i] < smallestArr) {
+        smallestArr = arr[i]
+    }
 }
-
+console.log(smallestArr + " this is the smallest value")
 
 
 // ## 8. Problem Eight - Second smallest value
