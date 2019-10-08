@@ -211,11 +211,17 @@
 // Hint
 let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
 let noDupeList = []
+let duplicate = false
 
 for (let i=0;i<dupeFriendlyList.length;i++){
-    for (let i=0;i<noDupeList.length;i++){
-    if (noDupeList[i] !== noDupeList[i]) 
-    noDupeList += dupeFriendlyList[i]
-} 
-console.log(noDupeList)
+    for (let j=0;j<noDupeList.length;j++){
+        if (noDupeList[j] === dupeFriendlyList[i]) 
+        duplicate = true
+    } 
+        if (duplicate === false) 
+        noDupeList += dupeFriendlyList[i]
+}
+   console.log(noDupeList)
+
+
 // noDupleList = [4, 2, 6, 9, 1]
