@@ -248,3 +248,15 @@ for (let i = 0; i < array2.length; i++) {
 // // noDupleList = [4, 2, 6, 9, 1]
 
 // ```
+
+
+let dupeFriendlyList = [2, 5, 8, 3, 8, 1]
+let noDupeList = []
+// let noDupelist.concat(dupeFriendlyList) = friendlyDupe
+for (let i = 0; i < dupeFriendlyList.length; i++) {
+ if (!noDupeList.includes(dupeFriendlyList[i])) { 
+   let n = dupeFriendlyList[i]
+   noDupeList.push(n)
+ }
+}
+console.log(noDupeList)
