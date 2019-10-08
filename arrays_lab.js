@@ -200,14 +200,14 @@
 
 // // 3
 // ```
-let arr = [4, 3, 7, 29, 40]
-let smallestArr = arr[0]
-for(let i = 0; i < arr.length; i++) {
-    if(arr[i] < smallestArr) {
-        smallestArr = arr[i]
-    }
-}
-console.log(smallestArr + " this is the smallest value")
+// let arr = [4, 3, 7, 29, 40]
+// let smallestArr = arr[0]
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] < smallestArr) {
+//         smallestArr = arr[i]
+//     }
+// }
+// console.log(smallestArr + " this is the smallest value")
 
 
 // ## 8. Problem Eight - Second smallest value
@@ -220,6 +220,18 @@ console.log(smallestArr + " this is the smallest value")
 // // 4
 // ```
 
+let secondSmallestArr = [11, 52, 10, 7, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23,]
+let secSmallestArr = [smallestArr = secondSmallestArr[0]];
+let smallestArr = [secSmallestArr[0]];
+
+for(let i = 0; i < secondSmallestArr.length; i++) {
+    if(secondSmallestArr[i] < smallestArr) {
+        smallestArr = secondSmallestArr[i] 
+    } else if (secondSmallestArr[i] < secondSmallestArr) {
+        secSmallestArr = smallestArr[i]
+    }
+}
+console.log(secSmallestArr + " this is the second smallest")
 
 // ## 9. Problem Nine - Duplicates
 
