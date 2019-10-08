@@ -124,8 +124,9 @@
 // }
 // console.log(sum)
 
-//let secondArrToSum = [1, 2, 3, 4, 5, -6]
-//  9
+// let secondArrToSum = [1, 2, 3, 4, 5, -6]
+// //  9
+
 // let sum = 0
 // for (let i = 0; i < secondArrToSum.length; i++){
 //     sum += secondArrToSum[i]
@@ -136,7 +137,6 @@
 // 6. Problem Six - Log odd/even numbers
 // a. Given an array of numbers, write code that logs all the odd numbers
 
-// let evenAndOddArr = [1,5,2,4,11,12,99,100]
 // for (let i = 0; i < evenAndOddArr.length; i++){
 //     if (evenAndOddArr[i] % 2 != 0){
 //         console.log(evenAndOddArr[i]);
@@ -148,6 +148,19 @@
 
 // 1, 5, 11, 99
 // b. Given an array of numbers, write code that logs the sum of all the even numbers
+
+//let evenAndOddArr = [1,5,2,4,11,12,99,100]
+
+// sum = 0
+// for (i=0;i<evenAndOddArr.length;i++){
+//     if (evenAndOddArr[i]%2 !== 0) {
+//         console.log(`${evenAndOddArr[i]} is an odd number`)
+//     } else if (evenAndOddArr[i]%2 === 0){
+//         console.log(`${evenAndOddArr[i]} is an even number`)
+//         sum += evenAndOddArr[i]
+//     }
+//  } console.log(sum)
+
 
 // let evenAndOddArrToSum = [1,5,2,3,11,4,6]
 // let sum = 0
@@ -164,20 +177,45 @@
 // 7. Problem Seven - Smallest value
 // Given an array of numbers, write code that logs the smallest value
 
-// let arr = [4,3,7,29,40]
+// let arr = [4,2,7,29,40,1]
+// let min = arr[0]
+// for (let i=1; i<arr.length;i++){
+//     if (min > arr[i] )
+//     min = arr[i]
+//     console.log(min)
+// } console.log(min)
+
 
 // 3
+
+
 // 8. Problem Eight - Second smallest value
 // Find the second smallest number in an Array of Ints
 
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+//let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+
+// let min = secondSmallestArr[0]
+// let min2 = secondSmallestArr[1]
+// for (let i=1; i<secondSmallestArr.length;i++){
+//     if (min > secondSmallestArr[i]) {
+//         min = secondSmallestArr[i]
+//     } else if (min2 > secondSmallestArr[i])
+//         min2 = secondSmallestArr[i]
+// } console.log(min)
+//   console.log(min2)
 
 // 4
 // 9. Problem Nine - Duplicates
 // Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
 
 // Hint
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
-// let noDupeList = []
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = []
 
+for (let i=0;i<dupeFriendlyList.length;i++){
+    for (let i=0;i<noDupeList.length;i++){
+    if (noDupeList[i] !== noDupeList[i]) 
+    noDupeList += dupeFriendlyList[i]
+} 
+console.log(noDupeList)
 // noDupleList = [4, 2, 6, 9, 1]
