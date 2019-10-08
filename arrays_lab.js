@@ -164,14 +164,32 @@
 // 7. Problem Seven - Smallest value
 // Given an array of numbers, write code that logs the smallest value
 
-// let arr = [4,3,7,29,40]
+// let arr = [4,3,7,29,40,2]
+// arrSmallest = arr[0]
+// for (let i = 0; i < arr.length; i++){
+//     if (arrSmallest > arr[i]){
+//        arrSmallest = arr[i]
+//     }
+    
+// }
+// console.log(arrSmallest)
+
 
 // 3
 // 8. Problem Eight - Second smallest value
 // Find the second smallest number in an Array of Ints
 
-// let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
-
+let array = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+arrSmallest = array[0]
+arrSecondSmallest = array[0]
+for (let i = 0; i < array.length; i++){
+    if (arrSmallest > array[i] && arrSecondSmallest > array[i]){
+       arrSmallest = array[i] 
+       arrSmallest = arrSecondSmallest
+    }else if (array[0] < arrSmallest){
+        array[0] = arrSecondSmallest
+    }console.log(arrSecondSmallest, arrSmallest)
+}
 // 4
 // 9. Problem Nine - Duplicates
 // Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
