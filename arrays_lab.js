@@ -179,20 +179,31 @@
 // 8. Problem Eight - Second smallest value
 // Find the second smallest number in an Array of Ints
 
-let array = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
-arrSmallest = array[0]
-arrSecondSmallest = array[0]
-for (let i = 0; i < array.length; i++){
-    if (arrSmallest > array[i] && arrSecondSmallest > array[i]){
-       arrSmallest = array[i] 
-       arrSmallest = arrSecondSmallest
-    }else if (array[0] < arrSmallest){
-        array[0] = arrSecondSmallest
-    }console.log(arrSecondSmallest, arrSmallest)
-}
+// let array = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
+// arrSmallest = array[0]
+// arrSecondSmallest = array[0]
+// for (let i = 0; i < array.length; i++){
+//     if (arrSmallest > array[i] && arrSecondSmallest > array[i]){
+//        arrSmallest = array[i] 
+//        arrSmallest = arrSecondSmallest
+//     }else if (array[0] < arrSmallest){
+//         array[0] = arrSecondSmallest
+//     }console.log(arrSecondSmallest, arrSmallest)
+// }
 // 4
 // 9. Problem Nine - Duplicates
 // Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let noDupeList = [ ]
+
+for (let i = 0; i < dupeFriendlyList.length; i++){
+    if(noDupeList.includes(dupeFriendlyList[i])){
+        continue;
+   }else{
+       noDupeList.push(dupeFriendlyList[i])
+   }
+}
+console.log(noDupeList) 
 
 // Hint
 // let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
