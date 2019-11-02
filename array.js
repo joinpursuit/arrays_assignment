@@ -76,13 +76,13 @@
 // // logs 4,6
 
 // ```
-let  arr = [1,4,6,9];
-if (arr.length % 2 === 0) {
-  console.log(arr[(arr.length/2)-1]);
-  console.log(arr[arr.length/2]);
-} else {
-  console.log(arr[(arr.length-1)/2]);
-}
+// let  arr = [1,4,6,9];
+// if (arr.length % 2 === 0) {
+//   console.log(arr[(arr.length/2)-1]);
+//   console.log(arr[arr.length/2]);
+// } else {
+//   console.log(arr[(arr.length-1)/2]);
+// }
 
 // ## 4. Problem Four - Iterate over an array
 
@@ -97,7 +97,10 @@ if (arr.length % 2 === 0) {
 //   happy
 //   array
 // */
-// ```
+let arr = ["I", "am", "a", "happy", "array"];
+// for ( let i = 0 ; i < arr.length ; i++) {
+//   console.log(arr[i])
+// }
 
 // b. Write code that logs every value in an array using a `while` loop
 
@@ -111,6 +114,11 @@ if (arr.length % 2 === 0) {
 //   array
 // */
 // ```
+// let i = 0;
+// while(i < arr.length) {
+//   console.log(arr[i]);
+//   i++
+// }
 
 
 // c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
@@ -125,6 +133,9 @@ if (arr.length % 2 === 0) {
 //   array
 // */
 // ```
+for (const element of arr) {
+  console.log(element)
+}
 
 
 // ## 5. Problem Five - Sum of array
