@@ -97,7 +97,7 @@
 //   happy
 //   array
 // */
-let arr = ["I", "am", "a", "happy", "array"];
+// let arr = ["I", "am", "a", "happy", "array"];
 // for ( let i = 0 ; i < arr.length ; i++) {
 //   console.log(arr[i])
 // }
@@ -156,32 +156,47 @@ let arr = ["I", "am", "a", "happy", "array"];
 // let secondArrToSum = [1, 2, 3, 4, 5, -6]
 // //  9
 // ```
-let firstArrToSum = [1, 2, 3, 4, 5, -6];
-let sum = 0;
-for (let i = 0; i < firstArrToSum.length; i++) {
-  sum += firstArrToSum[i]
+// let firstArrToSum = [1, 2, 3, 4, 5, -6];
+// let sum = 0;
+// for (let i = 0; i < firstArrToSum.length; i++) {
+//   sum += firstArrToSum[i]
 
-}
-  console.log(sum);
+// }
+//   console.log(sum);
 
 
 // ## 6. Problem Six - Log odd/even numbers
 
-// a. Given an array of numbers, write code that logs all the odd numbers
+// a. Given an array of numbers, write code that logs 
+// all the odd numbers
 
 // ```js
 
-// let evenAndOddArr = [1,5,2,4,11,12,99,100]
+//  let evenAndOddArr = [1,5,2,4,11,12,99,100]
 
 // // 1, 5, 11, 99
 // ```
+//  for (let i = 0; i < evenAndOddArr.length; i++) {
+//    if(evenAndOddArr[i]% 2 === 1) {
+//      console.log(evenAndOddArr[i])
+//    }
+//  }
 
-// b. Given an array of numbers, write code that logs the sum of all the even numbers
+// b. Given an array of numbers, write code that 
+// logs the sum of all the even numbers
 
 // ```js
 
-// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
-
+let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+let sum = 0;
+for (let i = 0; i < evenAndOddArrToSum.length; i++) {
+  if(evenAndOddArrToSum[i]%2 === 0){
+    sum += evenAndOddArrToSum[i]
+  }
+  // return sum
+}
+console.log(sum)
+  
 // // 12
 // ```
 
