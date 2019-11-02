@@ -133,9 +133,9 @@ let arr = ["I", "am", "a", "happy", "array"];
 //   array
 // */
 // ```
-for (const element of arr) {
-  console.log(element)
-}
+// for (const element of arr) {
+//   console.log(element)
+// }
 
 
 // ## 5. Problem Five - Sum of array
@@ -143,12 +143,26 @@ for (const element of arr) {
 // Given an array of numbers, write code that logs the sum of all the numbers
 
 // ```js
-// let firstArrToSum = [1, 2, 3, 4, 5, 6]
+// let firstArrToSum = [1, 2, 3, 4, 5, 6];
+// let sum = 0;
+// for (let i = 0; i < firstArrToSum.length; i++) {
+//   sum += firstArrToSum[i]
+
+// }
+//   console.log(sum);
 // //  21
+
 
 // let secondArrToSum = [1, 2, 3, 4, 5, -6]
 // //  9
 // ```
+let firstArrToSum = [1, 2, 3, 4, 5, -6];
+let sum = 0;
+for (let i = 0; i < firstArrToSum.length; i++) {
+  sum += firstArrToSum[i]
+
+}
+  console.log(sum);
 
 
 // ## 6. Problem Six - Log odd/even numbers
