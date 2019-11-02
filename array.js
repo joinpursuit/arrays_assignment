@@ -48,17 +48,17 @@
 // // log [1,5,2,4]
 // ```
 
-let arr1 = [1,2,3, 4];
-let arr2 = [1,5,2,4,6];
+// let arr1 = [1,2,3, 4];
+// let arr2 = [1,5,2,4,6];
 
 
-  if(arr1.length > arr2.length) {
-    console.log(arr1)
-  } else if( arr1.length  < arr2.length ) {
-    console.log(arr2)
-  } else {
-    console.log("They are the same size")
-  }
+//   if(arr1.length > arr2.length) {
+//     console.log(arr1)
+//   } else if( arr1.length  < arr2.length ) {
+//     console.log(arr2)
+//   } else {
+//     console.log("They are the same size")
+//   }
 
 
 
@@ -76,6 +76,13 @@ let arr2 = [1,5,2,4,6];
 // // logs 4,6
 
 // ```
+let  arr = [1,4,6,9];
+if (arr.length % 2 === 0) {
+  console.log(arr[(arr.length/2)-1]);
+  console.log(arr[arr.length/2]);
+} else {
+  console.log(arr[(arr.length-1)/2]);
+}
 
 // ## 4. Problem Four - Iterate over an array
 
