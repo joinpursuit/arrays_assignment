@@ -239,7 +239,8 @@ console.log(secondSmall)
 
 // ## 9. Problem Nine - Duplicates
 
-// Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
+// Write code such that noDupeList has all the same numbers as dupeFriendlyList, 
+// but has no more than one of each number.
 
 // <details>
 //   <summary>Hint</summary>
@@ -248,9 +249,17 @@ console.log(secondSmall)
 // </details>
 
 // ```js
-// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
 // let noDupeList = []
 
 // // noDupleList = [4, 2, 6, 9, 1]
 
 // ```
+let noDupeList = [];
+for( let i = 0; i < dupeFriendlyList.length; i++){
+  if(!noDupeList.includes(dupeFriendlyList[i])) {
+    noDupeList.push(dupeFriendlyList[i])
+  }
+ 
+}
+console.log(noDupeList)
