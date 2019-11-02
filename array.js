@@ -8,37 +8,38 @@
 
 // array ["strawberry", "banana"].
 
-let array = ["strawberry", "banana"];
-array.push("mango");
-console.log(array)
+// let array = ["strawberry", "banana"];
+// array.push("mango");
+// console.log(array)
 
 // b. Add "blueberry" to the front of the same fruits array.
 
-array.unshift("blueberry");
-console.log(array)
+// array.unshift("blueberry");
+// console.log(array)
 
 // c. Remove the last element of the fruits array.
 
-array.pop();
-console.log(array)
+// array.pop();
+// console.log(array)
 
 // d. console.log the length of the fruits array.
 
-console.log(array.length)
+//console.log(array.length)
 
 // e. Remove the first element of the fruits array.
 
-array.shift();
-console.log(array)
+// array.shift();
+// console.log(array)
 
 // f. Join all the elements in the fruits array with a '$'.
 
-console.log(array.join("$"))
+//console.log(array.join("$"))
 
 
 // ## 2. Problem Two - Larger array
 
-// Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
+// Given two arrays, write code that logs the larger array.  
+// If the arrays are the same length, log "They are the same size"
 
 // ```js
 // let firstArr = [1,2,3]
@@ -46,6 +47,20 @@ console.log(array.join("$"))
 
 // // log [1,5,2,4]
 // ```
+
+let arr1 = [1,2,3, 4];
+let arr2 = [1,5,2,4,6];
+
+
+  if(arr1.length > arr2.length) {
+    console.log(arr1)
+  } else if( arr1.length  < arr2.length ) {
+    console.log(arr2)
+  } else {
+    console.log("They are the same size")
+  }
+
+
 
 // ## 3. Problem Three - Middle element
 
