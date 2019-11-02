@@ -206,13 +206,13 @@
 
 // ```js
 let arr = [4,3,7,29,40]
-let small = arr[0];
-for (let i = 0 ; i < arr.length; i++) {
-  if(small > arr[i]){
-    small = arr[i]
-  }
-}
-console.log(small)
+// let small = arr[0];
+// for (let i = 0 ; i < arr.length; i++) {
+//   if(small > arr[i]){
+//     small = arr[i]
+//   }
+// }
+// console.log(small)
 
 // // 3
 // ```
@@ -220,6 +220,15 @@ console.log(small)
 // ## 8. Problem Eight - Second smallest value
 
 // Find the second smallest number in an Array of Ints
+let small = Infinity;
+let secondSmall = Infinity;
+for(let i = 0; i < arr.length; i++) {
+  if ( small > arr[i]){
+    small = arr[i];
+    secondSmall = arr[i]
+  }
+}
+console.log(secondSmall)
 
 // ```js
 // let secondSmallestArr = [11, 52, 10, 7, 50, 46, 79, 78, 13, 26, 83, 92, 89, 81, 1, 41, 4, 23, 57, 41, 80, 83, 41, 69]
