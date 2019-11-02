@@ -187,15 +187,15 @@
 
 // ```js
 
-let evenAndOddArrToSum = [1,5,2,3,11,4,6]
-let sum = 0;
-for (let i = 0; i < evenAndOddArrToSum.length; i++) {
-  if(evenAndOddArrToSum[i]%2 === 0){
-    sum += evenAndOddArrToSum[i]
-  }
-  // return sum
-}
-console.log(sum)
+// let evenAndOddArrToSum = [1,5,2,3,11,4,6]
+// let sum = 0;
+// for (let i = 0; i < evenAndOddArrToSum.length; i++) {
+//   if(evenAndOddArrToSum[i]%2 === 0){
+//     sum += evenAndOddArrToSum[i]
+//   }
+//   // return sum
+// }
+// console.log(sum)
   
 // // 12
 // ```
@@ -205,7 +205,14 @@ console.log(sum)
 // Given an array of numbers, write code that logs the smallest value
 
 // ```js
-// let arr = [4,3,7,29,40]
+let arr = [4,3,7,29,40]
+let small = arr[0];
+for (let i = 0 ; i < arr.length; i++) {
+  if(small > arr[i]){
+    small = arr[i]
+  }
+}
+console.log(small)
 
 // // 3
 // ```
