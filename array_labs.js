@@ -202,3 +202,25 @@ for (let i = 0; i < evenAndOddArrToSum.length; i++) {
   }
 }
 console.log(sumSix)
+
+// ## 7. Problem Seven - Smallest value
+
+// Given an array of numbers, write code that logs the smallest value
+
+// ```js
+// let arr = [4,3,7,29,40]
+
+// // 3
+// ```
+let arrSeven = [4, 3, 7, 29, 40]
+
+let smallest = arrSeven[0];
+// let secondSmallest = arrSeven[]
+
+for (let i = 1; i < arrSeven.length; i++) {
+  if (smallest > arrSeven[i]) {
+    smallest = arrSeven[i]
+    //if(smallest > )
+  }
+}
+console.log(smallest)
