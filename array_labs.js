@@ -257,3 +257,33 @@ for (let i = 2; i < arrEight.length; i++) {
   }
 }
 console.log(secondSmallest)
+
+// ## 9. Problem Nine - Duplicates
+
+// Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
+
+// <details>
+//   <summary>Hint</summary>
+
+//   Make another array to store all the values you've seen so far.  When looking at a new value, see if your array [includes](https://www.w3schools.com/jsref/jsref_includes_array.asp#targetText=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not.) the value, and only add it to the `noDupeList` if it doesn't.
+// </details>
+
+// ```js
+// let dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
+// let noDupeList = []
+
+// // noDupleList = [4, 2, 6, 9, 1]
+
+// ```
+let dupeFriendlyList = [4, 2, 6, 2, 2, 6, 4, 9, 2, 1]
+let noDupeList = []
+
+
+for (let i = 0; i < dupeFriendlyList.length; i++) {
+  let current = dupeFriendlyList[i]
+  if (!noDupeList.includes(current)) {
+    noDupeList.push(current)
+  }
+
+}
+console.log(noDupeList)
