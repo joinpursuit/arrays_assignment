@@ -144,3 +144,22 @@ for (let i = 0; i < logMeOutForOf.length; i++) {
   console.log(logMeOutForOf[i])
 
 }
+
+// ## 5. Problem Five - Sum of array
+
+// Given an array of numbers, write code that logs the sum of all the numbers
+
+// ```js
+let firstArrToSum = [1, 2, 3, 4, 5, 6]
+
+let sum = 0;
+for (let i = 0; i < firstArrToSum.length; i++) {
+
+  sum += firstArrToSum[i]
+}
+console.log(sum);
+// //  21
+
+// let secondArrToSum = [1, 2, 3, 4, 5, -6]
+// //  9
+// ```
