@@ -84,3 +84,63 @@ if (arrayThree.length % 2 === 1) {
 } else if (arrayThree.length % 2 === 0) {
   console.log(`${arrayThree[otherMid]}, ${arrayThree[midElement]}`)
 }
+
+// ## 4. Problem Four - Iterate over an array
+
+// a. Write code that logs every value in an array using a `for` loop
+
+// ```js
+let logMeOutFor = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+for (let i = 0; i < logMeOutFor.length; i++) {
+  console.log(logMeOutFor[i])
+}
+
+// console.log(logInput.join(" "))
+
+
+// b. Write code that logs every value in an array using a `while` loop
+
+// ```js
+let logMeOutWhile = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+let i = 0;
+while (i < logMeOutWhile.length) {
+  console.log(logMeOutWhile[i]);
+  i++;
+}
+
+
+// c. Write code that logs every value in an array using a [for/of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) loop
+
+// ```js
+let logMeOutForOf = ["I", "am", "a", "happy", "array"]
+
+// /* I
+//   am
+//   a
+//   happy
+//   array
+// */
+// ```
+
+
+for (let i = 0; i < logMeOutForOf.length; i++) {
+  console.log(logMeOutForOf[i])
+
+}
