@@ -38,3 +38,25 @@ console.log(fruits);
 // f. Join all the elements in the fruits array with a '$'.
 ;
 console.log(fruits.join(" $ ").split());
+
+// ## 2. Problem Two - Larger array
+
+// Given two arrays, write code that logs the larger array.  If the arrays are the same length, log "They are the same size"
+
+// ```js
+let firstArr = [1, 2, 3]
+let secondArr = [1, 5, 2, 4]
+
+// // log [1,5,2,4]
+// ```
+
+// let str2 = "This is the largest array"
+if (firstArr.length === secondArr.length) {
+  console.log(`They are the same size`)
+} else if (firstArr.length > secondArr.length) {
+  console.log(firstArr)
+} else {
+  console.log(secondArr)
+
+  // console.log(str2, secondArr)
+}
