@@ -60,3 +60,27 @@ if (firstArr.length === secondArr.length) {
 
   // console.log(str2, secondArr)
 }
+// ## 3. Problem Three - Middle element
+
+// Given an array, log its middle element.  If the middle of the array is between two elements, log both of them.
+
+// ```js
+// let hasExactMiddleArr = [1, 5, 3]
+
+// // logs 5
+
+// let hasNoExactMiddleArr = [1,4,6,9]
+
+// // logs 4,6
+
+// ```
+
+let arrayThree = [9, 8, 7, 6]
+let midElement = Math.ceil(arrayThree.length / 2)
+let otherMid = midElement - 1
+
+if (arrayThree.length % 2 === 1) {
+  console.log(arrayThree[midElement])
+} else if (arrayThree.length % 2 === 0) {
+  console.log(`${arrayThree[otherMid]}, ${arrayThree[midElement]}`)
+}
