@@ -55,3 +55,12 @@ if (arr.length % 2 === 0) {
 } else {
   console.log(arr[Math.floor(arr.length / 2)])
 }
+
+// Problem Four - Iterate over an array
+// a. Write code that logs every value in an array using a for loop
+
+let arr = [1,2,3]
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i])
+}
