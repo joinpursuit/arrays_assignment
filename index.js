@@ -64,3 +64,14 @@ let arr = [1,2,3]
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i])
 }
+
+//b. Write code that logs every value in an array using a while loop
+
+let arr = [1,2,3]
+
+let i = 0
+
+while(i < arr.length){
+  console.log(arr[i])
+  i++
+}
