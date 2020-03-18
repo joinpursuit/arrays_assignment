@@ -75,3 +75,11 @@ while(i < arr.length){
   console.log(arr[i])
   i++
 }
+
+// c. Write code that logs every value in an array using a for/of loop
+
+let arr = [1,2,3]
+
+for (let element of arr) {
+  console.log(element)
+}
