@@ -48,10 +48,10 @@ if (arr1.length > arr2.length) {
 
 // Given an array, log its middle element. If the middle of the array is between two elements, log both of them.
 
-let arr = [1,2,3,4]
+let arr = [1,2,3,4,5]
 
 if (arr.length % 2 === 0) {
-  console.log(Math.floor((arr.length)/ 2) + "," + arr[Math.floor(arr.length / 2)])
+  console.log(Math.floor(arr.length) / 2 + "," + arr[Math.floor(arr.length / 2)])
 } else {
   console.log(arr[Math.floor(arr.length / 2)])
 }
