@@ -93,3 +93,14 @@ let sum = 0
 for (let i = 0; i < arr.length; i++) {
   sum += arr[i]
 }
+
+// Problem Six - Log odd/even numbers
+// a. Given an array of numbers, write code that logs all the odd numbers
+
+let arr = [1,2,3,4,5]
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 1) {
+    console.log(arr[i])
+  }
+}
