@@ -104,3 +104,13 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr[i])
   }
 }
+
+// b. Given an array of numbers, write code that logs the sum of all the even numbers
+
+let arr = [1,2,3,4]
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    console.log(arr[i])
+  }
+}
