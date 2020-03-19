@@ -128,3 +128,19 @@ for (let i = 0; i < arr.length; i++) {
     console.log(smallest)
   }
 }
+
+// Problem Eight - Second smallest value
+// Find the second smallest number in an Array of Ints
+
+let arr = [1,2,3,4,5]
+let smallest = Infinity
+let secondSmallest = Infinity
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < smallest) {
+    smallest = arr[i]
+  } else if (arr[i] < secondSmallest) {
+    secondSmallest = arr[i]
+    console.log(arr[i])
+  }
+}
