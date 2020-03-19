@@ -65,7 +65,7 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i])
 }
 
-//b. Write code that logs every value in an array using a while loop
+// b. Write code that logs every value in an array using a while loop
 
 let arr = [1,2,3]
 
@@ -82,4 +82,14 @@ let arr = [1,2,3]
 
 for (let element of arr) {
   console.log(element)
+}
+
+// Problem Five - Sum of array
+// Given an array of numbers, write code that logs the sum of all the numbers
+
+let arr = [1,2,3,4]
+let sum = 0
+
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i]
 }
