@@ -114,3 +114,17 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr[i])
   }
 }
+
+// Problem Seven - Smallest value
+
+// Given an array of numbers, write code that logs the smallest value
+
+let arr = [1,2,3,4,5]
+let smallest = Infinity
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < smallest) {
+    smallest = arr[i]
+    console.log(smallest)
+  }
+}
