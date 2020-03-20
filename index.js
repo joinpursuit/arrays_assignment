@@ -130,6 +130,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 // Problem Eight - Second smallest value
+
 // Find the second smallest number in an Array of Ints
 
 let arr = [1,2,3,4,5]
@@ -144,3 +145,18 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr[i])
   }
 }
+
+// Problem Nine - Duplicates
+
+// Write code such that noDupeList has all the same numbers as dupeFriendlyList, but has no more than one of each number.
+
+let arr = [4,2,6,2,2,6,4,9,2,1]
+let noDuplicates = []
+
+for (let i = 0; i < arr.length; i++) {
+  if (noDuplicates.includes(arr[i])) {
+  } else {
+    noDuplicates.push(arr[i])
+  }
+}
+console.log(noDuplicates)
