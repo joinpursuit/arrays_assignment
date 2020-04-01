@@ -119,15 +119,9 @@ for (let i = 0; i < arr.length; i++) {
 
 // Given an array of numbers, write code that logs the smallest value
 
-let arr = [1,2,3,4,5]
-let smallest = Infinity
+let arr = [6,5,4,1,3,2]
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] < smallest) {
-    smallest = arr[i]
-    console.log(smallest)
-  }
-}
+console.log(Math.min(...arr))
 
 // Problem Eight - Second smallest value
 
