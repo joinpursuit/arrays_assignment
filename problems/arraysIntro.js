@@ -20,27 +20,24 @@ function addFruitToFront() {}
 /**
  * Takes in an array of fruits. And removes last fruit in the array.
  * @param {array} fruits
- * @return {array} 
+ * @return {array}
  */
 
 function removeLast() {}
 
-
 /**
- * Takes in an array of fruits. And removes last fruit in the array and 
- * returns the fruit that was removed. 
+ * Takes in an array of fruits. And removes last fruit in the array and
+ * returns the fruit that was removed.
  * @param {array} fruits
- * @return {string} fruit that was removed 
+ * @return {string} fruit that was removed
  */
 
 function removeLastandReturnLast() {}
 
-
-
 /**
  * Takes in an array and returns the length
- * @param {array} 
- * @return {number} 
+ * @param {array}
+ * @return {number}
  */
 
 function arrayLength() {}
@@ -48,47 +45,45 @@ function arrayLength() {}
 /**
  * Takes in an array of fruits. And removes the first fruit in the array.
  * @param {array} fruits
- * @return {array} 
+ * @return {array}
  */
 
 function removeFirst() {}
 
-
 /**
- * Takes in an array of fruits. And removes first fruit in the array and 
- * returns the fruit that was removed. 
+ * Takes in an array of fruits. And removes first fruit in the array and
+ * returns the fruit that was removed.
  * @param {array} fruits
- * @return {string} fruit that was removed 
+ * @return {string} fruit that was removed
  */
 
 function removeFirstandReturnFirst() {}
 
 /**
- * Takes in an array of fruits. And returns a string where all 
- * elements have been joined by '$'. 
+ * Takes in an array of fruits. And returns a string where all
+ * elements have been joined by '$'.
  * @param {array} fruits
- * @return {string} joined array 
+ * @return {string} joined array
  */
 
 function arrayToString() {}
 
-
 /**
- * Takes in two arrays. And returns the longer array. 
+ * Takes in two arrays. And returns the longer array.
  * If the arrays are of the same length return "They are the same size"
- * 
+ *
  * @param {array} array1
  * @param {array} array2
- * @return {array || string} 
+ * @return {array || string}
  */
 
 function largerArray() {}
 
 /**
- * Takes in an array. And returns the middle element. 
+ * Takes in an array. And returns the middle element.
  * If the array is even in length return the middle two elements in their own array.
  * @param {array} array
- * @return {any} 
+ * @return {any}
  */
 
 function middleElement() {}
@@ -98,11 +93,26 @@ function middleElement() {}
  *
  */
 
- function lastElementIndexing(){}
+function lastElementIndexing() {}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  *
  */
 
- function firstElementIndexing(){}
+function firstElementIndexing() {}
+
+module.exports = {
+  addFruitToEnd,
+  addFruitToFront,
+  removeLast,
+  removeLastandReturnLast,
+  arrayLength,
+  removeFirst,
+  removeFirstandReturnFirst,
+  arrayToString,
+  largerArray,
+  middleElement,
+  lastElementIndexing,
+  firstElementIndexing,
+};
