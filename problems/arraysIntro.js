@@ -44,6 +44,7 @@ function arrayLength() {}
 
 /**
  * Takes in an array of fruits. And removes the first fruit in the array.
+ * Returns the new array.
  * @param {array} fruits
  * @return {array}
  */
