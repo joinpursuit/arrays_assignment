@@ -53,37 +53,47 @@ function evenArray() {}
 
 /**
  * Takes in array and returns the smallest number in the array
- * @param {array} nums 
+ * @param {array} nums
  * @returns {number} smallest value
  */
 
- function findSmallest(){}
+function findSmallest() {}
 
 /**
  * Takes in array and returns the second smallest number in the array
  * You may NOT use sort
- * @param {array} nums 
+ * @param {array} nums
  * @returns {number} second smallest value
  */
 
- function findSecondSmallest(){}
+function findSecondSmallest() {}
 
 /**
  * Takes in array and returns the second largest number in the array
- * @param {array} nums 
+ * @param {array} nums
  * @returns {number} second largest value
  */
 
- function findLargestSmallest(){}
-
- 
+function findSecondLargest() {}
 
 /**
  * Takes in array and returns an array with all the values but with no duplicates.
  * Exp Input: [4,2,6,2,2,6,4,9,2,1] Output: [4, 2, 6, 9, 1]
- * @param {array} nums 
+ * @param {array} nums
  * @returns {array} nums without the duplicates
  */
-// Hint: Look into the `.includes` method. 
- function removeDups(){}
+// Hint: Look into the `.includes` method.
+function removeDups() {}
 
+module.exports = {
+  shoutForLoop,
+  shoutWhileLoop,
+  shoutForOfLoop,
+  sumArray,
+  oddArray,
+  evenArray,
+  findSmallest,
+  findSecondSmallest,
+  findSecondLargest,
+  removeDups,
+};
