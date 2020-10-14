@@ -6,7 +6,10 @@
  * @return {array}
  */
 
-function addFruitToEnd() {}
+function addFruitToEnd(fruits, fruit) {
+  fruits.push(fruit)
+  return fruits
+}
 /**
  * Takes in an array of fruits and a fruit.
  * The fruit should be added to the front of the array.
@@ -15,7 +18,10 @@ function addFruitToEnd() {}
  * @return {array}
  */
 
-function addFruitToFront() {}
+function addFruitToFront(fruits, fruit) {
+  fruits.unshift(fruit)
+  return fruits
+}
 
 /**
  * Takes in an array of fruits. And removes last fruit in the array.
@@ -23,7 +29,10 @@ function addFruitToFront() {}
  * @return {array}
  */
 
-function removeLast() {}
+function removeLast(fruits) {
+  fruits.pop()
+  return fruits
+}
 
 /**
  * Takes in an array of fruits. And removes last fruit in the array and
@@ -32,7 +41,9 @@ function removeLast() {}
  * @return {string} fruit that was removed
  */
 
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) {
+  return fruits.pop()
+}
 
 /**
  * Takes in an array and returns the length
@@ -40,7 +51,9 @@ function removeLastandReturnLast() {}
  * @return {number}
  */
 
-function arrayLength() {}
+function arrayLength(array) {
+  return array.length
+}
 
 /**
  * Takes in an array of fruits. And removes the first fruit in the array.
@@ -49,7 +62,10 @@ function arrayLength() {}
  * @return {array}
  */
 
-function removeFirst() {}
+function removeFirst(fruits) {
+  fruits.shift()
+  return fruits
+}
 
 /**
  * Takes in an array of fruits. And removes first fruit in the array and
@@ -58,7 +74,11 @@ function removeFirst() {}
  * @return {string} fruit that was removed
  */
 
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits) {
+  const firstFruit = fruits[0]
+  fruits.shift()
+  return firstFruit
+}
 
 /**
  * Takes in an array of fruits. And returns a string where all
@@ -67,7 +87,9 @@ function removeFirstandReturnFirst() {}
  * @return {string} joined array
  */
 
-function arrayToString() {}
+function arrayToString(fruits) {
+  return fruits.join("$")
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -78,7 +100,10 @@ function arrayToString() {}
  * @return {array || string}
  */
 
-function largerArray() {}
+function largerArray(array1, array2) {
+  if (array1.length === array2.length) { return "They are the same size" }
+  return (array1.length > array2.length) ? array1 : array2
+}
 
 /**
  * Takes in an array. And returns the middle element.
@@ -87,21 +112,30 @@ function largerArray() {}
  * @return {any}
  */
 
-function middleElement() {}
+function middleElement(array) {
+  if (array.length % 2 === 0) {
+    return [array[(array.length / 2) - 1], array[array.length / 2]]
+  }
+  return array[Math.floor(array.length / 2)]
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  *
  */
 
-function lastElementIndexing() {}
+function lastElementIndexing(array) {
+  return array[array.length - 1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  *
  */
 
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+  return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
