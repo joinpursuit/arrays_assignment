@@ -1,106 +1,91 @@
 /**
- * Takes in an array of fruits and a fruit.
- * The fruit should be added to the end of the array.
- * @param {array} fruits
+ * Appends a fruit to an array of fruits and returns the array.
+ * @param {string[]} fruits
  * @param {string} fruit
- * @return {array}
+ * @returns {string[]}
  */
-
 function addFruitToEnd() {}
-/**
- * Takes in an array of fruits and a fruit.
- * The fruit should be added to the front of the array.
- * @param {array} fruits
- * @param {string} fruit
- * @return {array}
- */
 
+/**
+ * Adds a fruit to the front of an array of fruits and returns the array.
+ * @param {string[]} fruits
+ * @param {string} fruit
+ * @returns {string[]}
+ */
 function addFruitToFront() {}
 
 /**
- * Takes in an array of fruits. And removes last fruit in the array.
- * @param {array} fruits
- * @return {array}
+ * Removes the last fruit from an array of fruits and returns the array.
+ * @param {string[]} fruits
+ * @returns {string[]}
  */
-
 function removeLast() {}
 
 /**
- * Takes in an array of fruits. And removes last fruit in the array and
- * returns the fruit that was removed.
- * @param {array} fruits
- * @return {string} fruit that was removed
+ * Removes and returns the last fruit from from an array of fruits
+ * @param {string[]} fruits
+ * @returns {string} The fruit that was removed
  */
-
 function removeLastandReturnLast() {}
 
 /**
  * Takes in an array and returns the length
- * @param {array}
- * @return {number}
+ * @param {Array} array
+ * @returns {number}
  */
-
 function arrayLength() {}
 
 /**
- * Takes in an array of fruits. And removes the first fruit in the array.
- * Returns the new array.
- * @param {array} fruits
- * @return {array}
+ * Removes the first fruit in an array of fruits and returns the array.
+ * @param {string[]} fruits
+ * @returns {string[]}
  */
-
 function removeFirst() {}
 
 /**
- * Takes in an array of fruits. And removes first fruit in the array and
- * returns the fruit that was removed.
- * @param {array} fruits
- * @return {string} fruit that was removed
+ * Removes and returns the first fruit in an array of fruits.
+ * @param {string[]} fruits
+ * @returns {string} The fruit that was removed
  */
-
 function removeFirstandReturnFirst() {}
 
 /**
- * Takes in an array of fruits. And returns a string where all
- * elements have been joined by '$'.
- * @param {array} fruits
- * @return {string} joined array
+ * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
+ * @param {string[]} fruits
+ * @returns {string}
  */
-
 function arrayToString() {}
 
 /**
  * Takes in two arrays. And returns the longer array.
  * If the arrays are of the same length return "They are the same size"
  *
- * @param {array} array1
- * @param {array} array2
- * @return {array || string}
+ * @param {Array} array1
+ * @param {Array} array2
+ * @returns {string|Array}
  */
-
 function largerArray() {}
 
 /**
- * Takes in an array. And returns the middle element.
+ * Takes in an array and returns the middle element.
  * If the array is even in length return the middle two elements in their own array.
- * @param {array} array
- * @return {any}
+ * @param {Array} array
+ * @returns {*|Array}
  */
-
 function middleElement() {}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
- *
+ * @param {Array} array
+ * @returns {*}
  */
-
 function lastElementIndexing() {}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
- *
+ * @param {Array} array
+ * @returns {*}
  */
-
 function firstElementIndexing() {}
 
 module.exports = {
