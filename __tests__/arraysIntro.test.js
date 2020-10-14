@@ -15,9 +15,9 @@ const {
 
 describe("addFruitToEnd", () => {
   test("should add the fruit to the end of the array", () => {
-    expect(addFruitToEnd(["banana", "pear"], "blueberry")).toEqual([
+    expect(addFruitToEnd(["banana", "pear"], "blueberry")).toEqual(
       ["banana", "pear", "blueberry"],
-    ]);
+    );
     expect(addFruitToEnd(["kiwi"], "orange")).toEqual(["kiwi", "orange"]);
   });
 
@@ -29,9 +29,9 @@ describe("addFruitToEnd", () => {
 
 describe("addFruitToFront", () => {
   test("should add the fruit to the front of the array", () => {
-    expect(addFruitToFront(["banana", "pear"], "blueberry")).toEqual([
+    expect(addFruitToFront(["banana", "pear"], "blueberry")).toEqual(
       ["blueberry", "banana", "pear"],
-    ]);
+    );
     expect(addFruitToFront(["kiwi"], "orange")).toEqual(["orange", "kiwi"]);
   });
 
@@ -125,11 +125,11 @@ describe("largerArray", () => {
 });
 
 describe("middleElement", () => {
-  tests("returns middle element with odd length arrays", () => {
+  test("returns middle element with odd length arrays", () => {
     expect(middleElement([1, 2, 3, 4, 5])).toBe(3);
     expect(middleElement(["bird", "cat", "whale"])).toBe("cat");
   });
-  tests("returns middle two elements with even length arrays", () => {
+  test("returns middle two elements with even length arrays", () => {
     expect(middleElement([1, 2, 3, 4, 5, 6])).toEqual([3, 4]);
     expect(middleElement(["bird", "cat", "whale", "snake"])).toEqual([
       "cat",
@@ -139,29 +139,29 @@ describe("middleElement", () => {
 });
 
 describe("lastElementIndexing", () => {
-      test("returns the last element of the array", () => {
-        expect(lastElementIndexing(["blueberry", "banana", "pear"])).toBe(
-          "pear"
-        );
-        expect(lastElementIndexing(["orange", "kiwi"])).toBe("kiwi");
-      });
+  test("returns the last element of the array", () => {
+    expect(lastElementIndexing(["blueberry", "banana", "pear"])).toBe(
+      "pear"
+    );
+    expect(lastElementIndexing(["orange", "kiwi"])).toBe("kiwi");
+  });
 
-      test("should NOT use method pop", () => {
-        const funcString = lastElementIndexing.toString();
-        expect(funcString.includes("pop")).toBe(false);
-      });
+  test("should NOT use method pop", () => {
+    const funcString = lastElementIndexing.toString();
+    expect(funcString.includes("pop")).toBe(false);
+  });
 })
 
 describe("firstElementIndexing", () => {
-      test("returns the first element of the array", () => {
-        expect(firstElementIndexing(["blueberry", "banana", "pear"])).toBe(
-          "blueberry"
-        );
-        expect(firstElementIndexing(["orange", "kiwi"])).toBe("orange");
-      });
+  test("returns the first element of the array", () => {
+    expect(firstElementIndexing(["blueberry", "banana", "pear"])).toBe(
+      "blueberry"
+    );
+    expect(firstElementIndexing(["orange", "kiwi"])).toBe("orange");
+  });
 
-      test("should NOT use method shift", () => {
-        const funcString = firstElementIndexing.toString();
-        expect(funcString.includes("shift")).toBe(false);
-      });
+  test("should NOT use method shift", () => {
+    const funcString = firstElementIndexing.toString();
+    expect(funcString.includes("shift")).toBe(false);
+  });
 })
