@@ -115,7 +115,7 @@ describe("largerArray", () => {
     expect(largerArray([5, 3, 2, 1, 4], [1, 2, 3])).toEqual([5, 3, 2, 1, 4]);
   });
 
-  tests(
+  test(
     "returns 'They are the same size' when arrays are the same size",
     () => {
       expect(largerArray([], [])).toBe("They are the same size");
