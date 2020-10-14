@@ -2,7 +2,7 @@
 
 # Arrays Lab
 
-Practice getting familiar with arrays.
+Practice getting familiar with arrays.  [Documentation link](https://joinpursuit.github.io/Pursuit-Core-Web-Arrays-Lab/)
 
 ## Learning Objectives 
  * Be able to key / index into an array 
