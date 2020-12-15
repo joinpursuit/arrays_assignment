@@ -105,21 +105,16 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement(array) {
-if (arry.length %2 === 0){
-  let theMiddle = math.floor(array.length / 2)
-  //return array[theMiddle]
-  return array[Math.round((array.length - 1 )/2)]
-} else if (array.length % 2 !== 0){
-  let theMiddle = math.floor(array.length / 2)
-  return array[theMiddle]
+function middleElement(theArray) {
+ let middle = Math.floor(theArray.length/2)// returns the postion of the array
+if (theArray.length % 2 === 0){
+  return [theArray[middle -1],theArray[middle] ]
+} else {
+  
+  return theArray[middle]
 }
-
-  let add = array.reduce()
-let middle = `${add}`/2
-
-
-return middle
+// [5, 6, 7, 8]
+//console.log(middleElement[2,3,4,8,7])
 }
 
 /**
