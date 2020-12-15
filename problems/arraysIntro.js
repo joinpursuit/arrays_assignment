@@ -103,6 +103,7 @@ function largerArray(array1,array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {}
+//Come back to it later
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
