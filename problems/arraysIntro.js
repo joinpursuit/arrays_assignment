@@ -105,13 +105,13 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-  // let a = [array[(array.length / 2) - 1], array[(array.length / 2)]]
+  let a = [array[(array.length / 2) - 1], array[(array.length / 2)]]
   
   if((array.length % 2) === 1) {
     return array[(array.length - 1) / 2]
   }
   else{
-    return [array[(array.length / 2) - 1], array[(array.length / 2)]]
+    return a
   }
 }
 
