@@ -109,6 +109,12 @@ describe("removeFirstandReturnFirst", () => {
   });
 });
 
+describe("arrayToString", () => {
+  test("joined all of the elements with a '$' character", () => {
+    expect(arrayToString(["blueberry", "banana", "pear"])).toBe("blueberry$banana$pear");
+  });
+});
+
 describe("largerArray", () => {
   test("returns the lager of two arrays", () => {
     expect(largerArray([], [1, 2, 3])).toEqual([1, 2, 3]);
