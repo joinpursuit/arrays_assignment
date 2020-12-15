@@ -4,7 +4,11 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
+function addFruitToEnd(fruits, fruit){
+  fruits.push(fruit)
+  return fruits
+
+}
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -12,49 +16,69 @@ function addFruitToEnd() {}
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+function addFruitToFront(fruits, fruit) {
+  fruits.unshift(fruit)
+  return fruits
+}
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+function removeLast(fruits) {
+  fruits.pop(fruits)
+  return fruits
+}
 
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) {
+  fruits.pop(fruits)
+  return fruits.length -1
+}
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+function arrayLength(array) {
+  return array.length
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst(fruits) {
+  fruits.shift(fruits)
+  return fruits
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits) {
+  fruit.shift(fruits)
+  return  fruits
+
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+function arrayToString(fruits) {
+  fruits.join(fruits`$`)
+  return fruits
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -64,7 +88,10 @@ function arrayToString() {}
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+function largerArray(array1, array2) {
+  array1 === array2
+  return "They are the same size"
+}
 
 /**
  * Takes in an array and returns the middle element.
