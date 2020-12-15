@@ -104,15 +104,19 @@ function largerArray(array1, array2) {
 function middleElement(array) {
   let newArray = []
   if(array.length % 2 !== 0){
-    newArray.push(array[(Math.round((array.length-1)/2))])
+    
+    newArray.push( array[ (Math.round( ( array.length-1 ) / 2 ) ) ] )
+    
     return newArray[0]
+  
   }else{
-    newArray.push(array[(Math.round((array.length-1)/2)-1)])
+
+    newArray.push( array[ ( Math.round( ( array.length-1)/2)-1)])
     newArray.push(array[(Math.round((array.length-1)/2))])
+    
     return newArray
   }
 }
-console.log(middleElement(["bird", "cat", "cow", "whale"]))
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
