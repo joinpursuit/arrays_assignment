@@ -6,7 +6,7 @@
  */
 function addFruitToEnd(fruits, fruit) {
   fruits.push(fruits)
-  return fruits
+  return fruit
 }
 
 /**
@@ -17,7 +17,7 @@ function addFruitToEnd(fruits, fruit) {
  */
 function addFruitToFront(fruits, fruit) {
   fruits.upshift(fruit)
-  return fruits
+  return fruits 
 }
 
 /**
@@ -36,7 +36,7 @@ function removeLast(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeLastandReturnLast(fruits) {
-  let fruit = fruit.pop()
+  let fruit = fruits.pop()
   return fruit
 }
 
@@ -55,7 +55,7 @@ function arrayLength(array) {
  * @returns {string[]}
  */
 function removeFirst(fruits) {
-  fruit.shift()
+  fruits.shift()
   return fruits
 }
 
@@ -74,7 +74,7 @@ function removeFirstandReturnFirst(fruits) {
  * @returns {string}
  */
 function arrayToString(fruits) {
-  let str = fruits.join('')
+  let str = fruits.join('$')
   return str
 }
 
