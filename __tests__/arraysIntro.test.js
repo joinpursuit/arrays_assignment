@@ -102,6 +102,14 @@ describe("removeFirstandReturnFirst", () => {
     expect(removeFirstandReturnFirst(["orange", "kiwi"])).toBe("orange");
   });
 
+describe("arrayToString", () => {
+  test("should join the array with $", () => {
+    expect(arrayToString(["blueberry", "banana", "pear"])).toBe(
+      'blueberry$banana$pear'
+    );
+    expect(arrayToString(["orange", "kiwi"])).toBe('orange$kiwi');
+  });
+
   test("should use method shift", () => {
     const funcString = removeFirstandReturnFirst.toString();
     expect(funcString.includes("shift")).toBe(true);
