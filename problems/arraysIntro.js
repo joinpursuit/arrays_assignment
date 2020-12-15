@@ -107,7 +107,7 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement(array)
+function middleElement(array) {
   if (array.length % 2 === 0) {
     return array[(array.length / 2), ((array.length / 2) + 1)]
   }
@@ -115,7 +115,7 @@ function middleElement(array)
   {
     return array[(((array.length - 1) / 2) + 1)]
   }
-
+}
   /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
