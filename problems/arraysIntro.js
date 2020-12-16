@@ -109,11 +109,15 @@ function largerArray(array1, array2) {
  */
 function middleElement(array) {
   if (array.length % 2 === 0) {
-    return array[(array.length / 2), ((array.length / 2) + 1)]
+    let index1 = (array.length / 2) - 1
+    let index2 = index1 + 1
+    let element1 = array[index1]
+    let element2 = array[index2]
+    return [element1, element2]
   }
   else 
   {
-    return array[(((array.length - 1) / 2) + 1)]
+    return array[(((array.length - 1) / 2))]
   }
 }
   /**
