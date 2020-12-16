@@ -15,7 +15,10 @@ const addFruitToEnd = (fruits, fruit) => {
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+const addFruitToFront = (fruits, fruit) => {
+  fruits.unshift(fruit);
+  return fruits;
+}
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
