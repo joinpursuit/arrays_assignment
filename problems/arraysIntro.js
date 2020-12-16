@@ -5,8 +5,8 @@
  * @returns {string[]}
  */
 function addFruitToEnd(fruits, fruit) {
-  fruits.push(fruits)
-  return fruit
+  fruits.push(fruit)
+  return fruits
 }
 
 /**
@@ -16,7 +16,7 @@ function addFruitToEnd(fruits, fruit) {
  * @returns {string[]}
  */
 function addFruitToFront(fruits, fruit) {
-  fruits.upshift(fruit)
+  fruits.unshift(fruit)
   return fruits 
 }
 
@@ -89,14 +89,13 @@ function arrayToString(fruits) {
 function largerArray(array1, array2) {
   if (array1.lenth === array2.lenth) {
     return "They are the same size"
-  } else {
-    if (array1.length > array2.lenth) {
+  } else if (array1.length > array2.lenth) {
       return array1
     } else {
       return array2
     }
   }
-}
+
 
 /**
  * Takes in an array and returns the middle element.
