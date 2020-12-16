@@ -6,7 +6,7 @@
  */
 function addFruitToEnd(fruits,fruit) {
   fruits.push(fruit);
-  return (fruits)
+  return fruits
 }
 
 /**
@@ -17,42 +17,55 @@ function addFruitToEnd(fruits,fruit) {
  */
 function addFruitToFront(fruits,fruit) {
   fruits.unshift(fruit)
-  return (fruits)
+  return fruits
 }
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+function removeLast(fruits) {
+  fruits.pop() 
+  return fruits
+}  
 
 /**
- * Removes and returns the last fruit from from an array of fruits
+ * Removes and returns the last fruit from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) {
+  return fruits.pop()
+}
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+function arrayLength(array) {
+  return array.length  
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst(fruits) {
+  fruits.shift()
+  return fruits
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits) {
+  return fruits.shift()
+  
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
