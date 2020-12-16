@@ -103,7 +103,13 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
+  a = [array[(array.length / 2) - 1], array[(array.length / 2)]]
 
+  if ((array.length % 2) === 1) {
+    return array[(array.length - 1) / 2]
+  }
+  else {
+    return a }
 }
 
 /**
@@ -112,7 +118,7 @@ function middleElement(array) {
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  return array.length-1
+  return array[array.length-1]
 }
 
 /**
@@ -120,7 +126,9 @@ function lastElementIndexing(array) {
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
