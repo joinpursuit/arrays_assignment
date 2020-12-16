@@ -139,6 +139,7 @@ const largerArray = (array1,array2) => {
 //     // return sliceOfArr;
 //   }
 // }
+
 const middleElement = array => {
   if(array.length % 2 === 0){
     sliceOfArr = array.slice(((array.length/2) - 1),((array.length/2) + 1));
@@ -169,6 +170,7 @@ const lastElementIndexing = array => array[array.length -1];
 //   return array[0];
 // }
 const firstElementIndexing = array => array[0];
+
 module.exports = {
   addFruitToEnd,
   addFruitToFront,
