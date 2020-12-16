@@ -101,6 +101,7 @@ describe("removeFirstandReturnFirst", () => {
     );
     expect(removeFirstandReturnFirst(["orange", "kiwi"])).toBe("orange");
   });
+});
 
 describe("arrayToString", () => {
   test("should join the array with $", () => {
@@ -134,14 +135,21 @@ describe("largerArray", () => {
 
 describe("middleElement", () => {
   test("returns middle element with odd length arrays", () => {
+    expect(middleElement([1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(5);
     expect(middleElement([1, 2, 3, 4, 5])).toBe(3);
     expect(middleElement(["bird", "cat", "whale"])).toBe("cat");
+    expect(middleElement(["bird", "cat", "whale", "dog","shark"])).toBe("whale");
   });
   test("returns middle two elements with even length arrays", () => {
+    expect(middleElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toEqual([5, 6]);
     expect(middleElement([1, 2, 3, 4, 5, 6])).toEqual([3, 4]);
     expect(middleElement(["bird", "cat", "whale", "snake"])).toEqual([
       "cat",
       "whale",
+    ]);
+    expect(middleElement(["bird", "cat", "whale", "snake", "dog", "shark"])).toEqual([
+      "whale",
+      "snake",
     ]);
   });
 });
@@ -158,7 +166,7 @@ describe("lastElementIndexing", () => {
     const funcString = lastElementIndexing.toString();
     expect(funcString.includes("pop")).toBe(false);
   });
-})
+});
 
 describe("firstElementIndexing", () => {
   test("returns the first element of the array", () => {
@@ -172,4 +180,4 @@ describe("firstElementIndexing", () => {
     const funcString = firstElementIndexing.toString();
     expect(funcString.includes("shift")).toBe(false);
   });
-})
+});
