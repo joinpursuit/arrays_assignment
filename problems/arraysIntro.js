@@ -84,7 +84,15 @@ function arrayToString(fruits=[]) {
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+function largerArray(array1=[], array2=[]) {
+  if (array1.length > array2.length) {
+    return array1;
+  } else if (array1.length === array2.length) {
+    return "They are the same size"
+  } else {
+    return array2
+  }
+}
 
 /**
  * Takes in an array and returns the middle element.
