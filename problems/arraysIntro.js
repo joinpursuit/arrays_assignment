@@ -49,11 +49,14 @@ const arrayLength = (array) => {
 }
 
 /**
- * Removes the first fruit in an array of fruits and returns the array.
+ * Removes the first fruit in an array of fruits and returns the array. ???????????????????????
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+const removeFirst = (fruits) => {
+  fruits.shift();
+  return fruits;
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
