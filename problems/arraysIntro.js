@@ -73,7 +73,9 @@ const removeFirstandReturnFirst = (fruits) => {
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+const arrayToString = (fruits) => {
+  return fruits.join('$');
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
