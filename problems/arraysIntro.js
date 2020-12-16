@@ -108,20 +108,22 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement(array) {
-  if(array.length % 2 === 0){
-     array.length / 2 
-      array.slice()
+function middleElement(array){
+  let mid = [array[(array.length/2)-1], array[(array.length /2)]]
+  if(array.length % 2 === 1){
+    return (array[(array.length-1)/2])
+  }
+  else{
+    return mid
   }
 }
-
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
 function lastElementIndexing(array) {
-return ((array.length) -1)
+  return array[array.length-1]
 }
 
 /**
@@ -129,7 +131,9 @@ return ((array.length) -1)
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+  return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
