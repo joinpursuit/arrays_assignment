@@ -36,6 +36,7 @@ const removeLast = (fruits) => {
  * @returns {string} The fruit that was removed
  */
 const removeLastandReturnLast = (fruits) => {
+  fruits.shift();
   return fruits.pop();
 }
 
@@ -63,7 +64,9 @@ const removeFirst = (fruits) => {
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+const removeFirstandReturnFirst = (fruits) => {
+  return fruits.shift();
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
