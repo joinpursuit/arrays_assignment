@@ -4,7 +4,10 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
+const addFruitToEnd = (fruits, fruit) => {
+  fruits.push(fruit);
+  return fruits;
+}
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
