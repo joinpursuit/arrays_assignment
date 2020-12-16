@@ -106,17 +106,13 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
+  let middle = [array[(array.length/2)-1], array[(array.length/2)]]
   if (array.length % 2 !== 0) {
-    //let sliceOffArr = array.slice((array.length+1 /2), (array.length -1 /2))
-    //return(array[(array.length/2)-1], array[(array.length/2)])
-    return array[Math.floor(array.length/2)]
+      return array[Math.floor(array.length/2)]
   }
-
-//else {
-//return array[Math.floor(array.length/2)]
-//}
-
-
+  else {
+      return middle
+  }
 }
 
 /**
