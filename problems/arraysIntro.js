@@ -44,7 +44,9 @@ const removeLastandReturnLast = (fruits) => {
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+const arrayLength = (array) => {
+  return array.length;
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
