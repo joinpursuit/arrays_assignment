@@ -4,7 +4,11 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
+function addFruitToEnd(fruits, fruit) {
+  if(fruits.push(fruit)) {
+    return fruits
+  }
+}
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -12,21 +16,31 @@ function addFruitToEnd() {}
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+function addFruitToFront(fruits, fruit) {
+  if(fruits.unshift(fruit)) {
+    return fruits
+  }
+}
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+function removeLast(fruits) {
+  if(fruits.pop()) {
+    return fruits
+  }
+}
 
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) {
+  return fruits.pop()
+}
 
 /**
  * Takes in an array and returns the length
