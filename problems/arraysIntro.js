@@ -104,13 +104,23 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-   if (array.length % 2 === 1){
-    return array[(array.length - 1) / 2]
+  if (array.length % 2 === 0) {
+    let index1 = (array.length / 2) - 1
+    let index2 = index1 + 1
+    
+    let element1 = array[index1]
+    let element2 = array[index2]
+    
+    return [element1, element2]
+
+  } else{
+    let midIndex = (array.length - 1) / 2
+    let midElement = array[midIndex]
+
+    return midElement
+
   }
-  else {
-    const 
-  }
-    }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
