@@ -4,10 +4,18 @@
  * @param {string} fruit
  * @returns {string[]}
  */
+<<<<<<< HEAD
 function addFruitToEnd(fruits, fruit) {
   
   return fruits.push()
 }
+=======
+function addFruitToEnd(fruits,fruit){
+  fruits.push(fruit)
+  return fruits
+}
+
+>>>>>>> 5a44759d23e9bf3c04ac08957cdc0741729c9796
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -16,7 +24,12 @@ function addFruitToEnd(fruits, fruit) {
  * @returns {string[]}
  */
 function addFruitToFront(fruits,fruit) {
+<<<<<<< HEAD
   
+=======
+  fruits.unshift(fruit)
+  return fruits
+>>>>>>> 5a44759d23e9bf3c04ac08957cdc0741729c9796
 }
 
 /**
@@ -24,35 +37,50 @@ function addFruitToFront(fruits,fruit) {
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+function removeLast(fruits) {
+  fruits.pop()
+  return fruits
+
+}
 
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) {
+  let fruit = fruits.pop()
+  return fruit
+}
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+function arrayLength(array) {
+  return array.length
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst(fruits) {
+  fruits.shift()
+  return fruits
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits) {
+  let fruit = fruits.shift()
+  return fruit
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
