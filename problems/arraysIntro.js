@@ -63,14 +63,18 @@ function removeFirst(fruits=[]) {
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits=[]) {
+  return fruits.shift(fruits.length[0])
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+function arrayToString(fruits=[]) {
+  return fruits.join('$')
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
