@@ -4,7 +4,10 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
+function addFruitToEnd(fruits, fruit) {
+  
+  return fruits.push()
+}
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -12,7 +15,9 @@ function addFruitToEnd() {}
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+function addFruitToFront(fruits,fruit) {
+  
+}
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
