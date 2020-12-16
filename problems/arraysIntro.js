@@ -85,7 +85,20 @@ const arrayToString = (fruits) => {
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+const largerArray = (array1, array2) => {
+  if(array1.length > array2.length) {
+    return array1
+  } else if(array1.length < array2.length) {  
+      return array2
+  } else if(array1.length === array2.length) {
+    return "They are the same size"
+  }
+}
+
+console.log(largerArray([1, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
+console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 6]))
+console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
+
 
 /**
  * Takes in an array and returns the middle element.
