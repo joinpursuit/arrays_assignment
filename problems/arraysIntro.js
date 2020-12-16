@@ -4,7 +4,12 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
+const addFruitToEnd = (fruits, fruit) => {
+   fruits.push(fruit)
+   return fruits
+}
+
+
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -12,49 +17,69 @@ function addFruitToEnd() {}
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+const addFruitToFront = (fruits, fruit) => {
+  fruits.unshift(fruit)
+  return fruits
+}
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+const removeLast = (fruits) => {
+  fruits.pop()
+  return fruits
+}
 
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+const removeLastandReturnLast = (fruits) => {
+  let fruit = fruits.pop()
+  return fruit
+}
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+const arrayLength = (array) => {
+  return array.length
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+const removeFirst = (fruits) => {
+  fruits.shift()
+  return fruits
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+const removeFirstandReturnFirst = (fruits) => {
+  let fruit = fruits.shift()
+  return fruit
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+const arrayToString = (fruits) => {
+  let fruitsString = fruits.join('$')
+  return fruitsString
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
