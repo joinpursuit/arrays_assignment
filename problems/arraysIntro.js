@@ -75,7 +75,7 @@ function removeFirstandReturnFirst(fruits) {
  * @returns {string}
  */
 function arrayToString(fruits) {
-  return (fruits.join + ('$'))
+  
 }
 
 /**
@@ -87,14 +87,14 @@ function arrayToString(fruits) {
  * @returns {string|Array}
  */
 function largerArray(array1, array2) {
-  if (array1.length > array2.length)
-  return array1 
-  else array2
-}
-{
-  if (array1 = array2)
-  return "They are the same size"
-}
+  if (array1.length > array2.length) {
+    return array1
+  }
+ else if (array1.length < array2.length)  {
+    return array2 
+  } else { return "They are the same size"
+  }
+  }
 
 /**
  * Takes in an array and returns the middle element.
@@ -102,21 +102,32 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+function middleElement(theArray) {
+  let middle = Math.floor(theArray.length/2)
+  if (theArray.length % 2 === 0) {
+    return [theArray[middle -1], theArray[middle] ]
+  } else {
+    return theArray[middle]
+  }
+}
 
-/**
+/**)
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+function lastElementIndexing(array) {
+  return array[array.length -1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+  return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
