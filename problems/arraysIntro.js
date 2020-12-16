@@ -44,14 +44,19 @@ function removeLastandReturnLast(fruits=[]) {
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
+function arrayLength(array=[]) {
+  return array.length
+}
 
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst(fruits=[]) {
+  fruits.shift() 
+  return fruits
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
