@@ -20,8 +20,10 @@ function addFruitToFront() {}
  * @returns {string[]}
  */
 //function removeLast() {}
-const removeLast = [fruits];
-  return removeLast.pop();
+const removeLast = ["apple", "kiwi"];
+  removeLast.pop();
+  console.log(removeLast);
+
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
