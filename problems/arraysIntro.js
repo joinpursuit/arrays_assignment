@@ -19,8 +19,9 @@ function addFruitToFront() {}
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
-
+//function removeLast() {}
+const removeLast = [fruits];
+  return removeLast.pop();
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
