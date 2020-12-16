@@ -84,7 +84,15 @@ function arrayToString(fruits) {
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+function largerArray(array1,array2) {
+  if(array1.length > array2.length){
+    return array1
+  } else if(array2.length > array1.length){
+    return array2
+  } else {
+    return "They are the same size"
+  }
+}
 
 /**
  * Takes in an array and returns the middle element.
@@ -92,7 +100,14 @@ function largerArray() {}
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+function middleElement(array) {
+let middle = Math.floor(array.length/2)
+if((array.length % 2) === 0 ){
+  return [array[middle-1],array[middle]]
+  } else {
+    return array[middle]
+  }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
