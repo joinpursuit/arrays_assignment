@@ -35,7 +35,9 @@ const removeLast = (fruits) => {
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+const removeLastandReturnLast = (fruits) => {
+  return fruits.pop();
+}
 
 /**
  * Takes in an array and returns the length
