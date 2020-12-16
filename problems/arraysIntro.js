@@ -142,8 +142,9 @@ const largerArray = (array1,array2) => {
 
 const middleElement = array => {
   if(array.length % 2 === 0){
-    sliceOfArr = array.slice(((array.length/2) - 1),((array.length/2) + 1));
+    let sliceOfArr = array.slice(((array.length/2) - 1),((array.length/2) + 1));
     return sliceOfArr;
+    // return array.slice(((array.length/2) - 1),((array.length/2) + 1)); // This Works also
   }else{
     let sliceOfArr = array.slice(((array.length / 2)),((array.length / 2) + 1));
     return sliceOfArr[sliceOfArr.length -1];
