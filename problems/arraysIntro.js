@@ -165,7 +165,10 @@ function middleElement(array)
             return num
             break;
            */ 
-          return middle
+
+           // After 4 hours of needed sleep, the mistake was obvious: I was overthinking, the problem just ask to print the 
+           //middle value of array in the case of the array being odd
+          return array[n]
       }
      }
     
