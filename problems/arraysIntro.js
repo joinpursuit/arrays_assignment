@@ -102,11 +102,9 @@ largerArray([1,2,3], [4,5,6])
  */
 function middleElement(array) {
   if(array.length % 2 === 0) {
-    array[array.length/2]
-    return array.pop()
-  } else if (array.length % 2 !== 0) {
-    (array[array.length/2])
-    return array.pop()
+    return [array[(array.length/2)-1], array[array.length/2]]
+  } else if (!array.length % 2 === 0) {
+    return array[(array.length-1)/2]
   }
 }
 middleElement([1,2,3,4])
