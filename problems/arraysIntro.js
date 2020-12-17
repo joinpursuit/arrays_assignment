@@ -106,9 +106,9 @@ function middleElement(array) {
   let arrLength = array.length;
   //Math.floor(array.length / 2); 
   // check if length is even or odd 
-  let middleTwo = [array.slice(((arrLength / 2)- 1), arrLength / 2)]
+  let middleTwo = [array[(array.length / 2) - 1], array[array.length / 2]];
   return ((array.length % 2  === 0) ? middleTwo : 
-  array[Math.ceil(arrLength / 2) - 1]); 
+  array[Math.ceil(arrLength / 2) - 1]); // array[(array.length - 1) / 2]
   
   //if odd -- Math.floor???
    // if even
