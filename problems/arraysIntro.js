@@ -104,11 +104,9 @@ function largerArray(array1, array2) {
  */
 function middleElement(array) {
   if (array.length % 2 !== 0) {
-      return array[Math.floor(array.length / 2)]
+      return array[array.length/2-1] , array[ array.length /2]
   }else {
-    let mid1 = array[array.length / 2]
-    let mid2 = array[array.length / 2 - 1]
-    return [mid1, mid2]
+    return array[array.length - 1 /2]
   }
   
 }
