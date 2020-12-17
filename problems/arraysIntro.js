@@ -114,14 +114,18 @@ function middleElement(array=[]) {
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+function lastElementIndexing(array=[]) {
+  return array [array.length-1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array=[]) {
+  return array [0]
+}
 
 module.exports = {
   addFruitToEnd,
