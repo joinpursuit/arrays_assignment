@@ -103,22 +103,22 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-//function middleElement(array) {
-//   if (array.length % 2 === 0){
-//     return array.slice((array.length/2 - 1),(array.length/2 + 1))
-    
-//   } else{
-//     return array[Math.floor(array.length/2)]
-//   }
-// }
- const middleElement = (array) => {
-     if (array.length % 2 === 0){
+function middleElement(array) {
+  if (array.length % 2 === 0){
     return array.slice((array.length/2 - 1),(array.length/2 + 1))
     
   } else{
     return array[Math.floor(array.length/2)]
   }
 }
+//  const middleElement = (array) => {
+//      if (array.length % 2 === 0){
+//     return array.slice((array.length/2 - 1),(array.length/2 + 1))
+    
+//   } else{
+//     return array[Math.floor(array.length/2)]
+//   }
+// }
 
 
 
