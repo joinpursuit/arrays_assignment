@@ -11,6 +11,7 @@
 // pop method = pops off the last element of an array
 // shift method = removes first element of an array
 // when you return either pop or shift , you will get the actual element that came off
+// slicw returns the last element in an arry without mutating it
 
   const addFruitToEnd = (fruits,fruit) => {
     fruits.push(fruit)
@@ -24,17 +25,27 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-    const addFruitToFront = (fruits, fruit) => {
+    const addFruitToFront = (fruits,fruit) => {
       fruits.unshift(fruit)
       return fruits
-    }
+    } 
 
+    /**
+ * Removes the last fruit from an array of fruits and returns the array.
+ * @param {string[]} fruits
+ * @returns {string[]}
+ */
+function removeLast(fruits) {
+  fruits.pop();
+  return fruits;
+}
+/**
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-  const removeLastFruit = (fruits) => {
+  const removeLastFruit = (fruit) => {
       fruits.pop()
       return fruits
 }
@@ -65,8 +76,9 @@
  * @returns {string[]}
  */
     const  removeFirst = (fruits) => {
-     
-    }
+       fruits.shift()
+       return fruits 
+ }
 
 /**
  * Removes and returns the first fruit in an array of fruits.
@@ -74,8 +86,7 @@
  * @returns {string} The fruit that was removed
  */
     const removeFirstandReturnFirst = (fruits) => {
-       let fruits = []
-       let removeFirstandReturnFirst = fruits.pop();
+       return fruits.shift()
 
     }
 
@@ -84,7 +95,10 @@
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+  const arrayToString = (fruits) => {
+    return fruits.join("$")
+
+  }
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -94,7 +108,16 @@ function arrayToString() {}
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+    const largerArray = (array1, array2) => {
+      if (array1.length > array2.length){
+        return array1
+      }else if (array1.length < array2.length){
+        return array2
+      }else{
+        return "They are the same size"
+      }
+    }
+
 
 /**
  * Takes in an array and returns the middle element.
@@ -103,10 +126,16 @@ function largerArray() {}
  * @returns {*|Array}
  */
     const middleElement = (array) => {
-      let middleElement = []
-      middleElement[1][2] = []
-      console.log(middleElement)
-    }
+        let mid = [array[(array.length /2)-1], array[(array.length/2)]]
+        if(array.length % 2 ===1){
+          return array[(array.length -1)/2];
+      }else{
+        return mid
+          
+      }
+      }
+      
+    
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -114,8 +143,8 @@ function largerArray() {}
  * @returns {*}
  */
       const lastElementIndexing = (array) => {
-        let lastElementIndexing = []
-        console.log(lastElementIndexing[lastElementIndexing.length -1]) ;
+        return array[array.length -1]
+       
       }
 
 /**
@@ -124,9 +153,8 @@ function largerArray() {}
  * @returns {*}
  */
     const firstElementIndexing = (array) => {
-      let firstElementIndexing = []
-      firstElementIndexing[0] = " "
-      console.log(firstElementIndexing)
+      return array[0]
+      
     }
 
 module.exports = {
