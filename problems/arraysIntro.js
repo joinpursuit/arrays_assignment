@@ -89,7 +89,15 @@ const arrayToString = (fruits) => {
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+const largerArray = (array1, array2) => {
+  if(array1.length > array2.length) {
+    return array1
+  } else if (array1.length === array2.length) {
+    return "They are the same size"
+  } else {
+    return array2
+  }
+}
 
 /**
  * Takes in an array and returns the middle element.
@@ -97,21 +105,35 @@ function largerArray() {}
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+const middleElement = (array) => {
+ 
+  let newArray = array.slice(Math.floor((array.length - 1)/2), Math.ceil((array.length - 1)/2)+1)
+ 
+  if(array.length % 2 === 0) {
+    return newArray 
+  } else {
+    return array [(array.length - 1)/2]
+  }
+  
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+const lastElementIndexing = (array) => {
+  return array[array.length-1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+const firstElementIndexing = (array) => {
+  return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
