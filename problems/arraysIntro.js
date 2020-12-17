@@ -148,8 +148,8 @@ const middleElement = array => {
     // return array.slice((arrShort - 1),(arrShort + 1)); // This Works also
   }else{
     let sliceOfArr = array.slice((arrShort),(arrShort + 1));
-    return sliceOfArr[sliceOfArr.length -1];
-    // return sliceOfArr;
+    return sliceOfArr[sliceOfArr.length - 1];  //returns just the element
+    // return sliceOfArr;  //  return the element but as an array
   }
 }
 
