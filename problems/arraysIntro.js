@@ -145,7 +145,7 @@ const middleElement = array => {
   if(array.length % 2 === 0){
     let sliceOfArr = array.slice((arrShort - 1),(arrShort + 1));
     return sliceOfArr;
-    // return array.slice(((array.length/2) - 1),((array.length/2) + 1)); // This Works also
+    // return array.slice((arrShort - 1),(arrShort + 1)); // This Works also
   }else{
     let sliceOfArr = array.slice((arrShort),(arrShort + 1));
     return sliceOfArr[sliceOfArr.length -1];
