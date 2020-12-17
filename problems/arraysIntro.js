@@ -58,21 +58,29 @@ function arrayLength( array ) {
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst( fruits ) {
+  fruits.shift()
+  return fruits 
+}
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst( fruits ) {
+  return fruits.shift()
+  
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
+function arrayToString( fruits ) {
+ return fruits.join('$')
+}
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -82,7 +90,17 @@ function arrayToString() {}
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+function largerArray( array1 , array2) {
+  if (array1.length > array2.length) { 
+    return array1 
+  }
+  else if (array2.length > array1.length){
+    return array2
+  }
+ else if (array1.length === array2.length){
+   return "They are the same size"
+ }
+}
 
 /**
  * Takes in an array and returns the middle element.
@@ -90,7 +108,12 @@ function largerArray() {}
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+function middleElement( array ) {
+  if (array.length %2 == 0){}
+  else if ((array[1]===array.length/2)-1){}
+  else if (array[0]=== array.length/2){}
+  else 
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
