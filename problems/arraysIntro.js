@@ -103,9 +103,14 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-  let middle = Math.ceil(array.length / 2);
-  if 
-  return array[middle- middle];
+  let arrLength = array.length;
+  //Math.floor(array.length / 2); 
+  // check if length is even or odd 
+  (array.length % 2  === 0) ? array.slice[((arrLength / 2)- 1), (arrLength / 2)] : 
+  array[Math.ceil(arrLength / 2)]; 
+  
+  //if odd -- Math.floor???
+   // if even
 }
 
 /**
@@ -114,7 +119,7 @@ function middleElement(array) {
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  return array.slice(array.length - 1);
+  return array[array.length - 1];
 }
 
 /**
@@ -123,8 +128,8 @@ function lastElementIndexing(array) {
  * @returns {*}
  */
 function firstElementIndexing(array) {
-  let element1 =  array.slice(array[0], 1);
-  return element1;
+  
+  return array[0];
 }
 
 module.exports = {
