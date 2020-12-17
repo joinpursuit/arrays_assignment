@@ -65,6 +65,7 @@ const removeFirst = (fruits) => {
  * @returns {string} The fruit that was removed
  */
 const removeFirstandReturnFirst = (fruits) => {
+
   return fruits.shift();
 }
 
@@ -95,9 +96,9 @@ const largerArray = (array1, array2) => {
   }
 }
 
-console.log(largerArray([1, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
-console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 6]))
-console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
+// console.log(largerArray([1, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
+// console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 6]))
+// console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
 
 
 /**
@@ -106,21 +107,35 @@ console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]))
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+
+// function middleElement() {} 
+
+const middleElement = (array) => {
+  
+  if((array.length % 2) === 1) {
+    return array[[array.length -1] / 2]
+  } else {
+    return [array[(array.length/ 2) -1], array[(array.length / 2)]]
+  }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+const lastElementIndexing = (array) => {
+
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+const firstElementIndexing = (array) => {
+
+}
 
 module.exports = {
   addFruitToEnd,
