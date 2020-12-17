@@ -100,7 +100,14 @@ function largerArray(array1=[], array2=[]) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+function middleElement(array=[]) {
+  const element = array.length/2
+  if (array.length % 2 === 0) {
+    return array.slice(element - 1, element + 1) 
+  } else {
+    return array.slice(element, element + 1)[0];
+  }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
