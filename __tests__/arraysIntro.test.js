@@ -118,7 +118,7 @@ describe("arrayToString", () => {
 });
 
 describe("largerArray", () => {
-  test("returns the lager of two arrays", () => {
+  test("returns the larger of two arrays", () => {
     expect(largerArray([], [1, 2, 3])).toEqual([1, 2, 3]);
     expect(largerArray([5, 3, 2, 1, 4], [1, 2, 3])).toEqual([5, 3, 2, 1, 4]);
   });
