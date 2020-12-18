@@ -106,26 +106,18 @@ const largerArray = (array1, array2) => {
  * @returns {*|Array}
  */
 
-// function middleElement() {
-//   const evenMiddleElements = [
-//     array[array.length / 2 - 1],
-//     array[array.length / 2],
-//   ];
-//   const oddMiddleElement = array[(array.length - 1) / 2];
+// const middleElement = (array) => {
 //   if (array.length % 2 !== 0) {
-//     return oddMiddleElement;
+//     return array[(array.length - 1) / 2];
 //   } else {
-//     return evenMiddleElements;
+//     return [array[array.length / 2 - 1], array[array.length / 2]];
 //   }
-// }
+// };
 
-const middleElement = (array) => {
-  const evenMiddleElements = [
-    array[array.length / 2 - 1],
-    array[array.length / 2],
-  ];
-  const oddMiddleElement = array[(array.length - 1) / 2];
-  return array.length % 2 === 0 ? evenMiddleElements : oddMiddleElement;
+const middleElement = (array) => { // ES6+ ternary
+  return array.length % 2 === 0
+    ? [array[array.length / 2 - 1], array[array.length / 2]]
+    : array[(array.length - 1) / 2];
 };
 
 /**
