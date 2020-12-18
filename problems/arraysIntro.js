@@ -90,7 +90,7 @@ const largerArray = (array1, array2) => {
     return array1;
   } else if (array1.length < array2.length) {
     return array2;
-  } else if (array1.length === array2.length) {
+  } else {
     return "They are the same size";
   }
 };
@@ -106,7 +106,27 @@ const largerArray = (array1, array2) => {
  * @returns {*|Array}
  */
 
-function middleElement() {}
+// function middleElement() {
+//   const evenMiddleElements = [
+//     array[array.length / 2 - 1],
+//     array[array.length / 2],
+//   ];
+//   const oddMiddleElement = array[(array.length - 1) / 2];
+//   if (array.length % 2 !== 0) {
+//     return oddMiddleElement;
+//   } else {
+//     return evenMiddleElements;
+//   }
+// }
+
+const middleElement = (array) => {
+  const evenMiddleElements = [
+    array[array.length / 2 - 1],
+    array[array.length / 2],
+  ];
+  const oddMiddleElement = array[(array.length - 1) / 2];
+  return array.length % 2 === 0 ? evenMiddleElements : oddMiddleElement;
+};
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
