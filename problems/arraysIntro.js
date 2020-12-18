@@ -59,6 +59,8 @@ function removeFirst(fruits) {
   return fruits
 }
 
+
+
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
