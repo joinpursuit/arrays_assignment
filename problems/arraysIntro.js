@@ -37,8 +37,7 @@ function removeLast(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeLastandReturnLast(fruits) {
-  fruits.pop(fruits)
-  return fruits.length -1
+  return fruits.pop()
 }
 
 /**
@@ -66,8 +65,9 @@ function removeFirst(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeFirstandReturnFirst(fruits) {
-  fruit.shift(fruits)
-  return  fruits
+  
+  return  fruits.shift()
+}
 
 
 /**
@@ -76,8 +76,7 @@ function removeFirstandReturnFirst(fruits) {
  * @returns {string}
  */
 function arrayToString(fruits) {
-  fruits.join(fruits`$`)
-  return fruits
+  return fruits.join('$')
 }
 
 /**
@@ -89,8 +88,14 @@ function arrayToString(fruits) {
  * @returns {string|Array}
  */
 function largerArray(array1, array2) {
-  array1 === array2
-  return "They are the same size"
+  if (array1.length > array2.length){
+    return array1
+  }else if (array1.length < array2.length){
+    return array2
+  }else if (array1.length === array2.length){
+    return "They are the same size"
+  }
+  
 }
 
 /**
@@ -99,21 +104,35 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+function middleElement(array) {
+  if(array.length %2 ===0) {
+    return [array[(array.length / 2) -1], array[array.length/2]]
+    
+  }else if(!array.length%2 ===0){
+    return array[(array.length-1)/2]
+  }
+}
 
+//let returnValue = []
+//console.log(returnValue)
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+function lastElementIndexing(array) {
+  return array[array.length-1]
+ 
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+  return array [0] 
+}
 
 module.exports = {
   addFruitToEnd,
@@ -128,4 +147,4 @@ module.exports = {
   middleElement,
   lastElementIndexing,
   firstElementIndexing,
-};
+}
