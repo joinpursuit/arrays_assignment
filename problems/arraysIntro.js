@@ -49,7 +49,7 @@ console.log(removeFirstandReturnFirst(["cherry" , "apple"]))
 function arrayLength(array) {
 return array.length 
 }
-arrayLength(["cherry" , "apple"])
+console.log(arrayLength(["cherry" , "apple"]))
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
@@ -77,7 +77,7 @@ console.log(removeFirstandReturnFirst(["cherry" , "apple"]))
 function arrayToString(fruits) {
 return fruits.join('$')
 }
-console.log(arrayToString(["animal" , "sdsdsd"]))
+console.log(arrayToString(["cash" , "money"]))
 /**
  * Takes in two arrays. And returns the longer array.
  * If the arrays are of the same length return "They are the same size"
@@ -105,12 +105,21 @@ console.log(largerArray())
  * @returns {*|Array}
  */
 function middleElement(array) {
-  let splice = array.splice(1,1) 
-  return splice 
+ 
+if (array.length % 2 === 0) {
+  let index1 = (array.length / 2) - 1
+  let index2 = (array.length/2)
+  
+  let element1 = array[index1]
+  let element2 = array[index2]
+  return [element1, element2]
+
+  } else {
+   let oddIndex = (array.length-1)/2
+   return array[oddIndex]
   }
-
-console.log(middleElement([1,2,3,]))
-
+}
+console.log(middleElement([0,1,2,3]))
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
