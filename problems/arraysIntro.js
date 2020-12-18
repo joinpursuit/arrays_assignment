@@ -109,6 +109,7 @@ function middleElement(array) {
     const midLow = array[middle - 1]
     const midHigh = array[middle]
     return newArray = [midLow, midHigh]
+  }
 }
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -140,5 +141,5 @@ module.exports = {
   largerArray,
   middleElement,
   lastElementIndexing,
-  firstElementIndexing,
+  firstElementIndexing
 }
