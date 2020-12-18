@@ -122,7 +122,10 @@ const lastElementIndexing = (array) => {
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {};
+
+const firstElementIndexing = (array) => {
+  return array[0];
+};
 
 module.exports = {
   addFruitToEnd,
