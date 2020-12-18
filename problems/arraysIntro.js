@@ -113,17 +113,7 @@ function middleElement(array) {
 }
 
 
-  //    let arrayLength = array.length;
-  //      let isEven = arrayLength % 2 === 0;
-  //          if (isEven){
-  //              let idx1 = Math.floor(arrayLength / 2) - 1
-  //              let idxe = Math.ceil(arrayLength / 2)
-  //              return [idx1, idxe]
-  //              }else{
-  //          let idx = Math.floor(arrayLength / 2)
-  //        return array[idx] 
-  //      }
-  // }
+
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
