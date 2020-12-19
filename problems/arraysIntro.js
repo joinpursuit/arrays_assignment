@@ -1,53 +1,73 @@
+
 /**
  * Appends a fruit to an array of fruits and returns the array.
  * @param {string[]} fruits
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd() {}
-
+function addFruitToEnd(fruits,fruit) {
+  fruits.push(fruit);
+  return fruits
+}
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
  * @param {string[]} fruits
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront() {}
+function addFruitToFront(fruits,fruit) {
+  fruits.unshift(fruit);
+  return fruits
+}
+
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeLast() {}
+function removeLast(fruits,fruit) {
+  fruits.pop(fruit);
+  return fruits
+}
 
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeLastandReturnLast() {}
+function removeLastandReturnLast(fruits) { 
+  return fruits.pop();
+  
+}
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-function arrayLength() {}
-
+function arrayLength(array) {
+  return array.length
+}
 /**
  * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst() {}
+function removeFirst(fruits) {
+    fruits.shift()
+    return fruits
+}
+  
 
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-function removeFirstandReturnFirst() {}
+function removeFirstandReturnFirst(fruits) {
+  return fruits.shift()
+}
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
@@ -72,7 +92,18 @@ function largerArray() {}
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() {}
+ function middleElement(array) {
+  let arrayLength = array.length;
+  let isEven = arrayLength % 2 === 0;
+      if (isEven){
+          let idx1 = Math.floor(arrayLength / 2) - 1
+          let idxe = Math.ceil(arrayLength / 2)
+          return [idx1, idxe]
+          }else{
+      let idx = Math.floor(arrayLength / 2)
+    return array[idx] 
+  }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -102,3 +133,4 @@ module.exports = {
   lastElementIndexing,
   firstElementIndexing,
 };
+
