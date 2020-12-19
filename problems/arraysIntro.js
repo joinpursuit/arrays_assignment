@@ -99,18 +99,20 @@ function largerArray(array1,array2) {
 /**
  * Takes in an array and returns the middle element.
  * If the array is even in length return the middle two elements in their own array.
- * @param {Array} array
+ * @param {Array}
  * @returns {*|Array}
  */
 function middleElement(array) {
-  if (array.length % 2 === 0)
-  return array[Math.floor(array.length/2)], array[Math.floor(array.length/2) - 1];
+   let a = [array[(array.length / 2) - 1], array[(array.length / 2)]]
 
-
-  else {
-  return array[Math.floor(array.length /2)]
+  if((array.length % 2) === 1) {
+    return array[(array.length - 1) / 2]
+  }
+  else{
+    return a
   }
 }
+
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
