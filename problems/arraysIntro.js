@@ -1,4 +1,3 @@
-
 /**
  * Appends a fruit to an array of fruits and returns the array.
  * @param {string[]} fruits
@@ -40,7 +39,6 @@ function removeLastandReturnLast(fruits) {
   return fruits.pop();
   
 }
-
 /**
  * Takes in an array and returns the length
  * @param {Array} array
@@ -74,8 +72,9 @@ function removeFirstandReturnFirst(fruits) {
  * @param {string[]} fruits
  * @returns {string}
  */
-function arrayToString() {}
-
+function arrayToString(fruits) {
+      return fruits.join("$");
+}
 /**
  * Takes in two arrays. And returns the longer array.
  * If the arrays are of the same length return "They are the same size"
@@ -84,40 +83,49 @@ function arrayToString() {}
  * @param {Array} array2
  * @returns {string|Array}
  */
-function largerArray() {}
+function largerArray(array1, array2) {
+      if (array1.length > array2.length){
+        return array1
+      }else if (array2.length === array1.length){
+        return "They are the same size"
+      }else{
+          return array2
+      }
 
+}
 /**
  * Takes in an array and returns the middle element.
  * If the array is even in length return the middle two elements in their own array.
  * @param {Array} array
  * @returns {*|Array}
- */
+ */ //[0,1,2,3,4,5] 6
  function middleElement(array) {
-  let arrayLength = array.length;
-  let isEven = arrayLength % 2 === 0;
+  let isEven = array.length % 2 === 0; 
+  let idx1 = Math.floor(array.length / 2)
+  let idxe = Math.ceil(array.length / 2) + 1
       if (isEven){
-          let idx1 = Math.floor(arrayLength / 2) - 1
-          let idxe = Math.ceil(arrayLength / 2)
-          return [idx1, idxe]
+          return [idxe, idx1]
           }else{
-      let idx = Math.floor(arrayLength / 2)
-    return array[idx] 
+    return array[idx1] 
+    }     
   }
-}
-
 /**
  * Takes in an array and returns the last element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing() {}
+function lastElementIndexing(array) {
+        return array[array.length-1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing() {}
+function firstElementIndexing(array) {
+      return array[0]
+      }
 
 module.exports = {
   addFruitToEnd,
@@ -133,4 +141,3 @@ module.exports = {
   lastElementIndexing,
   firstElementIndexing,
 };
-
