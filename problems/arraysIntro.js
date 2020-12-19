@@ -103,7 +103,22 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() { }
+function middleElement(array) { 
+  let arrayLength = array.length
+    if(arrayLength % 2 !== 0){
+      let middle = Math.floor(arrayLength /2)
+      return array[middle]
+    }else {
+      let index = arrayLength /2
+      let lowIndex = (arrayLength /2) -1
+      let myNum = [array[lowIndex], array[index]]
+      return myNum
+    }
+
+
+
+
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
