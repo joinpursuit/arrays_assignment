@@ -108,7 +108,12 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-
+  let midIdx = Math.floor(array.length / 2);
+  if(array.length % 2 === 1) {
+    return array[midIdx];
+  } else {
+    return [array[midIdx - 1], array[midIdx]];
+  }
 }
 
 /**
