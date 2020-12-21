@@ -108,9 +108,9 @@ function middleElement(array) {
   let isEven = arrayLength % 2 === 0
  
   if(isEven){
-    let idxEven = Math.floor(arrayLength / 2)
-    let idxEven1 = Math.ceil(arrayLength / 2) -1
-    return array[idxEven, idxEven1]
+    let idxLarge = arrayLength / 2
+    let idxSmall = idxLarge - 1
+    return [array[idxSmall], array[idxLarge]]
 
 } else {
   let idx = Math.floor(arrayLength / 2)
