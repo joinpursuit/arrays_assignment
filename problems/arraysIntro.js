@@ -19,7 +19,6 @@ function addFruitToFront(fruits,fruit) {
   return fruits
 }
 
-
 /**
  * Removes the last fruit from an array of fruits and returns the array.
  * @param {string[]} fruits
@@ -29,7 +28,6 @@ function removeLast(fruits,fruit) {
   fruits.pop(fruit);
   return fruits
 }
-
 /**
  * Removes and returns the last fruit from from an array of fruits
  * @param {string[]} fruits
@@ -37,7 +35,6 @@ function removeLast(fruits,fruit) {
  */
 function removeLastandReturnLast(fruits) { 
   return fruits.pop();
-  
 }
 /**
  * Takes in an array and returns the length
@@ -56,8 +53,6 @@ function removeFirst(fruits) {
     fruits.shift()
     return fruits
 }
-  
-
 /**
  * Removes and returns the first fruit in an array of fruits.
  * @param {string[]} fruits
@@ -98,16 +93,14 @@ function largerArray(array1, array2) {
  * If the array is even in length return the middle two elements in their own array.
  * @param {Array} array
  * @returns {*|Array}
- */ //[0,1,2,3,4,5] 6
+ */ 
  function middleElement(array) {
-  let isEven = array.length % 2 === 0; 
-  let idx1 = Math.floor(array.length / 2)
-  let idxe = Math.ceil(array.length / 2) + 1
-      if (isEven){
-          return [idxe, idx1]
-          }else{
-    return array[idx1] 
-    }     
+   let num = Math.floor(array.length / 2) //this get you to the halfway point
+   if (array.length % 2 === 0){
+     return [array[num-1], array[num]]
+   } else {
+     return array[num]
+   }
   }
 /**
  * Takes in an array and returns the last element without altering or mutating the array
