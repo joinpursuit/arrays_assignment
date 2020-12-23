@@ -6,8 +6,8 @@
  */
 
 function addFruitToEnd(fruits, fruit) {
-  fruits.push(fruit)
-  return fruits 
+fruits.push(fruit)
+return  fruits
 }
 
 /**
@@ -18,7 +18,7 @@ function addFruitToEnd(fruits, fruit) {
  */
 function addFruitToFront(fruits, fruit) {
 fruits.unshift(fruit)
-return fruits 
+return fruits
 }
 
 /**
@@ -37,7 +37,7 @@ return fruits
  * @returns {string} The fruit that was removed
  */
 function removeLastandReturnLast(fruits) {
-  return fruits.pop()
+return fruits.pop()
 }
 
 /**
@@ -66,7 +66,7 @@ function removeFirst(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeFirstandReturnFirst(fruits) {
-  return fruits.shift()
+return fruits.shift()
 }
 
 /**
@@ -89,15 +89,11 @@ function arrayToString(fruits) {
  * @returns {string|Array}
  */
 function largerArray(array1, array2) {
-if (array1.length > array2.length)
-{
-
-{
-if (array1 === array2)
-return 'They are the same size'
-}
-{
+if(array1.length > array2.length){
   return array1
+}else if(array1.length < array2.length){
+  return array2
+}else{return 'They are the same size'}
 }
 
 
@@ -108,7 +104,12 @@ return 'They are the same size'
  * @returns {*|Array}
  */
 function middleElement(array) {
-
+let mid = Math.floor(array.length / 2)
+if(array.length % 2 === 0){
+return [array[mid - 1], array[mid]]
+}else{ 
+  return array[mid]
+}
 }
 
 /**
@@ -116,14 +117,18 @@ function middleElement(array) {
  * @param {Array} array
  * @returns {*}
  */
-function lastElementIndexing(array) {}
+function lastElementIndexing(array) {
+  return array[array.length - 1]
+}
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
-function firstElementIndexing(array) {}
+function firstElementIndexing(array) {
+  return array[0]
+}
 
 module.exports = {
   addFruitToEnd,
@@ -138,4 +143,4 @@ module.exports = {
   middleElement,
   lastElementIndexing,
   firstElementIndexing,
-};
+}
