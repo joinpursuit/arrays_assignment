@@ -87,13 +87,15 @@ function arrayToString(fruits) {
  * @returns {string|Array}
  */
 function largerArray(array1, array2) {
-  if (array1.lenth === array2.lenth) {
-    return "They are the same size"
-  } else if (array1.length > array2.lenth) {
-      return array1
-    } else {
+  if (array1.length > array2.length) {
+    return array1
+  }
+    else if (array1.length < array2.length) {
       return array2
     }
+      else {
+      return "They are the same size"
+      }
   }
 
 
@@ -122,7 +124,7 @@ function middleElement(array) {
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  return array[array.lenth-1]
+  return array[array.length-1]
 }
 
 /**
