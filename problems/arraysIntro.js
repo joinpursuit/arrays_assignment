@@ -71,8 +71,7 @@ function removeFirst (fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeFirstandReturnFirst(fruits) {
-  let removedFruit = fruits.shift(fruits);
-  return removedFruit;
+  return fruits[0];
 }
 
 /**
