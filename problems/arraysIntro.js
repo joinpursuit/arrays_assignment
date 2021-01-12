@@ -61,7 +61,7 @@ function arrayLength(array) {
  * @returns {string[]}
  */
 function removeFirst (fruits) {
-  let fruit = fruits.shift();
+   fruits.shift(fruits);
   return fruits;
 }
 
@@ -71,8 +71,8 @@ function removeFirst (fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeFirstandReturnFirst(fruits) {
-  let fruit = fruits.shift();
-  return fruit
+  let removedFruit = fruits.shift(fruits);
+  return removedFruit;
 }
 
 /**
@@ -124,8 +124,7 @@ function middleElement(array) {
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  let arra1 = array.slice(length - 1)
-  return arra1.toString();
+  return array[array.length - 1];
 }
 
 /**
