@@ -13,6 +13,7 @@ function addFruitToEnd(fruits, fruit) {
 //   fruits.push(fruit)
 //   return (fruits)
 // }
+// the fat arrow makes the const a function. Without it becomes 
 
 
 
