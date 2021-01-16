@@ -4,13 +4,10 @@
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToEnd (fruits, fruit) {
+function addFruitToEnd(fruits, fruit) {
   fruits.push(fruit);
   return fruits;
-
-
-} 
- 
+}
 
 /**
  * Adds a fruit to the front of an array of fruits and returns the array.
@@ -18,11 +15,10 @@ function addFruitToEnd (fruits, fruit) {
  * @param {string} fruit
  * @returns {string[]}
  */
-function addFruitToFront (fruits, fruit) {
-  fruits.unshift(fruit)
+function addFruitToFront(fruits, fruit) {
+  fruits.unshift(fruit);
   return fruits;
 }
-
 
 /**
  * Removes the last fruit from an array of fruits and returns the array.
@@ -30,7 +26,7 @@ function addFruitToFront (fruits, fruit) {
  * @returns {string[]}
  */
 function removeLast(fruits) {
-  fruits.pop(fruits);
+  fruits.pop();
   return fruits;
 }
 
@@ -41,9 +37,7 @@ function removeLast(fruits) {
  */
 function removeLastandReturnLast(fruits) {
   let fruit = fruits.pop();
-  return fruit
-
-
+  return fruit;
 }
 
 /**
@@ -60,8 +54,8 @@ function arrayLength(array) {
  * @param {string[]} fruits
  * @returns {string[]}
  */
-function removeFirst (fruits) {
-   fruits.shift(fruits);
+function removeFirst(fruits) {
+  fruits.shift();
   return fruits;
 }
 
@@ -79,10 +73,19 @@ function removeFirstandReturnFirst(fruits) {
  * @param {string[]} fruits
  * @returns {string}
  */
-const arrayToString = (fruits) => {
-  let fruitsString = fruits.join('$') 
-  return fruitsString;
+const arrayToString = (fruits) => { 
+  let string = "";
+  while(fruits.length > 0){
+    if(fruits.length === 1){
+      string += fruits.shift()
+    }else{
+    string += fruits.shift() + ("$");
+  //console.log(fruits.shift());
+  }
 }
+  return string;
+};
+arrayToString(["apple", "pear", "mango"])
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -93,15 +96,14 @@ const arrayToString = (fruits) => {
  * @returns {string|Array}
  */
 function largerArray(array1, array2) {
-  if(array1.length > array2.length){
+  if (array1.length > array2.length) {
     return array1;
-  } else if (array1.length === array2.length){
-    return "They are the same size"
-  }
-  else {
+  } else if (array1.length === array2.length) {
+    return "They are the same size";
+  } else {
     return array2;
   }
-  }
+}
 /**
  * Takes in an array and returns the middle element.
  * If the array is even in length return the middle two elements in their own array.
@@ -109,11 +111,11 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-  let midInx = Math.floor(array.length / 2)
-  if(array.length % 2 === 1){
+  let midInx = Math.floor(array.length / 2);
+  if (array.length % 2 === 1) {
     return array[midInx];
-  }else if (array.length % 2 === 0){
-    return [array[midInx - 1], array[midInx]]
+  } else if (array.length % 2 === 0) {
+    return [array[midInx - 1], array[midInx]];
   }
 }
 
@@ -132,10 +134,9 @@ function lastElementIndexing(array) {
  * @returns {*}
  */
 const firstElementIndexing = (array) => {
-  let arra1 = array.slice(0, 1)
+  let arra1 = array.slice(0, 1);
   return arra1.toString();
-    
-}
+};
 
 module.exports = {
   addFruitToEnd,
