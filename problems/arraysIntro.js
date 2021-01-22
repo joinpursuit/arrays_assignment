@@ -5,8 +5,8 @@
  * @returns {string[]}
  */
 const addFruitToEnd = (fruits, fruit) => {
-  fruits.push(fruit);
-  return fruits;
+  fruits.push(fruit)
+  return fruits 
 };
 
 /**
@@ -16,8 +16,8 @@ const addFruitToEnd = (fruits, fruit) => {
  * @returns {string[]}
  */
 const addFruitToFront = (fruits, fruit) => {
-  fruits.unshift(fruit);
-  return fruits;
+  fruits.unshift(fruit)
+  return fruits  
 };
 
 /**
@@ -25,9 +25,9 @@ const addFruitToFront = (fruits, fruit) => {
  * @param {string[]} fruits
  * @returns {string[]}
  */
-const removeLast = (fruits) => {
-  fruits.pop();
-  return fruits;
+const removeLast = fruits => {
+  fruits.pop()
+  return fruits
 };
 
 /**
@@ -35,28 +35,23 @@ const removeLast = (fruits) => {
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-const removeLastandReturnLast = (fruits) => {
-  fruits.shift();
-  return fruits.pop();
-};
+const removeLastandReturnLast = fruits => fruits.pop()
 
 /**
  * Takes in an array and returns the length
  * @param {Array} array
  * @returns {number}
  */
-const arrayLength = (array) => {
-  return array.length;
-};
+const arrayLength = array => array.length
 
 /**
- * Removes the first fruit in an array of fruits and returns the array. ???????????????????????
+ * Removes the first fruit in an array of fruits and returns the array.
  * @param {string[]} fruits
  * @returns {string[]}
  */
-const removeFirst = (fruits) => {
-  fruits.shift();
-  return fruits;
+const removeFirst = fruits => {
+  fruits.shift()
+  return fruits
 };
 
 /**
@@ -64,18 +59,15 @@ const removeFirst = (fruits) => {
  * @param {string[]} fruits
  * @returns {string} The fruit that was removed
  */
-const removeFirstandReturnFirst = (fruits) => {
-  return fruits.shift();
-};
+
+const removeFirstandReturnFirst = fruits => fruits.shift()
 
 /**
  * Returns a string made by joining all of the elements in an array of fruits with a '$' character.
  * @param {string[]} fruits
  * @returns {string}
  */
-const arrayToString = (fruits) => {
-  return fruits.join("$");
-};
+const arrayToString = fruits => fruits.join("$")
 
 /**
  * Takes in two arrays. And returns the longer array.
@@ -85,19 +77,17 @@ const arrayToString = (fruits) => {
  * @param {Array} array2
  * @returns {string|Array}
  */
-const largerArray = (array1, array2) => {
-  if (array1.length > array2.length) {
-    return array1;
-  } else if (array1.length < array2.length) {
-    return array2;
+
+const largerArray = (array1, array2) => {  // use array method
+  if (array1.length === array2.length) {
+    return "They are the same size"
+  } else if (array1.length > array2.length) {
+    return array1
   } else {
-    return "They are the same size";
+    return array2
   }
 };
 
-// console.log(largerArray([1, 4, 5, 6], [1, 2, 3, 4, 5, 6]));
-// console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 6]));
-// console.log(largerArray([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]));
 
 /**
  * Takes in an array and returns the middle element.
@@ -106,18 +96,13 @@ const largerArray = (array1, array2) => {
  * @returns {*|Array}
  */
 
-// const middleElement = (array) => {
-//   if (array.length % 2 !== 0) {
-//     return array[(array.length - 1) / 2];
-//   } else {
-//     return [array[array.length / 2 - 1], array[array.length / 2]];
-//   }
-// };
-
-const middleElement = (array) => { // ES6+ ternary
-  return array.length % 2 === 0
-    ? [array[array.length / 2 - 1], array[array.length / 2]]
-    : array[(array.length - 1) / 2];
+const middleElement = (array) => {
+  let arrLength = array.length
+  if (arrLength % 2 === 0) {
+     return [array[arrLength / 2 - 1], array[arrLength / 2]]
+  } else {
+    return array[(arrLength - 1) / 2]
+  }
 };
 
 /**
@@ -125,9 +110,7 @@ const middleElement = (array) => { // ES6+ ternary
  * @param {Array} array
  * @returns {*}
  */
-const lastElementIndexing = (array) => {
-  return array[array.length - 1];
-};
+const lastElementIndexing = array => array[array.length - 1]
 
 /**
  * Takes in an array and returns the first element without altering or mutating the array
@@ -135,9 +118,7 @@ const lastElementIndexing = (array) => {
  * @returns {*}
  */
 
-const firstElementIndexing = (array) => {
-  return array[0];
-};
+const firstElementIndexing = array => array[0]
 
 module.exports = {
   addFruitToEnd,
