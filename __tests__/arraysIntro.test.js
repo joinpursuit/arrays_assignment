@@ -103,9 +103,6 @@ describe("removeFirstandReturnFirst", () => {
   });
 });
 
-
-
-  
 describe("arrayToString", () => {
   test("should join the array with $", () => {
     expect(arrayToString(["blueberry", "banana", "pear"])).toBe(
