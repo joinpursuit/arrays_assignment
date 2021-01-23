@@ -6,7 +6,7 @@
  */
 function addFruitToEnd(fruits, fruit) {
   if (fruits.push(fruit)) {
-    return fruits
+    return fruits;
   }
 }
 
@@ -18,7 +18,7 @@ function addFruitToEnd(fruits, fruit) {
  */
 function addFruitToFront(fruits, fruit) {
   if (fruits.unshift(fruit)) {
-    return fruits
+    return fruits;
   }
 }
 
@@ -29,7 +29,7 @@ function addFruitToFront(fruits, fruit) {
  */
 function removeLast(fruits) {
   if (fruits.pop()) {
-    return fruits
+    return fruits;
   }
 }
 
@@ -39,7 +39,7 @@ function removeLast(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeLastandReturnLast(fruits) {
-  return fruits.pop()
+  return fruits.pop();
 }
 
 /**
@@ -48,7 +48,7 @@ function removeLastandReturnLast(fruits) {
  * @returns {number}
  */
 function arrayLength(array) {
-  return array.length
+  return array.length;
 }
 
 /**
@@ -76,7 +76,7 @@ function removeFirstandReturnFirst(fruits) {
  * @returns {string}
  */
 function arrayToString(fruits) {
-  return fruits.join("$")
+  return fruits.join("$");
 }
 
 /**
@@ -87,13 +87,14 @@ function arrayToString(fruits) {
  * @param {Array} array2
  * @returns {string|Array}
  */
+
 function largerArray(array1, array2) {
-  if(array1.length > array2.length) {
-    return array1
-  } else if(array2.length > array1.length) {
-    return array2
-  } else if(array1.length === array2.length) {
-    return "They are the same size"
+  if (array1.length > array2.length) {
+    return array1;
+  } else if (array2.length > array1.length) {
+    return array2;
+  } else if (array1.length === array2.length) {
+    return "They are the same size";
   }
 }
 
@@ -103,7 +104,15 @@ function largerArray(array1, array2) {
  * @param {Array} array
  * @returns {*|Array}
  */
-function middleElement() { }
+
+function middleElement(array) {
+  let midIdx = Math.floor(array.length / 2);
+  if (array.length % 2 === 1) {
+    return array[midIdx];
+  } else {
+    return [array[midIdx - 1], array[midIdx]];
+  }
+}
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -111,7 +120,7 @@ function middleElement() { }
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  return array[array.length - 1]
+  return array[array.length - 1];
 }
 
 /**
@@ -120,7 +129,7 @@ function lastElementIndexing(array) {
  * @returns {*}
  */
 function firstElementIndexing(array) {
-  return array[0]
+  return array[0];
 }
 
 module.exports = {
