@@ -95,6 +95,8 @@ function largerArray(array1, array2) {
     return array2
   }
 }
+console.log(largerArray([1,2, 5, 8],[3, 4, 5, 6]))
+console.log(largerArray([1,2],[3, 4, 5, 6]))
 
 /**
  * Takes in an array and returns the middle element.
@@ -104,15 +106,34 @@ function largerArray(array1, array2) {
  */
 
 function middleElement(array) {
-  let mid = [array.length / 2];
-  let mid2 = [mid - 1];
-    if (array.length % 2 === 0) {
-      return (mid.concat(mid2))
-  
-    }
-  
+    function takeElement(i){
+      let value = a[['pop', 'shift'][i]]();
+      return 0 in a
+      ? takeElement( 1 - i )
+      : value;
 
+    }
+    let a = array.slice();
+    return takeElement(0);  
   }
+console.log(middleElement([9, 2, 6, 4,7]));
+// let mid = [array.length / 2];
+  // let mid2 = [mid - 1];
+  //   if (array.length % 2 === 0) {
+  //     return (mid.concat(mid2))
+  
+  //   }
+
+//   function middleElement(array) {
+//     let middleIndex = (array.length- 1)/2
+//        let middleElement = array[middleIndex]
+//     if (array.length % 2 === 0) {
+
+//        return middleElement
+
+//     }
+//   }
+// console.log(middleElement([1, 2, 3, 4]))
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -122,15 +143,17 @@ function middleElement(array) {
 function lastElementIndexing(array) {
 return (array[array.length-1]) 
 }
-
+console.log(lastElementIndexing([1,2,3, 5]))
 /**
  * Takes in an array and returns the first element without altering or mutating the array
  * @param {Array} array
  * @returns {*}
  */
 function firstElementIndexing(array) {
-  return (array[0])
+  return (array[0]) 
 }
+console.log(firstElementIndexing([1,2]))
+
 
 module.exports = {
   addFruitToEnd,
